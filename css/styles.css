@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: #010102;
+}
+header{
+    background: linear-gradient(91.51deg, rgba(255, 255, 255, 0.02) -6.42%, rgba(255, 255, 255, 0.02) 100.57%);
+    border: 1px solid rgba(7, 34, 55, 0.5);
+    border-radius: 100px;
+}
+
+.hero-banner{
+    background-image: url("../assets/images/hero.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.nav-item{
+    width: max-content;
+}
+.button-outline{
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 14px 24px;
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 30 30%22%3E%3Cpath stroke=%22white%22 stroke-linecap=%22round%22 stroke-miterlimit=%2210%22 stroke-width=%222%22 d=%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
+}
+.nav-underline {
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    text-align: center;
+}
+
+.nav-item:hover .nav-underline {
+    opacity: 1;
+    margin-top: -17px;
+}
+
+.nav-item{
+    height: 50px;
+}
+
+.nav-item a {
+    position: relative;
+    display: block;
+}
+
+.nav-underline svg {
+    width: max-content !important;
+}
+.text-underline{
+    text-decoration: underline;
+    font-family: Raleway;
+}
+.text-lgrey{
+    color: #CBCED6;
+}
+.hero-text-container{
+    margin-top: 105px;
+}
+.button-blue{
+    background-color: #1C64FE;
+    padding: 14px 24px;
+    border-radius: 25px;
+    box-shadow: 2px 4px 20px 0px rgba(16, 56, 143, 0.22);
+    color: white;
+}
+.hero-content h1{
+    line-height: 42.8px;
+}
+.font-raleway{
+    font-family: 'Raleway' ;
+    font-size: 32px;
+    line-height: 16.73px;
+    text-align: center;
+}
+
+.font-bebas {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 21.4px;
+    text-align: center;
+}
+.metrics-container{
+    background: linear-gradient(91.51deg, rgba(255, 255, 255, 0.02) -6.42%, rgba(255, 255, 255, 0.02) 100.57%);
+    box-shadow: 0px 8px 20px 5px #00000026;
+    border-radius: 60px;
+    padding: 24px 34px;
+    bottom: -108px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

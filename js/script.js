@@ -8,4 +8,15 @@ $(document).ready(function () {
             $this.find('.navbar-toggler-icon').css('background-image', 'url(data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3E%3Cpath stroke=\'white\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' stroke-width=\'2\' d=\'M6 6l18 18M6 24L24 6\'/%3E%3C/svg%3E)');
         }
     });
+    const navItems = document.querySelectorAll('.nav-item');
+
+
+    const currentPath = window.location.pathname;
+    $('.nav-item a').each(function() {
+        if ($(this).attr('href') === currentPath) {
+            $(this).parent().addClass('active');
+        }
+    });
+
+
 });

@@ -31,7 +31,8 @@ header nav {
     overflow: hidden;
 }
 
-.home-page .page {
+.page-container:has(.home-page) .page,
+.page-container:has(.hakkimizda-page) {
     background-image: url('../../Vonboarding/assets/images/bg-img.png');
     background-image: url('/assets/images/bg-img.png');
     background-size: cover;
@@ -68,7 +69,6 @@ header {
     background: var(--primary-bgcolor);
     border: 1px solid rgba(7, 34, 55, 0.5);
     border-radius: 40px;
-    box-shadow: 0px 8px 20px 5px #07223780;
     backdrop-filter: blur(5px);
     padding: 16px 24px;
 }
@@ -151,7 +151,7 @@ header:has(.navbar-collapse.show) {
     z-index: 3333;
 }
 
-.hero-banner video {
+.page-container:has(.home-page) .hero-banner video {
     position: absolute;
     top: 0;
     left: 0;
@@ -161,7 +161,7 @@ header:has(.navbar-collapse.show) {
     z-index: -1;
 }
 
-.video-filter video {
+.page-container:has(.home-page) .video-filter video {
     filter: brightness(40%);
 }
 
@@ -387,7 +387,7 @@ footer {
     transform: translateX(-150px);
 }
 
-.blog-page .hero-banner {
+.page-container:has(.blog-page) .hero-banner {
     background-color: #010102;
     background-image: url("/assets/images/blog-bg.png") !important;
     height: max-content;
@@ -396,7 +396,11 @@ footer {
     background-repeat: no-repeat;
 }
 
-/*BLOG PAGE STYLES*/
+.page-container:has(.blog-page) .hero-text-container,
+.page-container:has(.blog-detail-page) .hero-text-container {
+    margin-bottom: 90px;
+}
+
 .blog-page {
     background-color: #F0F0F2;
 }
@@ -438,20 +442,26 @@ footer {
     width: 60px;
 }
 
-.blog-detail-page .hero-banner {
+.page-container:has(.blog-detail-page) .hero-banner {
     background-image: url(/assets/images/blog-detail.png) !important;
     background-color: unset;
     background-position: bottom;
 }
 
-.blog-detail-page blockquote {
+.page-container:has(.blog-detail-page) blockquote {
     border-left: 5px solid #1C64FE;
     border-radius: 5px;
 }
 
-.blog-detail-page .page {
+.page-container:has(.blog-detail-page) .page {
     margin-top: -305px;
     z-index: 3333;
+}
+
+.page-container:has(.blog-detail-page) .user-info img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .avantaj-box.border-bottom {
@@ -501,11 +511,11 @@ footer {
 }
 
 .slick-prev {
-    left: -15px;
+    left: -40px;
 }
 
 .slick-next {
-    right: -15px;
+    right: -40px;
 }
 
 .slick-slide .bg img {
@@ -588,11 +598,32 @@ footer {
     border-radius: 0px 0px 20px 20px;
 }
 
-/*RESPONSIVE STYLES*/
+.page-container:has(.hakkimizda-page) .hero-banner {
+    background-image: unset !important;
+    height: max-content;
+}
+
+.hakkimizda-box {
+    box-shadow: 0px 2.81px 7.02px 1.75px #00000026;
+    background: var(--primary-bgcolor);
+    border-radius: 21.05px;
+    max-width: 560px;
+    padding: 50px;
+    position: relative;
+    height: 400px;
+}
+.hakkimizda-box img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 21.05px;
+}
 
 @media screen and (min-width: 1400px) {
     .max-w1140 {
         max-width: 1140px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .w1140 {
@@ -609,7 +640,16 @@ footer {
     .pl-90 {
         padding-left: 90px !important;
     }
-
+    .custom-row {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .left-column, .right-column {
+        flex: 1;
+    }
+    .left-column {
+        margin-right: 40px;
+    }
     .max-w336 {
         max-width: 336px;
     }
@@ -639,7 +679,9 @@ footer {
     .nav-underline {
         display: none;
     }
-
+    .hakkimizda-box{
+        padding: 32px;
+    }
     .mt-150 {
         margin-top: 75px;
     }
@@ -664,13 +706,10 @@ footer {
         margin-top: 30px;
     }
 
-    .blog-detail-page .max-w744 {
-        max-width: calc(100vw - 100px);
-    }
-
     .mt-100 {
         margin-top: 65px;
     }
+
 }
 
 @media (min-width: 769px) and  (max-width: 992px ) {
@@ -703,10 +742,8 @@ footer {
 @media (min-width: 769px) {
     .slick .item .bg {
         height: 475px;
-        background-position: center;
-        background-size: cover;
         transition: .3s;
-        margin: 0 -24px;
+        margin: 0 -40px;
         -webkit-transform: scale3d(0.8, 0.8, 1);
         transform: scale3d(0.8, 0.8, 1);
         transition: all 0.3s ease-in-out;
@@ -715,7 +752,6 @@ footer {
     .slick .slick-center .bg {
         opacity: 1;
         -webkit-transform: scale3d(1.0, 1.0, 1);
-        transform: scale3d(1.2, 1.0, 1);
         position: relative;
         z-index: 4444;
         background-color: #FFFFFF;
@@ -725,6 +761,10 @@ footer {
 @media (max-width: 768px ) {
     .metrics-container {
         height: max-content;
+    }
+
+    .hero-text-container {
+        padding: 0 16px;
     }
 
     .accordion {
@@ -775,7 +815,10 @@ footer {
 
 @media (max-width: 575px) {
     main {
-        padding: 16px;
+        padding: 0 16px;
+    }
+    .page-container:has(.hakkimizda-page) main{
+        padding: 0 28px !important;
     }
 
     .hero-banner {
@@ -832,27 +875,47 @@ footer {
         gap: unset !important;
     }
 
-    .blog-detail-page .hero-banner {
+    .page-container:has(.blog-detail-page) .hero-banner {
         background-image: url("/assets/images/blog-bg.png") !important;
     }
 
-    .blog-detail-page .page {
+
+    .page-container:has(.blog-detail-page) .page {
         margin-top: 30px;
     }
 
-    .blog-detail-page span.ms-5 {
+    .page-container:has(.blog-detail-page) span.ms-5 {
         margin-left: 0 !important;
     }
 
-    .blog-detail-page blockquote p {
+    .page-container:has(.blog-detail-page) blockquote p {
         font-size: 24px;
     }
 
-    .slick-next {
-        right: -30px;
+    .slick-next,
+    .slick-prev {
+        display: none !important;
     }
 
-    .slick-prev {
-        left: -30px;
+    .page-container:has(.blog-detail-page) .user-info img {
+        width: 64px;
+        height: 64px;
+        object-fit: contain;
+    }
+
+    .page-container:has(.blog-detail-page) .text-user-color {
+        font-size: 18px;
+    }
+
+    .vbutton-container {
+        flex-direction: column;
+    }
+
+    .vbutton-container button,
+    .resp-with100,
+    .form-button {
+        width: 100%;
+        margin-right: unset;
+        margin-bottom: 30px;
     }
 }

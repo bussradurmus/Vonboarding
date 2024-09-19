@@ -1,6 +1,11 @@
 <?php
 require 'master/header.php';
 ?>
+<div class="video-filter">
+    <video class="d-none d-md-block w-100" autoplay muted loop>
+        <source src="/assets/images/5427792_Coll_wavebreak_Particles_1280x720_1.mp4" type="video/mp4">
+    </video>
+</div>
 <div class="hero-text-container text-center">
     <div class="col-lg-8 col-md-10 mx-auto hero-content">
         <div class="mb-4 text-white">
@@ -93,7 +98,7 @@ require 'master/header.php';
 </div>
 </div>
 
-<div class="page position-relative">
+<div class="page position-relative home-page">
     <main>
         <div class="vonboarding-box container">
             <div class="row justify-content-center align-items-center">
@@ -102,7 +107,7 @@ require 'master/header.php';
                     <p class="font-raleway text-lgrey fs-18 max-w457">Vonboarding, tüm ödeme kuruluşları için
                         entegrasyon süreçlerini tek bir yerden yürütüp, onboarding süreçlerinizi hızlandırır.
                         Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
-                    <div class="d-flex justify-content-around justify-content-lg-start align-items-center mt-5">
+                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center mt-5 vbutton-container">
                         <button class="btn btn-primary btn-lg me-24">Hemen Başla</button>
                         <button class="btn button-outline">Dökümantasyon</button>
                     </div>
@@ -346,12 +351,12 @@ require 'master/header.php';
             <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center bg-darklinear w1140">
 
                 <div class="col-lg-8 col-12 d-flex pl-90 text-lg-start p-5 p-lg-0 ">
-                    <div>
+                    <div class="w-100">
                         <h3 class="mb-3 fs-32 lh-1 text-white">Tek Adımda Entegrasy<span
                                     class="text-blue">on</span> Başlasın!</h3>
                         <p class="text-grey fs-18 lh-23">Ödeme sistemlerine sorunsuz entegrasyon için hemen <br>Vonboarding’e
                             katılın ve süreci hızlandırın!</p>
-                        <button class="btn btn-primary mt-4 fs-14">Hemen Başla</button>
+                        <button class="btn btn-primary mt-4 fs-14 resp-with100">Hemen Başla</button>
                     </div>
                 </div>
 

@@ -92,19 +92,22 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                     <div class="col-lg-7 col-md-12">
                         <h2 class="fs-40 text-grey fw-bold ">Makalelerimiz</h2>
                         <div class="article-box mb-4 max-w678 mt-4">
-                            <div class="d-flex resp-box">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
-                                <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding Nedir?</h5>
-                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Here are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                                        alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum,
-                                        you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on.</p>
-                                    <div class="user-info fs-14 ">
-                                        <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
+                            <a href="blog-id.php" class="text-decoration-none text-dark">
+                                <div class="d-flex resp-box">
+                                    <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
+                                    <div class="ms-3">
+                                        <h5 class="text-dark fs-18 fw-bold">Vonboarding Nedir?</h5>
+                                        <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Here are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                            alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem
+                                            Ipsum,
+                                            you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on.</p>
+                                        <div class="user-info fs-14 ">
+                                            <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
+                                            <span class="fw-bold me-3 text-user-color">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                             <img src="<?= $baseUrl ?>/assets/images/boldLine.svg" alt="Line" class="mt-4 w-100">
 
                         </div>
@@ -119,7 +122,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                                         you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
+                                        <span class="fw-bold me-3 text-user-color">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +140,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                                         you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
+                                        <span class="fw-bold me-3 text-user-color">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +158,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                                         you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
+                                        <span class="fw-bold me-3 text-user-color">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -173,7 +176,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                                         you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
+                                        <span class="fw-bold me-3 text-user-color">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +194,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                                         you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
+                                        <span class="fw-bold me-3 text-user-color">Metehan Akcan</span> | <span class="ms-3 text-date">20 Temmuz 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -272,50 +275,9 @@ $baseUrl = 'https://busra.valletbeta2.site/';
 
         </main>
 
-        <footer class="footer pt-5 pb-3 mt-150">
-            <div class="container  max-w1140">
-                <div class="d-flex flex-row justify-content-center align-items-center mb-4">
-                    <div class="line me-5">
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100">
-                    </div>
-                    <div class="footer-logo-box">
-                        <img src="/assets/images/bluelogo.svg" alt="Logo" class="mx-3 footer-logo">
-                    </div>
-                    <div class="line ms-5">
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100">
-                    </div>
-                </div>
-
-
-                <div class="row mt-5 mb-5 text-center text-md-start">
-                    <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start mb-4 mb-md-0">
-                        <a href="#" class="mb-2 text-grey fs-16 lh-19">KVKK Aydınlatma Metni</a>
-                        <a href="#" class="mb-2 text-grey fs-16 lh-19">Çerez Yönetimi</a>
-                        <a href="#" class="mb-2 text-grey fs-16 lh-19">Gizlilik Sözleşmesi</a>
-                    </div>
-                    <div class="col-12 col-md-4 d-flex justify-content-center gap-4 align-items-center mb-4 mb-md-0">
-                        <a href="#" class="mx-2"><img src="/assets/images/instagram.svg" alt="Instagram Logo"></a>
-                        <a href="#" class="mx-2"><img src="/assets/images/twitter.svg" alt="Twitter Logo"></a>
-                        <a href="#" class="mx-2"><img src="/assets/images/linkedin.svg" alt="Linkedin Logo"></a>
-                    </div>
-                    <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-end">
-                        <a href="/" class="mb-2 text-grey fs-16 lh-19">Ana Sayfa</a>
-                        <a href="#" class="mb-2 text-grey fs-16 lh-19">Dokümantasyon</a>
-                        <a href="#" class="mb-2 text-grey fs-16 lh-19">Blog</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="footer-bottom pt-3">
-                <div class="container mt-3">
-                    <div class="text-grey text-center text-md-start">
-                        <p class="text-center fs-14">Vonboarding bir Vallet Elektronik A.Ş ürünüdür. <span
-                                    class="mx-4"> | </span> Tüm Hakları Saklıdır ©</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php
+        require 'master/footer-white.php';
+        ?>
 
     </div>
 </div>

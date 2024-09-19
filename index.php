@@ -259,7 +259,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line">
+                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header mb-3 " id="headingTwo">
@@ -278,7 +278,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line">
+                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header " id="headingThree">
@@ -297,7 +297,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line">
+                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header " id="headingFour">
@@ -316,7 +316,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line">
+                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header fs-18 " id="headingFive">
@@ -335,7 +335,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line">
+                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
                     </div>
                 </div>
             </div>

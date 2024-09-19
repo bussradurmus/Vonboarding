@@ -5,7 +5,7 @@
                 <img src="/assets/images/Line 8.png" alt="Line" class="w-100 opacity-50">
             </div>
             <div class="footer-logo-box">
-                <img src="/assets/images/logo.svg" alt="Logo" class="mx-3 footer-logo">
+                <img src="/assets/images/bluelogo.svg" alt="Logo" class="mx-3 footer-logo">
             </div>
             <div class="line ms-5">
                 <img src="/assets/images/Line 8.png" alt="Line" class="w-100 opacity-50">
@@ -37,7 +37,7 @@
         <div class="container mt-3">
             <div class="text-grey text-center text-md-start">
                 <p class="text-center fs-14">Vonboarding bir Vallet Elektronik A.Ş ürünüdür. <span
-                            class="mx-4"> | </span> Tüm Hakları Saklıdır ©</p>
+                        class="mx-4"> | </span> Tüm Hakları Saklıdır ©</p>
             </div>
         </div>
     </div>

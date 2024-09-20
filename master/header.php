@@ -7,7 +7,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vonboarding - Ana Sayfa</title>
+    <title>Vonboarding</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
           rel="stylesheet">
@@ -27,7 +27,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                 <a class="navbar-brand" href="#">
                     <img src="./assets/images/logo.svg" alt="Logo" class="logo">
                 </a>
-                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -69,10 +69,11 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                             </div>
                         </li>
                     </ul>
-                    <div class="d-flex mb-2">
+                    <div class="d-flex mb-2 ms-3 ms-lg-0">
                         <button class="btn text-white me-lg-2 ps-0 fs-14 font-raleway">Giriş Yap</button>
                         <button class="btn button-outline fs-14 font-raleway">Kayıt Ol</button>
                     </div>
                 </div>
             </nav>
         </header>
+

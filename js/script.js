@@ -18,5 +18,29 @@ $(document).ready(function () {
         }
     });
 
-
 });
+
+//
+// document.addEventListener('DOMContentLoaded', function() {
+//     var navbarCollapse = document.querySelector('.navbar-collapse');
+//     var header = document.querySelector('header');
+//
+//     function updateHeaderBorderRadius() {
+//         if (header.querySelector('.navbar-collapse.show')) {
+//             header.style.borderRadius = '100px';
+//
+//         } else {
+//             header.style.borderRadius = '40px';
+//         }
+//     }
+//
+//     updateHeaderBorderRadius();
+//
+//     navbarCollapse.addEventListener('show.bs.collapse', function () {
+//         updateHeaderBorderRadius();
+//     });
+//
+//     navbarCollapse.addEventListener('hide.bs.collapse', function () {
+//         updateHeaderBorderRadius();
+//     });
+// });

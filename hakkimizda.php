@@ -10,8 +10,9 @@ require 'master/header.php';
         <div class="col-lg-8 col-md-10 mx-auto hero-content text-center mt-150 mb-5">
             <h1 class="mb-4 text-white fw-bold">Hakkımızda</h1>
             <div class="d-flex justify-content-center">
-            <p class="mb-4 text-lgrey font-raleway fs-18 max-w560">It is a long established fact that a reader will be distracted by the readable content of a page when looking age when lo age when lo age when loage
-                when loage when loage when lo .</p>
+                <p class="mb-4 text-lgrey font-raleway fs-18 max-w560">It is a long established fact that a reader will be distracted by the readable content of a page when looking age when lo age
+                    when lo age when loage
+                    when loage when loage when lo .</p>
             </div>
         </div>
 
@@ -51,13 +52,17 @@ require 'master/header.php';
             <div class="left-column px-0">
                 <div class="mb-5">
                     <h2 class="text-uppercase letterSpace-45 mb-4">MISY<span class="text-blue">ON</span>UMUZ</h2>
-                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin. Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
-                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin. Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
+                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin.
+                        Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
+                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin.
+                        Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
                 </div>
                 <div>
                     <h2 class="text-uppercase letterSpace-45 mb-4">VİZY<span class="text-blue">ON</span>UMUZ</h2>
-                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin. Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
-                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin. Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
+                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin.
+                        Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
+                    <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip edin.
+                        Gereksiz beklemelere son verin, hızlı ve sorunsuz bir deneyim yaşayın.</p>
                 </div>
             </div>
             <div class="right-column d-flex align-items-center justify-content-end px-0 mt-5 mt-lg-0">
@@ -92,11 +97,10 @@ require 'master/header.php';
 
 </div>
 </div>
-<!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script src="js/script.js"></script>
+<script src="js/script.js?v=<?= time(); ?>"></script>
 </body>
 
 </html>

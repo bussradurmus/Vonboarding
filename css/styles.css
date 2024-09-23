@@ -126,6 +126,7 @@ header {
     border: 1px solid rgba(255, 255, 255, 1);
     padding: 14px 24px;
     color: white;
+    font-weight: 600;
 }
 .navbar-toggler-icon {
     background-image: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 30 30%22%3E%3Cpath stroke=%22white%22 stroke-linecap=%22round%22 stroke-miterlimit=%2210%22 stroke-width=%222%22 d=%22M4 7h22M4 15h22M4 23h22%22/%3E%3C/svg%3E');
@@ -150,8 +151,9 @@ header {
     position: relative;
     display: block;
 }
-.nav-underline svg {
+.nav-underline img {
     width: max-content !important;
+
 }
 .text-underline {
     text-decoration: underline;
@@ -276,12 +278,52 @@ footer {
     width: -webkit-fill-available;
     width: -moz-available;
 }
+/* Başlangıçta sağdan gelen img */
 .text-img .img-content {
     transform: translateX(150px);
+    opacity: 0;
 }
+
+/* Sağdan gelen img animasyonu */
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(280px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(150px);
+        opacity: 1;
+    }
+}
+
+/* Animasyon tetiklenince çalışacak */
+.text-img .img-content.animate {
+    animation: slideInFromRight 1s ease-out forwards;
+}
+
+/* Başlangıçta soldan gelen img */
 .img-text .img-content {
     transform: translateX(-150px);
+    opacity: 0;
 }
+
+/* Soldan gelen img animasyonu */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-280px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-150px);
+        opacity: 1;
+    }
+}
+
+/* Animasyon tetiklenince çalışacak */
+.img-text .img-content.animate {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
 .page-container:has(.blog-page) .hero-banner {
     background-color: #010102;
     background-image: url("/assets/images/blog-bg.png") !important;
@@ -482,6 +524,22 @@ footer {
     right: 0;
     border-bottom-right-radius: 21.05px;
 }
+.circle-number {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    background-image: url('/assets/images/circle-number.svg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #626C85;
+}
+.btn-primary:hover{
+    background-color: rgba(28, 100, 254, 0.5);
+}
 @media screen and (min-width: 1400px) {
     .max-w1140 {
         max-width: 1140px;
@@ -495,10 +553,16 @@ footer {
         font-size: 42px;
     }
 }
-@media (min-width: 992px) {
+@media (min-width: 1201px) {
+    header{
+        border-radius: 100px;
+    }
     header nav {
         height: 100px;
     }
+}
+
+@media (min-width: 992px) {
     .pl-90 {
         padding-left: 90px !important;
     }
@@ -731,3 +795,59 @@ footer {
     }
 }
 
+/* Animasyon için basit fade-in ve slide efektleri */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hidden-animation {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.show-animation {
+    animation: fadeIn 0.8s forwards ease-out;
+}
+.black-footer a:hover rect{
+    fill: rgba(98, 108, 133, 1);
+}
+.black-footer a:hover path{
+    fill: #FFFFFF;
+}
+.black-footer a:hover{
+    color: #FFFFFF;
+}
+.white-footer a:hover rect{
+    fill: #626C85;
+}
+.white-footer a:hover path{
+    fill: #FFFFFF;
+}
+.white-footer a:hover{
+    color: #434550;
+}
+input,textarea {
+    --c: #1C64FE; /* the border color */
+    --b: 1px;    /* the border thickness*/
+    --g: 5px;     /* the gap on hover */
+    --_g: #0000 25%,var(--c) 0;
+    background:
+            conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+            var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+            conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+            0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .2s, background-position .2s .2s;
+    cursor: pointer;
+}
+input:focus , textarea:focus {
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+    border-radius: 10px;
+}

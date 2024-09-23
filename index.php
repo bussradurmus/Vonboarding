@@ -159,44 +159,61 @@ require 'master/header.php';
                 </div>
             </div>
 
-            <div class="row align-items-center justify-content-center flex-column flex-lg-row desktop-show">
+            <div class="row align-items-center justify-content-center flex-column flex-lg-row desktop-show ">
 
                 <div class="col-lg-4 col-12 mb-0 mb-lg-5 text-start">
                     <div class="content-box first">
-                        <div class="icon-title mb-4">
-                            <img src="/assets/images/number-1 1.svg" alt="Number 1">
+                        <div class="hidden-animation first-show">
+                            <div class="icon-title mb-4">
+                                <div class="circle-number">
+                                    01
+                                </div>
+                            </div>
+                            <p class="text-white fs-18 font-raleway max-w336 ">Müşterilerinize Vonboarding aracılığıyla sanal POS
+                                sistemi önerin ve süreçleri hızlandırarak onların işlerini büyütmelerine yardımcı
+                                olun.</p>
+                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
-                        <p class="text-white fs-18 font-raleway max-w336">Müşterilerinize Vonboarding aracılığıyla sanal POS
-                            sistemi önerin ve süreçleri hızlandırarak onların işlerini büyütmelerine yardımcı
-                            olun.</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
-                        <div class="icon-title mb-4">
-                            <img src="/assets/images/number-3 1.svg" alt="Number 3">
+
+                        <div class="hidden-animation third-show">
+                            <div class="icon-title mb-4">
+                                <div class="circle-number">
+                                    03
+                                </div>
+                            </div>
+                            <p class="text-white fs-18 font-raleway max-w336 ">Gerekli belgeleri Vonboarding sistemine yükleyerek
+                                sanal pos sürecini yönetin.</p>
+                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
-                        <p class="text-white fs-18 font-raleway max-w336">Gerekli belgeleri Vonboarding sistemine yükleyerek
-                            sanal pos sürecini yönetin.</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                     </div>
                 </div>
 
-                <div class="col-lg-1 d-none d-lg-flex justify-content-center divider-img">
+                <div class="col-lg-1 d-none d-lg-flex justify-content-center divider-img hidden-animation">
                     <img src="/assets/images/vertical-line.png" alt="Divider Image">
                 </div>
 
                 <div class="col-lg-4 col-12 text-start">
                     <div class="content-box second">
-                        <div class="icon-title mb-4">
-                            <img src="/assets/images/number-2 1.svg" alt="Number 2">
+                        <div class="hidden-animation second-show">
+                            <div class="icon-title mb-4">
+                                <div class="circle-number">
+                                    02
+                                </div>
+                            </div>
+                            <p class="text-white fs-18 font-raleway max-w336">Vonboarding ile müşterilerinize sanal POS hizmeti
+                                sunarken ek gelir fırsatlarını değerlendirin.</p>
+                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
-                        <p class="text-white fs-18 font-raleway max-w336">Vonboarding ile müşterilerinize sanal POS hizmeti
-                            sunarken ek gelir fırsatlarını değerlendirin.</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
-                        <div class="icon-title mb-4">
-                            <img src="/assets/images/number-4 1.svg" alt="Number 4">
+                        <div class="hidden-animation forth-show">
+                            <div class="icon-title mb-4">
+                                <div class="circle-number">
+                                    04
+                                </div>
+                            </div>
+                            <p class="text-white fs-18 font-raleway max-w336 ">Sanal POS entegrasyonlarından elde ettiğiniz
+                                gelirlerin keyfini çıkarın. Müşterilerinize değer katarken, siz de kazançlı çıkın!</p>
+                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
-                        <p class="text-white fs-18 font-raleway max-w336">Sanal POS entegrasyonlarından elde ettiğiniz
-                            gelirlerin keyfini çıkarın. Müşterilerinize değer katarken, siz de kazançlı çıkın!</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                     </div>
                 </div>
             </div>
@@ -205,14 +222,18 @@ require 'master/header.php';
                 <div class="col-lg-4 col-12 mb-0 mb-lg-5 text-start ">
                     <div class="content-box first">
                         <div class="icon-title mb-4">
-                            <img src="/assets/images/number-1 1.svg" alt="Number 1">
+                            <div class="circle-number">
+                                01
+                            </div>
                         </div>
                         <p class="text-white fs-18 font-raleway max-w336">Müşterilerinize Vonboarding aracılığıyla sanal POS
                             sistemi önerin ve süreçleri hızlandırarak onların işlerini büyütmelerine yardımcı
                             olun.</p>
                         <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         <div class="icon-title mb-4">
-                            <img src="/assets/images/number-2 1.svg" alt="Number 2">
+                            <div class="circle-number">
+                                02
+                            </div>
                         </div>
                         <p class="text-white fs-18 font-raleway max-w336">Vonboarding ile müşterilerinize sanal POS hizmeti
                             sunarken ek gelir fırsatlarını değerlendirin.</p>
@@ -224,14 +245,18 @@ require 'master/header.php';
                 <div class="col-lg-4 col-12 text-start">
                     <div class="content-box second">
                         <div class="icon-title mb-4">
-                            <img src="/assets/images/number-3 1.svg" alt="Number 3">
+                            <div class="circle-number">
+                                03
+                            </div>
                         </div>
                         <p class="text-white fs-18 font-raleway max-w336">Gerekli belgeleri Vonboarding sistemine yükleyerek
                             sanal pos sürecini yönetin.</p>
                         <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
 
                         <div class="icon-title mb-4">
-                            <img src="/assets/images/number-4 1.svg" alt="Number 4">
+                            <div class="circle-number">
+                                04
+                            </div>
                         </div>
                         <p class="text-white fs-18 font-raleway max-w336">Sanal POS entegrasyonlarından elde ettiğiniz
                             gelirlerin keyfini çıkarın. Müşterilerinize değer katarken, siz de kazançlı çıkın!</p>
@@ -241,6 +266,7 @@ require 'master/header.php';
             </div>
 
         </div>
+
         <div class="container mt-150">
             <div class="row justify-content-center">
                 <h2 class="mb-3 letterSpace-45 text-center mb-5 fs-42"><span class="text-blue">SIK</span> SORULAN SORULAR
@@ -366,7 +392,6 @@ require 'master/header.php';
             </div>
         </div>
 
-
         <div class="container my-5" id="iletisim">
             <div class="row justify-content-center">
                 <div class="col-lg-6 max-w560">
@@ -376,23 +401,27 @@ require 'master/header.php';
                     <form>
                         <div class="mb-3">
                             <label for="firstName" class="form-label text-grey font-raleway">Adınız</label>
-                            <input type="text" class="form-control" id="firstName" name="firstName"
+                            <input type="text" class="form-control effect-9" id="firstName" name="firstName"
                                    pattern="[A-Za-zçÇğĞıİöÖşŞüÜ]+$" title="Sadece harf karakterleri girilebilir"
                                    required>
+                            <span class="focus-border"><i></i></span>
                         </div>
                         <div class="mb-3">
                             <label for="lastName" class="form-label text-grey font-raleway">Soyadınız</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName"
+                            <input type="text" class="form-control effect-9" id="lastName" name="lastName"
                                    pattern="[A-Za-zçÇğĞıİöÖşŞüÜ]+$" title="Sadece harf karakterleri girilebilir"
                                    required>
+                            <span class="focus-border"><i></i></span>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label text-grey font-raleway">Eposta</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
+                            <input type="email" class="form-control effect-9" id="email" name="email" required>
+                            <span class="focus-border"><i></i></span>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label text-grey font-raleway">Mesajınız</label>
-                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            <textarea class="form-control effect-9" id="message" name="message" rows="4" required></textarea>
+                            <span class="focus-border"><i></i></span>
                         </div>
                         <button type="submit" class="btn btn-primary form-button mt-3">Gönder</button>
                     </form>

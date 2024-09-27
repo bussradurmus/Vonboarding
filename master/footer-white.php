@@ -15,7 +15,7 @@
         </div>
 
 
-        <div class="row mt-5 mb-5 text-center text-md-start">
+        <div class="row mt-5 mb-5 text-center text-md-start hover-effect">
             <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start mb-4 mb-md-0">
                 <a href="javascript:void(0)" class="mb-2 text-grey fs-16 lh-19">KVKK Aydınlatma Metni</a>
                 <a href="javascript:void(0)" class="mb-2 text-grey fs-16 lh-19">Çerez Yönetimi</a>

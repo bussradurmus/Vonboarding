@@ -32,4 +32,17 @@ $(document).ready(function(){
             }
         ]
     });
+
+    $('#copyButton').on('click', function() {
+        // Geçerli sayfanın URL'sini al
+        const pageUrl = window.location.href;
+
+        // Clipboard API kullanarak URL'yi kopyala
+        navigator.clipboard.writeText(pageUrl).then(function() {
+            alert('Sayfa linki başarıyla kopyalandı!');
+        }, function(err) {
+            console.error('Link kopyalanamadı: ', err);
+        });
+    });
+
 });

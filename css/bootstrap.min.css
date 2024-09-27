@@ -102,7 +102,7 @@
     --bs-highlight-bg: #fff3cd;
     --bs-border-width: 1px;
     --bs-border-style: solid;
-    --bs-border-color: #dee2e6;
+    --bs-border-color: #626C85;
     --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
     --bs-border-radius: 0.375rem;
     --bs-border-radius-sm: 0.25rem;
@@ -172,7 +172,7 @@
     --bs-code-color: #e685b5;
     --bs-highlight-color: #dee2e6;
     --bs-highlight-bg: #664d03;
-    --bs-border-color: #495057;
+    --bs-border-color: #626C85;
     --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
     --bs-form-valid-color: #75b798;
     --bs-form-valid-border-color: #75b798;
@@ -2286,7 +2286,6 @@ progress {
 .form-control:focus {
     color: #FFFFFF;
     outline: 0;
-    box-shadow: 0 0 0 .25rem #3333331A
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2472,25 +2471,26 @@ textarea.form-control-lg {
 }
 
 .form-select {
-    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2225%22%20height%3D%2225%22%20viewBox%3D%220%200%2025%2025%22%20fill%3D%22none%22%3E%3Cg%20clip-path%3D%22url(%23clip0_538_2639)%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M13.2073%2016.2073C13.0198%2016.3948%2012.7655%2016.5001%2012.5003%2016.5001C12.2352%2016.5001%2011.9809%2016.3948%2011.7933%2016.2073L6.13634%2010.5503C6.04083%2010.4581%205.96465%2010.3478%205.91224%2010.2257C5.85983%2010.1037%205.83225%209.97252%205.83109%209.83974C5.82994%209.70696%205.85524%209.57529%205.90552%209.45239C5.9558%209.32949%206.03006%209.21784%206.12395%209.12395C6.21784%209.03006%206.32949%208.9558%206.45239%208.90552C6.57529%208.85524%206.70696%208.82994%206.83974%208.83109C6.97252%208.83225%207.10374%208.85983%207.22575%208.91224C7.34775%208.96465%207.4581%209.04083%207.55034%209.13634L12.5003%2014.0863L17.4503%209.13634C17.6389%208.95418%2017.8915%208.85339%2018.1537%208.85567C18.4159%208.85795%2018.6668%208.96312%2018.8522%209.14852C19.0376%209.33393%2019.1427%209.58474%2019.145%209.84694C19.1473%2010.1091%2019.0465%2010.3617%2018.8643%2010.5503L13.2073%2016.2073Z%22%20fill%3D%22white%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CclipPath%20id%3D%22clip0_538_2639%22%3E%3Crect%20width%3D%2224%22%20height%3D%2224%22%20fill%3D%22white%22%20transform%3D%22translate(0.5%200.5)%22%2F%3E%3C%2FclipPath%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
     display: block;
     width: 100%;
     padding: .375rem 2.25rem .375rem .75rem;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: var(--bs-body-color);
+    color: #FFFFFF;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-color: var(--bs-body-bg);
+    background-color: #07080C;
     background-image: var(--bs-form-select-bg-img), var(--bs-form-select-bg-icon, none);
     background-repeat: no-repeat;
     background-position: right .75rem center;
     background-size: 16px 12px;
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    height:50px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -3237,8 +3237,6 @@ textarea.form-control-lg {
 
 .btn-check:checked + .btn, .btn.active, .btn.show, :not(.btn-check) + .btn:active {
     color: #434550;
-    background-color: #FFFFFF;
-    border-color: var(--bs-btn-active-border-color)
 }
 
 .btn-check:checked + .btn:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible, .btn:first-child:active:focus-visible, :not(.btn-check) + .btn:active:focus-visible {
@@ -5748,7 +5746,7 @@ textarea.form-control-lg {
 
 .btn-close {
     --bs-btn-close-color: #000;
-    --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+    --bs-btn-close-bg: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMSIgdmlld0JveD0iMCAwIDIwIDIxIiBmaWxsPSJub25lIj4KPHBhdGggZD0iTTEyLjQ5NDggMTAuNUwxOS40NzggMy41MTY4NEMxOS44MDk0IDMuMTg2MDEgMTkuOTk1OCAyLjczNzA3IDE5Ljk5NjIgMi4yNjg3OUMxOS45OTY2IDEuODAwNSAxOS44MTEgMS4zNTEyMyAxOS40ODAyIDEuMDE5ODFDMTkuMTQ5NCAwLjY4ODM5NSAxOC43MDA0IDAuNTAxOTczIDE4LjIzMjEgMC41MDE1NkMxNy43NjM4IDAuNTAxMTQ2IDE3LjMxNDYgMC42ODY3NzQgMTYuOTgzMiAxLjAxNzYxTDEwIDguMDAwNzdMMy4wMTY4NCAxLjAxNzYxQzIuNjg1NDIgMC42ODYxOSAyLjIzNTkyIDAuNSAxLjc2NzIzIDAuNUMxLjI5ODUzIDAuNSAwLjg0OTAyOCAwLjY4NjE5IDAuNTE3NjA5IDFDMCAxLjM0OTAzIDAgMS43OTg1MyAwIDIuMjY3MjNDMCAyLjczNTkyIDAuMTg2MTkgMy4xODU0MiAwLjUxNzYwOSAzLjUxNjg0TDcuNTAwNzcgMTAuNUwwLjUxNzYwOSAxNy40ODMyQzAuMTg2MTkgMTcuODE0NiAwIDE4LjI2NDEgMCAxOC43MzI4QzAgMTkuMjAxNSAwLjE4NjE5IDE5LjY1MSAwLjUxNzYwOSAxOS45ODI0QzAuODQ5MDI4IDIwLjMxMzggMS4yOTg1MyAyMC41IDEuNzY3MjMgMjAuNUMyLjIzNTkyIDIwLjUgMi42ODU0MiAyMC4zMTM4IDMuMDE2ODQgMTkuOTgyNEwxMCAxMi45OTkyTDE2Ljk4MzIgMTkuOTgyNEMxNy4zMTQ2IDIwLjMxMzggMTcuNzY0MSAyMC41IDE4LjIzMjggMjAuNUMxOC43MDE1IDIwLjUgMTkuMTUxIDIwLjMxMzggMTkuNDgyNCAxOS45ODI0QzE5LjgxMzggMTkuNjUxIDIwIDE5LjIwMTUgMjAgMTguNzMyOEMyMCAxOC4yNjQxIDE5LjgxMzggMTcuODE0NiAxOS40ODI0IDE3LjQ4MzJMMTIuNDk0OCAxMC41WiIgZmlsbD0iIzNDNDI1MiIvPjwvc3ZnPg==');
     --bs-btn-close-opacity: 0.5;
     --bs-btn-close-hover-opacity: 0.75;
     --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -5763,7 +5761,8 @@ textarea.form-control-lg {
     background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
     border: 0;
     border-radius: .375rem;
-    opacity: var(--bs-btn-close-opacity)
+    opacity: var(--bs-btn-close-opacity);
+    fill: #3C4252;
 }
 
 .btn-close:hover {
@@ -5868,8 +5867,8 @@ textarea.form-control-lg {
 }
 
 .modal {
-    --bs-modal-zindex: 1055;
-    --bs-modal-width: 500px;
+    --bs-modal-zindex: 10555;
+    --bs-modal-width: 550px;
     --bs-modal-padding: 1rem;
     --bs-modal-margin: 0.5rem;
     --bs-modal-color: ;
@@ -5896,8 +5895,6 @@ textarea.form-control-lg {
     display: none;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
     outline: 0
 }
 
@@ -5905,7 +5902,8 @@ textarea.form-control-lg {
     position: relative;
     width: auto;
     margin: var(--bs-modal-margin);
-    pointer-events: none
+    pointer-events: none;
+    max-width: 550px;
 }
 
 .modal.fade .modal-dialog {
@@ -5920,7 +5918,8 @@ textarea.form-control-lg {
 }
 
 .modal.show .modal-dialog {
-    transform: none
+    transform: none;
+    top: 80px;
 }
 
 .modal.modal-static .modal-dialog {
@@ -5953,17 +5952,23 @@ textarea.form-control-lg {
     width: 100%;
     color: var(--bs-modal-color);
     pointer-events: auto;
-    background-color: var(--bs-modal-bg);
     background-clip: padding-box;
     border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
-    border-radius: var(--bs-modal-border-radius);
-    outline: 0
+    border-radius: 40px;
+    outline: 0;
+    backdrop-filter: blur(35px);
+    box-shadow: 0px 4px 20px 0px #1C64FE1A;
+    background: linear-gradient(90.05deg, rgba(18, 25, 41, 0.45) 0.04%, rgba(22, 30, 46, 0.45) 20.35%, rgba(22, 30, 46, 0.45) 40.66%, rgba(22, 30, 46, 0.45) 60.96%, rgba(22, 29, 45, 0.45) 81.27%, rgba(18, 25, 41, 0.45) 101.58%),
+    linear-gradient(90deg, rgba(28, 100, 254, 0.07) -1.64%, rgba(28, 100, 254, 0.07) 102.73%),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02));
+    padding: 40px;
+
 }
 
 .modal-backdrop {
-    --bs-backdrop-zindex: 1050;
+    --bs-backdrop-zindex: 150;
     --bs-backdrop-bg: #000;
-    --bs-backdrop-opacity: 0.5;
+    --bs-backdrop-opacity: 70%;
     position: fixed;
     top: 0;
     left: 0;
@@ -5984,11 +5989,9 @@ textarea.form-control-lg {
 .modal-header {
     display: flex;
     flex-shrink: 0;
-    align-items: center;
-    padding: var(--bs-modal-header-padding);
-    border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
-    border-top-left-radius: var(--bs-modal-inner-border-radius);
-    border-top-right-radius: var(--bs-modal-inner-border-radius)
+    position: relative;
+    top: -10px;
+    right: 0px;
 }
 
 .modal-header .btn-close {
@@ -5998,13 +6001,12 @@ textarea.form-control-lg {
 
 .modal-title {
     margin-bottom: 0;
-    line-height: var(--bs-modal-title-line-height)
+    line-height: var(--bs-modal-title-line-height);
 }
 
 .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: var(--bs-modal-padding)
 }
 
 .modal-footer {
@@ -6015,7 +6017,6 @@ textarea.form-control-lg {
     justify-content: flex-end;
     padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
     background-color: var(--bs-modal-footer-bg);
-    border-top: var(--bs-modal-footer-border-width) solid var(--bs-modal-footer-border-color);
     border-bottom-right-radius: var(--bs-modal-inner-border-radius);
     border-bottom-left-radius: var(--bs-modal-inner-border-radius)
 }

@@ -12,13 +12,14 @@ $(document).ready(function () {
 
 
     const currentPath = window.location.pathname;
-    $('.nav-item a').each(function() {
+    $('.nav-item a').each(function () {
         if ($(this).attr('href') === currentPath) {
             $(this).parent().addClass('active');
         }
     });
 
 });
+
 // Sıralı animasyonları tetikleyen fonksiyon
 function animateSequentially(entries, observerSeq) {
     entries.forEach(entry => {

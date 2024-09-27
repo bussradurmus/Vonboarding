@@ -1,4 +1,5 @@
 <?php
+global $baseUrl;
 require 'master/header.php';
 ?>
 <div class="video-filter">
@@ -101,21 +102,42 @@ require 'master/header.php';
 <div class="page position-relative home-page">
     <main>
         <div class="vonboarding-box container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0 mb-3">
+            <div class="d-flex flex-column justify-content-center align-items-center">
                     <h2 class="mb-3 letterSpace-45">V<span class="text-blue">ON</span>BOARDING</h2>
-                    <p class="font-raleway text-lgrey fs-18 max-w457">Vonboarding, tüm ödeme kuruluşları için
+                    <p class="font-raleway text-lgrey fs-18 max-w560 text-center">Vonboarding, tüm ödeme kuruluşları için
                         entegrasyon süreçlerini tek bir yerden yürütüp, onboarding süreçlerinizi hızlandırır.
                         Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
-                    <div class="d-flex justify-content-center justify-content-lg-start align-items-center mt-5 vbutton-container">
+                    <div class="d-flex justify-content-center align-items-center mt-4 vbutton-container">
                         <button class="btn btn-primary btn-lg me-24">Hemen Başla</button>
                         <button class="btn button-outline">Dökümantasyon</button>
                     </div>
-                </div>
-                <div class="col-lg-6 d-flex justify-content-center justify-content-lg-end align-items-center">
-                    <img src="/assets/images/vonboarding-circle.png" alt="Vonboarding Image" class="img-fluid">
-                </div>
+
             </div>
+        </div>
+        <div class="logo-container mt-100">
+            <!-- First set of logos -->
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <!-- Duplicate set of logos for seamless loop -->
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
         </div>
 
         <div class="container mt-150">
@@ -442,6 +464,7 @@ require 'master/header.php';
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="js/script.js?v=<?= time() ?>"></script>
+<script src="js/form.js?v=<?= time() ?>"></script>
 </body>
 
 </html>

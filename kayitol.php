@@ -62,7 +62,7 @@ require 'master/header.php';
                     <div class="mb-3 d-flex">
                         <select class="form-select w-25">
                             <option value="+90">+90</option>
-                            <option value="+1">+11</option>
+                            <option value="+1">+1</option>
                         </select>
                         <input type="tel" class="form-control ms-2" placeholder="Telefon Numarası" required>
                     </div>

@@ -85,7 +85,7 @@ require 'master/header.php';
                 </div>
 
                 <div class="col-lg-4 d-none d-lg-flex justify-content-end">
-                    <img src="/assets/images/XMLID.svg" alt="Image" class="img-fluid radius-img">
+                    <img src="<?= $baseUrl ?>/assets/images/XMLID.svg" alt="Image" class="img-fluid radius-img">
                 </div>
             </div>
         </div>

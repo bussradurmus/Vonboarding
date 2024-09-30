@@ -1,182 +1,198 @@
 $(document).ready(function () {
-    const passwordField = $("#passwordModal");
-    const eyeIcon = $('#eyeIcon');
-    let emailField = $('#emailModal');
-    const submitButton = $("#submitButton");
-    const inputs = $('#otp input');
-    const submitButtonSms = $('#submitButtonSms');
-    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     let currentStep = 1;
 
-    // Toggle Password Visibility
-    $("#togglePassword").on('click', function () {
-        let type = passwordField.attr('type') === 'password' ? 'text' : 'password';
-        passwordField.attr('type', type);
-
-        // Change the icon based on password visibility
-        if (type === 'password') {
-            eyeIcon.attr('src', '/assets/images/hidePassword.svg');
-        } else {
-            eyeIcon.attr('src', '/assets/images/showPassword.svg');
-        }
-    });
-
-    // Email Validation Function
-    function validateEmail(email) {
-        return emailPattern.test(email);
+    // İlk stepi gösterme
+    function showStep(step) {
+        $('.step-container').hide();  // Tüm stepleri gizle
+        $('#step-' + step).show();    // İlgili stepi göster
     }
 
-    // Password Validation Function
-    function validatePassword() {
-        return passwordField.val().length > 0;
-    }
-
-    // Checks if all OTP (SMS) boxes are filled
-    function validateOtpFields() {
-        let isAllFilled = false;
-
-        inputs.each(function() {
-            if ($(this).val().length === 1) {
-                isAllFilled = true;
-            }
-        });
-
-        return isAllFilled;
-    }
-
-    // Email and Password Validation (First Modal)
-    function validateForm() {
-        const email = emailField.val();
-        const isEmailValid = validateEmail(email);
-        const isPasswordValid = validatePassword();
-
-        if (isEmailValid && isPasswordValid) {
-            submitButton.prop('disabled', false);
-            submitButton.removeClass('disabled-button');
-        } else {
-            submitButton.prop('disabled', true);
-            submitButton.addClass('disabled-button');
-        }
-    }
-
-    // SMS Validation (Second Modal)
-    function validateFormSms() {
-        const isSmsValid = validateOtpFields();
-
-        if (isSmsValid) {
-            submitButtonSms.prop('disabled', false);
-            submitButtonSms.removeClass('disabled-button');
-        } else {
-            submitButtonSms.prop('disabled', true);
-            submitButtonSms.addClass('disabled-button');
-        }
-    }
-
-    // Email Input Blur Validation
-    $('#emailModal').on('blur', function () {
-        const email = $(this).val();
-        if (!validateEmail(email)) {
-            $(this).addClass('is-invalid');
-            $("#emailError").show();
-        } else {
-            $(this).removeClass('is-invalid');
-            $('#emailError').hide();
-        }
-    });
-
-    // When input fields change, validate
-    $('#emailModal, #passwordModal').on('input', validateForm);
-    inputs.on('input', function() {
-        validateFormSms();
-    });
-
-    // Validate the form on page load
-    validateForm();
-    validateFormSms();
-
-    // OTP (SMS) Input Keyup Handler for Auto Tab
-    inputs.on('keyup', function(e) {
-        const input = $(this);
-        const index = inputs.index(this);
-
-        // Automatically move to the next field when filled
-        if (input.val().length === 1 && index < inputs.length - 1) {
-            inputs.eq(index + 1).focus();
-        }
-        // Move back to the previous field when pressing backspace
-        else if (e.key === 'Backspace' && index > 0) {
-            inputs.eq(index - 1).focus();
-        }
-
-        // Validate the OTP fields after keyup
-        validateFormSms();
-    });
-
-    // 2. When the modal is opened, re-add the modal-open class
-    $('#loginButton2').on('shown.bs.modal', function () {
-        $('body').addClass('modal-open');
-    });
-
-    $('#loginButton').on('hidden.bs.modal', function (e) {
-        if ($('.modal.show').length) {
-            $('body').addClass('modal-open');
-        }
-    });
-    let timeLeft = 180;
-    let resendLink = $('#resendLink');
-    let timer;
-
-    function startTimer() {
-        timeLeft = 180;
-        timer = setInterval(updateTimer, 1000);
-
-        function updateTimer() {
-            if (timeLeft > 0) {
-                timeLeft--;
-                resendLink.text(' (' + timeLeft + ')');
-                resendLink.css('pointer-events', 'none');
-                resendLink.addClass('disabled');
+    // Progress barı güncelleme fonksiyonu
+    function updateProgressBar(step) {
+        $('.step').each(function () {
+            var stepNum = $(this).data('step');
+            if (stepNum <= step) {
+                $(this).addClass('active');
             } else {
-                clearInterval(timer);
-                resendLink.text('Tekrar Gönder');
-                resendLink.css('pointer-events', 'auto');
-                resendLink.removeClass('disabled');
-            }
-        }
-    }
-
-
-    $('#nextButtonPrg').click(function(event){
-        event.preventDefault();
-        if(currentStep < 4){
-            currentStep++;
-            updateProgressBar(currentStep);
-        }
-    });
-
-    function updateProgressBar(step){
-        $('.step').each(function(){
-            var stepNum = $(this).data('step');
-            if(stepNum == step){
-                $(this).addClass('active');
-            }else{
                 $(this).removeClass('active');
             }
         });
-        $('.dot').each(function(){
+        $('.dot').each(function () {
             var stepNum = $(this).data('step');
-            if(stepNum <= step){
+            if (stepNum <= step) {
                 $(this).addClass('active');
-            }else{
+            } else {
                 $(this).removeClass('active');
             }
         });
 
-        // Çizgiyi güncelle
         var totalSteps = 4;
         var percentage = (step - 1) / (totalSteps - 1) * 100;
         $('.progress-line .progress-line-active').css('width', percentage + '%');
     }
 
+    // İlk adımı başlat
+    showStep(currentStep);
     updateProgressBar(currentStep);
+
+    // 1. Stepten 2. Stepe geçiş
+    $('#nextButtonPrg').click(function (event) {
+        event.preventDefault();
+        if (currentStep < 4) {
+            currentStep++;
+            showStep(currentStep);
+            updateProgressBar(currentStep);
+        }
+    });
+
+    // 2. Stepten 3. Stepe geçiş
+    $('#nextButtonStep2').click(function (event) {
+        event.preventDefault();
+        if (currentStep < 4) {
+            currentStep++;
+            showStep(currentStep);
+            updateProgressBar(currentStep);
+        }
+    });
+
+    // 3. Stepten 4. Stepe geçiş (Bu henüz yoksa gelecekte ekleyebiliriz)
+    $('#nextButtonStep3').click(function (event) {
+        event.preventDefault();
+        if (currentStep < 4) {
+            currentStep++;
+            showStep(currentStep);
+            updateProgressBar(currentStep);
+        }
+    });
+
+    // "Geri Dön" butonuna tıklandığında bir önceki adımı göster
+    $('.back-button').click(function (event) {
+        event.preventDefault();
+        if (currentStep > 1) {
+            currentStep--;
+            showStep(currentStep);
+            updateProgressBar(currentStep);
+        }
+    });
+
+// Şifre göster/gizle işlevi
+    $('.password-toggle').click(function () {
+        var input = $(this).siblings('input');  // İlgili input alanını seç
+        var type = input.attr('type') === 'password' ? 'text' : 'password';
+        input.attr('type', type);
+
+        // Göz simgesini değiştir
+        var icon = $(this).children('img');
+        var newIconSrc = input.attr('type') === 'password' ? 'https://busra.valletbeta2.site/Vonboarding/assets/images/hidePassword.svg' : 'https://busra.valletbeta2.site/Vonboarding/assets/images/showPassword.svg';
+        icon.attr('src', newIconSrc);
+    });
+
+
+    // 2FA doğrulama switch kontrolü
+    $('#twoFactorSwitch').change(function () {
+        if ($(this).is(':checked')) {
+            console.log("2FA doğrulama aktif.");
+        } else {
+            console.log("2FA doğrulama pasif.");
+        }
+    });
+// Kimlik Ön Yüz Dosya Yükleme
+    $('#frontUploadBox img').on('click', function() {
+        $('#frontIDUpload').click();
+    });
+
+    $('#frontIDUpload').on('change', function() {
+        var file = this.files[0];
+        if (file) {
+            var fileType = file.type;
+            var validExtensions = ['image/jpeg', 'image/png', 'application/pdf'];
+            if (validExtensions.includes(fileType)) {
+                // Dosya başarılı bir şekilde seçildiğinde resmin üzerine dosya ismi yazılır
+                $('#frontUploadBox label').text(file.name);
+            } else {
+                alert('Lütfen yalnızca jpeg, png veya pdf formatında dosya yükleyin.');
+                $(this).val(''); // Yanlış formatta dosya yüklendiğinde input'u temizle
+            }
+        }
+    });
+
+    // Kimlik Arka Yüz Dosya Yükleme
+    $('#backUploadBox img').on('click', function() {
+        $('#backIDUpload').click();
+    });
+
+    $('#backIDUpload').on('change', function() {
+        var file = this.files[0];
+        if (file) {
+            var fileType = file.type;
+            var validExtensions = ['image/jpeg', 'image/png', 'application/pdf'];
+            if (validExtensions.includes(fileType)) {
+                // Dosya başarılı bir şekilde seçildiğinde resmin üzerine dosya ismi yazılır
+                $('#backUploadBox label').text(file.name);
+            } else {
+                alert('Lütfen yalnızca jpeg, png veya pdf formatında dosya yükleyin.');
+                $(this).val(''); // Yanlış formatta dosya yüklendiğinde input'u temizle
+            }
+        }
+    });
+
+    //GIRIS YAP KONTROL
+
+    // E-posta inputundan çıktığında (blur) doğrulama işlemi
+    $('#loginEmail').on('blur', function () {
+        var emailInput = $(this);
+        var emailValue = emailInput.val();
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;  // Basit e-posta regex kontrolü
+
+        // Hata mesajını ve sınıfları temizle
+        $('#emailError').hide();  // Hata mesajını başlangıçta gizle
+        emailInput.removeClass('is-invalid');
+
+        // E-posta kontrolü (Boş değil ve geçerli bir e-posta formatı)
+        if (emailValue === '' || !emailPattern.test(emailValue)) {
+            emailInput.addClass('is-invalid');
+            $('#emailError').show();  // Hata mesajını göster
+        }
+    });
+
+    // Şifre ve genel form doğrulama (Butona basıldığında)
+    $('#loginNextButton').on('click', function (event) {
+        event.preventDefault();
+
+        // Şifre inputunu kontrol et
+        var passwordInput = $('#passwordInput');
+
+        // Şifre hatasını temizle
+        $('#passwordError').hide();
+        passwordInput.removeClass('is-invalid');
+
+        var isValid = true;
+
+        // E-posta doğrulaması (Blur'da yapılmış olabilir, ama bir kez daha butona basıldığında kontrol edilebilir)
+        var emailInput = $('#loginEmail');
+        var emailValue = emailInput.val();
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailValue === '' || !emailPattern.test(emailValue)) {
+            emailInput.addClass('is-invalid');
+            $('#emailError').show();  // Hata mesajını göster
+            isValid = false;
+        }
+
+        // Şifre kontrolü (Boş değil)
+        var passwordValue = passwordInput.val();
+        if (passwordValue === '') {
+            passwordInput.addClass('is-invalid');
+            $('#passwordError').show();  // Hata mesajını göster
+            isValid = false;
+        }
+
+        // Eğer her iki input da geçerliyse bir sonraki adıma geç
+        if (isValid) {
+            $('#login-step-1').hide();
+            $('#login-step-2').show();
+        }
+    });
+
+
+
 });

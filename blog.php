@@ -1,4 +1,5 @@
 <?php
+global $baseUrl;
 require 'master/header.php';
 ?>
 

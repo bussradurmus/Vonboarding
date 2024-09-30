@@ -27,7 +27,7 @@ body, html {
 .page-container:has(.home-page) .page,
 .page-container:has(.hakkimizda-page),
 .page-container:has(.kayit-page){
-    background-image: url('/assets/images/bg-img.png');
+    background-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/bg-img.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ header {
     max-width: 560px;
 }
 .hero-banner {
-    background: url("../assets/images/hero.png") center no-repeat;
+    background: url("https://busra.valletbeta2.site/Vonboarding/assets/images/hero.png") center no-repeat;
     background-size: cover;
     height: 800px;
     margin-bottom: -10px;
@@ -319,7 +319,7 @@ footer {
 }
 .page-container:has(.blog-page) .hero-banner {
     background-color: #010102;
-    background-image: url("/assets/images/blog-bg.png") !important;
+    background-image: url("https://busra.valletbeta2.site/Vonboarding/assets/images/blog-bg.png") !important;
     height: max-content;
     background-size: cover;
     background-position: center;
@@ -363,7 +363,7 @@ footer {
     width: 60px;
 }
 .page-container:has(.blog-detail-page) .hero-banner {
-    background-image: url(/assets/images/blog-detail.png) !important;
+    background-image: url(https://busra.valletbeta2.site/Vonboarding/assets/images/blog-detail.png) !important;
     background-color: unset;
     background-position: bottom;
 }
@@ -551,7 +551,7 @@ footer {
     position: relative;
     width: 48px;
     height: 48px;
-    background-image: url('/assets/images/circle-number.svg');
+    background-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/circle-number.svg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -953,7 +953,7 @@ input:focus, textarea:focus {
     }
 
     .page-container:has(.blog-detail-page) .hero-banner {
-        background-image: url("/assets/images/blog-bg.png") !important;
+        background-image: url("https://busra.valletbeta2.site/Vonboarding/assets/images/blog-bg.png") !important;
     }
 
     .page-container:has(.blog-detail-page) .page {
@@ -1002,9 +1002,10 @@ input:focus, textarea:focus {
     }
 }
 
-#togglePassword{
-    top: 35px;
-    right: 5px;
+.password-toggle{
+    position: absolute;
+    top: 43px;
+    right: 10px;
 }
 .disabled-button{
     box-shadow: 2px 4px 20px 0px rgba(0, 0, 0, 0.5);
@@ -1018,7 +1019,6 @@ input:focus, textarea:focus {
 
 .step-text {
     color: #575A61;
-    width: max-content;
 }
 
 .progress-bar-container {
@@ -1032,8 +1032,8 @@ input:focus, textarea:focus {
     top: 2px;
     left: 0px;
     width: calc(100% - 6px);
-    height: 2px;
-    background-color: #575A61;
+    height: 1px;
+    background-color: #FFFFFF;
     z-index: 0;
 }
 
@@ -1070,4 +1070,35 @@ input:focus, textarea:focus {
 
 .dot.active {
     background-color: var(--primary-color);
+}
+.button-container button{
+    width: 43%;
+}
+.hover-link-underline:hover{
+    text-decoration: underline;
+}
+#step-2 input,
+#login-step-2 input{
+    max-width: 50px;
+}
+.file-upload-box{
+    border-radius: 30px;
+    border: 1px dashed #626C85;
+    padding: 20px;
+    cursor: pointer;
+}
+.up-img{
+    width: 32px;
+    height: 32px;
+}
+.is-invalid {
+    border-color: red;
+}
+
+.error-message {
+    font-size: 14px;
+    margin-top: 5px;
+}
+.text-danger{
+    display: none;
 }

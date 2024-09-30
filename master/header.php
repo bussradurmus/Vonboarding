@@ -1,5 +1,5 @@
 <?php
-$baseUrl = 'https://busra.valletbeta2.site/';
+$baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
 ?>
 <!DOCTYPE html>
 <html lang="tr">
@@ -24,7 +24,7 @@ $baseUrl = 'https://busra.valletbeta2.site/';
 
         <header class="container">
             <nav class="navbar navbar-expand-xl navbar-light px-3">
-                <a class="navbar-brand" href="/">
+                <a class="navbar-brand" href="<?= $baseUrl ?>">
                     <img src="<?= $baseUrl ?>/assets/images/logo.svg" alt="Logo" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -35,14 +35,14 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item me-xl-2">
-                            <a class="nav-link text-white fs-16 font-raleway" href="/">Ana Sayfa</a>
+                            <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>">Ana Sayfa</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
                             </div>
                         </li>
                         <li class="nav-item me-xl-2 ms-xl-2">
                             <a class="nav-link text-white fs-16 font-raleway"
-                               href="/hakkimizda.php">Hakkımızda</a>
+                               href="<?= $baseUrl ?>hakkimizda.php">Hakkımızda</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
                             </div>
@@ -54,21 +54,21 @@ $baseUrl = 'https://busra.valletbeta2.site/';
                             </div>
                         </li>
                         <li class="nav-item me-lg-2 ms-xl-2">
-                            <a class="nav-link text-white fs-16 font-raleway" href="/blog.php">Blog</a>
+                            <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>blog.php">Blog</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
                             </div>
                         </li>
                         <li class="nav-item ms-xl-2">
-                            <a class="nav-link text-white fs-16 font-raleway" href="/index.php#iletisim">İletişim</a>
+                            <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>index.php#iletisim">İletişim</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
                             </div>
                         </li>
                     </ul>
                     <div class="d-flex mb-2 ms-3 ms-xl-0">
-                        <button class="btn text-white me-lg-2 ps-0 fs-14 font-raleway fw-semibold" >Giriş Yap</button>
-                        <a href="/kayitol.php" class="btn button-outline fs-14 font-raleway fw-semibold">Kayıt Ol</a>
+                        <a href="<?= $baseUrl ?>girisyap.php" class="btn text-white me-lg-2 ps-0 fs-14 font-raleway fw-semibold align-content-center" >Giriş Yap</a>
+                        <a href="<?= $baseUrl ?>kayitol.php" class="btn button-outline fs-14 font-raleway fw-semibold">Kayıt Ol</a>
 
 
                         <div class="modal fade" id="loginButton" aria-hidden="true" aria-labelledby="loginButtonLabel" tabindex="-1">

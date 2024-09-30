@@ -4,16 +4,16 @@ require 'master/header.php';
 ?>
 <div class="video-filter">
     <video class="d-none d-md-block w-100" autoplay muted loop>
-        <source src="/assets/images/5427792_Coll_wavebreak_Particles_1280x720_1.mp4" type="video/mp4">
+        <source src="<?= $baseUrl ?>assets/images/5427792_Coll_wavebreak_Particles_1280x720_1.mp4" type="video/mp4">
     </video>
 </div>
 <div class="hero-text-container text-center">
     <div class="col-lg-8 col-md-10 mx-auto hero-content">
         <div class="mb-4 text-white">
-            <img src="./assets/images/Frame.svg" alt="Wallet" class="me-2">
-            <span class="text-underline text-lgrey fw-bold font-raleway"> Güvencesiyle </span>
+            <img src="<?= $baseUrl ?>assets/images/Frame.svg" alt="Wallet" class="me-2">
+            <span class="text-underline text-lgrey fw-bold font-raleway">Güvencesiyle </span>
         </div>
-        <h1 class="mb-4 text-white fw-bold">Başvuru Süreçlerini Hızlandırın,<br>İşinizi Büyütün!</h1>
+        <h1 class="mb-4 text-white fw-bold"> Başvuru Süreçlerini Hızlandırın,<br>İşinizi Büyütün!</h1>
         <p class="mb-4 text-lgrey font-raleway">Başvuruların inceleme ve platform üzerinden yönetim,
             Veriboarding <br> ile daha hızlı ve verimli çözümlere ulaşabilirsiniz.</p>
         <button class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold padding18-24">Hemen Başla</button>
@@ -25,7 +25,7 @@ require 'master/header.php';
             <div class="carousel-item active">
                 <div class="metric-item d-flex align-items-center justify-content-center">
                     <div class="metric-icon">
-                        <img src="./assets/images/onboarding.svg" alt="Icon">
+                        <img src="<?= $baseUrl ?>assets/images/onboarding.svg" alt="Icon">
                     </div>
                     <div class="metric-box ms-3">
                         <div class="metric-value font-raleway fw-bold mb-3">+22000</div>
@@ -36,7 +36,7 @@ require 'master/header.php';
             <div class="carousel-item">
                 <div class="metric-item d-flex align-items-center justify-content-center">
                     <div class="metric-icon">
-                        <img src="./assets/images/staffing 1.svg" alt="Icon">
+                        <img src="<?= $baseUrl ?>assets/images/staffing 1.svg" alt="Icon">
                     </div>
                     <div class="metric-box ms-3">
                         <div class="metric-value font-raleway fw-bold mb-3">4</div>
@@ -47,7 +47,7 @@ require 'master/header.php';
             <div class="carousel-item">
                 <div class="metric-item d-flex align-items-center justify-content-center">
                     <div class="metric-icon">
-                        <img src="./assets/images/feedback 1.svg" alt="Icon">
+                        <img src="<?= $baseUrl ?>assets/images/feedback 1.svg" alt="Icon">
                     </div>
                     <div class="metric-box ms-3">
                         <div class="metric-value font-raleway fw-bold mb-3">+300</div>
@@ -70,7 +70,7 @@ require 'master/header.php';
     <div class="d-none d-md-flex justify-content-around">
         <div class="metric-item d-flex align-items-center mb-3 mb-md-0">
             <div class="metric-icon">
-                <img src="./assets/images/onboarding.svg" alt="Icon">
+                <img src="<?= $baseUrl ?>assets/images/onboarding.svg" alt="Icon">
             </div>
             <div class="metric-box ms-3">
                 <div class="metric-value font-raleway fw-bold mb-3">+22000</div>
@@ -79,7 +79,7 @@ require 'master/header.php';
         </div>
         <div class="metric-item d-flex align-items-center mb-3 mb-md-0">
             <div class="metric-icon">
-                <img src="./assets/images/staffing 1.svg" alt="Icon">
+                <img src="<?= $baseUrl ?>assets/images/staffing 1.svg" alt="Icon">
             </div>
             <div class="metric-box ms-3">
                 <div class="metric-value font-raleway fw-bold mb-3">4</div>
@@ -88,7 +88,7 @@ require 'master/header.php';
         </div>
         <div class="metric-item d-flex align-items-center">
             <div class="metric-icon">
-                <img src="./assets/images/feedback 1.svg" alt="Icon">
+                <img src="<?= $baseUrl ?>assets/images/feedback 1.svg" alt="Icon">
             </div>
             <div class="metric-box ms-3">
                 <div class="metric-value font-raleway fw-bold mb-3">+300</div>
@@ -143,7 +143,7 @@ require 'master/header.php';
         <div class="container mt-150">
             <div class="row align-items-center position-relative img-text flex-column-reverse flex-lg-row text-center text-lg-start">
                 <div class="col-lg-6 img-content d-flex justify-content-center mb-4 mb-lg-0">
-                    <img src="/assets/images/img-frame.svg" alt="Image" class="img-fluid">
+                    <img src="<?= $baseUrl ?>assets/images/img-frame.svg" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-lg-6 text-content d-flex flex-column justify-content-center text-center text-lg-end">
                     <h2 class="mb-3 letterSpace-45">K<span class="text-blue">ON</span>TROL SİZDE</h2>
@@ -169,7 +169,7 @@ require 'master/header.php';
                     </p>
                 </div>
                 <div class="col-lg-6 img-content d-flex justify-content-center">
-                    <img src="/assets/images/img-frame.svg" alt="Image" class="img-fluid">
+                    <img src="<?= $baseUrl ?>assets/images/img-frame.svg" alt="Image" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -194,7 +194,7 @@ require 'master/header.php';
                             <p class="text-white fs-18 font-raleway max-w336 ">Müşterilerinize Vonboarding aracılığıyla sanal POS
                                 sistemi önerin ve süreçleri hızlandırarak onların işlerini büyütmelerine yardımcı
                                 olun.</p>
-                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                            <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
 
                         <div class="hidden-animation third-show">
@@ -205,13 +205,13 @@ require 'master/header.php';
                             </div>
                             <p class="text-white fs-18 font-raleway max-w336 ">Gerekli belgeleri Vonboarding sistemine yükleyerek
                                 sanal pos sürecini yönetin.</p>
-                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                            <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-1 d-none d-lg-flex justify-content-center divider-img hidden-animation">
-                    <img src="/assets/images/vertical-line.png" alt="Divider Image">
+                    <img src="<?= $baseUrl ?>assets/images/vertical-line.png" alt="Divider Image">
                 </div>
 
                 <div class="col-lg-4 col-12 text-start">
@@ -224,7 +224,7 @@ require 'master/header.php';
                             </div>
                             <p class="text-white fs-18 font-raleway max-w336">Vonboarding ile müşterilerinize sanal POS hizmeti
                                 sunarken ek gelir fırsatlarını değerlendirin.</p>
-                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                            <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
                         <div class="hidden-animation forth-show">
                             <div class="icon-title mb-4">
@@ -234,7 +234,7 @@ require 'master/header.php';
                             </div>
                             <p class="text-white fs-18 font-raleway max-w336 ">Sanal POS entegrasyonlarından elde ettiğiniz
                                 gelirlerin keyfini çıkarın. Müşterilerinize değer katarken, siz de kazançlı çıkın!</p>
-                            <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                            <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
                     </div>
                 </div>
@@ -251,7 +251,7 @@ require 'master/header.php';
                         <p class="text-white fs-18 font-raleway max-w336">Müşterilerinize Vonboarding aracılığıyla sanal POS
                             sistemi önerin ve süreçleri hızlandırarak onların işlerini büyütmelerine yardımcı
                             olun.</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                        <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         <div class="icon-title mb-4">
                             <div class="circle-number">
                                 02
@@ -259,7 +259,7 @@ require 'master/header.php';
                         </div>
                         <p class="text-white fs-18 font-raleway max-w336">Vonboarding ile müşterilerinize sanal POS hizmeti
                             sunarken ek gelir fırsatlarını değerlendirin.</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                        <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                     </div>
                 </div>
 
@@ -273,7 +273,7 @@ require 'master/header.php';
                         </div>
                         <p class="text-white fs-18 font-raleway max-w336">Gerekli belgeleri Vonboarding sistemine yükleyerek
                             sanal pos sürecini yönetin.</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                        <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
 
                         <div class="icon-title mb-4">
                             <div class="circle-number">
@@ -282,7 +282,7 @@ require 'master/header.php';
                         </div>
                         <p class="text-white fs-18 font-raleway max-w336">Sanal POS entegrasyonlarından elde ettiğiniz
                             gelirlerin keyfini çıkarın. Müşterilerinize değer katarken, siz de kazançlı çıkın!</p>
-                        <img src="/assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
+                        <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                     </div>
                 </div>
             </div>
@@ -312,7 +312,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
+                        <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header mb-3 " id="headingTwo">
@@ -331,7 +331,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
+                        <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header " id="headingThree">
@@ -350,7 +350,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
+                        <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header " id="headingFour">
@@ -369,7 +369,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
+                        <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
                             <h2 class="accordion-header fs-18 " id="headingFive">
@@ -388,7 +388,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                         </div>
-                        <img src="/assets/images/acordion-line.svg" alt="Line" class="opacity-50">
+                        <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
                     </div>
                 </div>
             </div>
@@ -409,7 +409,7 @@ require 'master/header.php';
                 </div>
 
                 <div class="col-lg-4 d-none d-lg-flex justify-content-end">
-                    <img src="/assets/images/XMLID.svg" alt="Image" class="img-fluid radius-img">
+                    <img src="<?= $baseUrl ?>assets/images/XMLID.svg" alt="Image" class="img-fluid radius-img">
                 </div>
             </div>
         </div>
@@ -455,7 +455,7 @@ require 'master/header.php';
     require 'master/footer.php';
     ?>
     <div class="position-absolute worl-side">
-        <img src="/assets/images/world.png" alt="World Image">
+        <img src="<?= $baseUrl ?>assets/images/world.png" alt="World Image">
     </div>
 </div>
 </div>

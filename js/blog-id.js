@@ -7,8 +7,8 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 3,
         centerMode: true,
-        nextArrow: '<button class="slick-next"><img src="/assets/images/next-arrow.svg" alt="Next Arrow"></button>',
-        prevArrow: '<button class="slick-prev"><img src="/assets/images/prev-arrow.svg" alt="Prev Arrow"></button>',
+        nextArrow: '<button class="slick-next"><img src="https://busra.valletbeta2.site/Vonboarding/assets/images/next-arrow.svg" alt="Next Arrow"></button>',
+        prevArrow: '<button class="slick-prev"><img src="https://busra.valletbeta2.site/Vonboarding/assets/images/prev-arrow.svg" alt="Prev Arrow"></button>',
         responsive: [{
             breakpoint: 1024,
             settings: {

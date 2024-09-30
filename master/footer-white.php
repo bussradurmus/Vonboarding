@@ -1,16 +1,19 @@
+<?php
+global $baseUrl;
+?>
 <footer class="footer pt-5 pb-3 mt-150 white-footer">
     <div class="container  max-w1140">
         <div class="d-flex flex-row justify-content-center align-items-center mb-4">
             <div class="line me-5">
-                <img src="/assets/images/Line 8.png" alt="Line" class="w-100 opacity-50">
+                <img src="<?= $baseUrl ?>/assets/images/Line 8.png" alt="Line" class="w-100 opacity-50">
             </div>
             <div class="footer-logo-box">
-                <a href="/">
-                    <img src="/assets/images/bluelogo.svg" alt="Logo" class="mx-3 footer-logo">
+                <a href="<?= $baseUrl ?>">
+                    <img src="<?= $baseUrl ?>/assets/images/bluelogo.svg" alt="Logo" class="mx-3 footer-logo">
                 </a>
             </div>
             <div class="line ms-5">
-                <img src="/assets/images/Line 8.png" alt="Line" class="w-100 opacity-50">
+                <img src="<?= $baseUrl ?>/assets/images/Line 8.png" alt="Line" class="w-100 opacity-50">
             </div>
         </div>
 
@@ -59,9 +62,9 @@
                 </a>
             </div>
             <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-end">
-                <a href="/" class="mb-2 text-grey fs-16 lh-19">Ana Sayfa</a>
+                <a href="<?= $baseUrl ?>" class="mb-2 text-grey fs-16 lh-19">Ana Sayfa</a>
                 <a href="javascript:void(0)" class="mb-2 text-grey fs-16 lh-19">Dokümantasyon</a>
-                <a href="/blog.php" class="mb-2 text-grey fs-16 lh-19">Blog</a>
+                <a href="<?= $baseUrl ?>/blog.php" class="mb-2 text-grey fs-16 lh-19">Blog</a>
             </div>
         </div>
     </div>

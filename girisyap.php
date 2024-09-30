@@ -1,0 +1,81 @@
+<?php
+global $baseUrl;
+require 'master/header.php';
+?>
+
+</div>
+<div id="login-step-1" class="login-page kayit-page">
+    <main>
+        <div class="container d-flex justify-content-center mt-150">
+            <div class="form-container text-center max-w560">
+                <h3 class="form-title fw-bold mb-3 text-white">Vonboarding’e Giriş Yapın</h3>
+                <p class="form-subtitle mb-5 font-raleway text-white">Giriş yapmak için e-posta adresinizi ve şifrenizi girin</p>
+
+                <!-- E-posta Alanı -->
+                <div class="mb-3 text-start">
+                    <label class="mb-2 text-lgrey">E-posta</label>
+                    <input type="email" class="form-control" id="loginEmail" required>
+                    <div class="error-message text-danger" id="emailError">Lütfen geçerli bir e-posta adresi girin</div>
+                </div>
+
+                <!-- Şifre Alanı -->
+                <div class="mb-3 text-start position-relative mt-4">
+                    <label class="font-raleway mb-2 text-lgrey">Şifreniz</label>
+                    <input type="password" class="form-control" id="passwordInput" required>
+                    <span class="password-toggle" id="togglePassword">
+        <img src="<?= $baseUrl ?>/assets/images/hidePassword.svg" alt="Password Image">
+    </span>
+                    <div class="error-message text-danger" id="passwordError">Lütfen şifrenizi girin</div>
+                </div>
+
+                <div class="my-4">
+                    <a href="#" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
+                </div>
+
+                <div class="d-flex justify-content-between mt-3 ">
+                    <button type="button" class="btn btn-primary w-100" id="loginNextButton">Devam Et</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<div id="login-step-2" class="login-page" style="display:none;">
+    <main>
+        <div class="container d-flex justify-content-center mt-150">
+            <div class="form-container text-center max-w560">
+                <h3 class="form-title fw-bold mb-3 text-white">Vonboarding’e Giriş Yapın</h3>
+                <p class="form-subtitle mb-5 text-white">Lütfen telefon numaranıza gönderilen 6 haneli doğrulama kodunu girin</p>
+
+                <!-- SMS Kodu Giriş Alanı -->
+                <div class="mb-3 text-start d-flex flex-column align-items-center">
+                    <label class="font-raleway mb-2 text-lgrey">SMS Kodu</label>
+                    <div class="d-flex justify-content-evenly gap-2">
+                        <input type="text" maxlength="1" class="form-control sms-input" required>
+                        <input type="text" maxlength="1" class="form-control sms-input" required>
+                        <input type="text" maxlength="1" class="form-control sms-input" required>
+                        <input type="text" maxlength="1" class="form-control sms-input" required>
+                        <input type="text" maxlength="1" class="form-control sms-input" required>
+                        <input type="text" maxlength="1" class="form-control sms-input" required>
+                    </div>
+                </div>
+                <p class="text-white mt-2">Tekrar gönder (180sn)</p>
+                <!-- Geri Dön ve Devam Et Butonları -->
+                <div class="d-flex justify-content-between mt-5">
+                    <button type="button" class="btn btn-primary w-100" id="loginFinishButton">Giriş Yap</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="js/script.js?v=<?= time() ?>"></script>
+<script src="js/form.js?v=<?= time() ?>"></script>
+</body>
+
+</html>

@@ -18,6 +18,71 @@ $(document).ready(function () {
         }
     });
 
+    // Türkçe karakterleri destekleyen isim/soyisim doğrulama
+    function validateName(name) {
+        return /^[a-zA-ZçÇğĞıİöÖşŞüÜ\s]+$/.test(name);  // Türkçe karakterleri ve boşlukları kabul eden regex
+    }
+
+    function validateEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);  // Geçerli e-posta formatı
+    }
+
+    function validateMessage(message) {
+        return message.trim().length > 0; // Mesaj alanının boş olmadığını kontrol et
+    }
+
+    // Her input alanı için hata kontrolü yapan fonksiyon
+    function validateInput(input, validationFn, errorMsgDiv) {
+        const value = input.val();  // Input değerini al
+        if (value && validationFn(value.trim())) {  // Değer boş değilse ve doğrulamadan geçiyorsa
+            input.removeClass('error-border');
+            errorMsgDiv.hide();
+            return true;
+        } else if (value) {  // Eğer kullanıcı alanı doldurduysa ve hatalıysa
+            input.addClass('error-border');
+            errorMsgDiv.show();
+            return false;
+        }
+        return true;  // Eğer kullanıcı inputa hiç veri girmemişse
+    }
+
+    // Form alanlarının geçerliliğini kontrol et ve hatalıları göster
+    function checkFormValidity() {
+        const isFirstNameValid = validateInput($('#firstName'), validateName, $('#indexName'));
+        const isLastNameValid = validateInput($('#lastName'), validateName, $('#indexSurame'));
+        const isEmailValid = validateInput($('#email'), validateEmail, $('#indexEmail'));
+        const isMessageValid = validateInput($('#message'), validateMessage, $('#indexMessage'));
+
+        return isFirstNameValid && isLastNameValid && isEmailValid && isMessageValid;  // Tüm alanlar geçerli mi?
+    }
+
+    // Her alan için blur (alan dışına çıkma) olayına bağlı doğrulama
+    $('#firstName').on('blur', function () {
+        validateInput($(this), validateName, $('#indexName'));
+    });
+
+    $('#lastName').on('blur', function () {
+        validateInput($(this), validateName, $('#indexSurame'));
+    });
+
+    $('#email').on('blur', function () {
+        validateInput($(this), validateEmail, $('#indexEmail'));
+    });
+
+    $('#message').on('blur', function () {
+        validateInput($(this), validateMessage, $('#indexMessage'));
+    });
+
+    // Form gönderme işlemi sırasında doğrulama
+    $('form').on('submit', function (event) {
+        event.preventDefault();  // Sayfa yenilenmesini engelle
+        if (checkFormValidity()) {
+            alert('Form başarıyla gönderildi!');
+            // Buraya form gönderme işlemi yapılabilir
+        } else {
+            alert('Lütfen formu doğru doldurun.');
+        }
+    });
 });
 
 // Sıralı animasyonları tetikleyen fonksiyon

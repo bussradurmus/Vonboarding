@@ -420,27 +420,32 @@ require 'master/header.php';
                     <h2 class="mb-3 text-white">Bize Ulaşın</h2>
                     <p class="text-grey">Vonboarding hakkında daha fazla bilgi almak için bizimle bağlantı kurun,
                         size rehberlik edelim.</p>
-                    <form>
+                    <form novalidate>
                         <div class="mb-3">
                             <label for="firstName" class="form-label text-grey font-raleway">Adınız</label>
                             <input type="text" class="form-control effect-9" id="firstName" name="firstName"
                                    pattern="[A-Za-zçÇğĞıİöÖşŞüÜ]+$" title="Sadece harf karakterleri girilebilir"
                                    required>
                             <span class="focus-border"><i></i></span>
+                            <div class="error-message text-danger mt-1" style="display: none;" id="indexName">Geçerli bir isim girin</div>
                         </div>
-                        <div class="mb-3">
+
+                        <div class="my-3">
                             <label for="lastName" class="form-label text-grey font-raleway">Soyadınız</label>
                             <input type="text" class="form-control effect-9" id="lastName" name="lastName"
                                    pattern="[A-Za-zçÇğĞıİöÖşŞüÜ]+$" title="Sadece harf karakterleri girilebilir"
                                    required>
                             <span class="focus-border"><i></i></span>
+                            <div class="error-message text-danger mt-1" style="display: none;" id="indexSurame">Geçerli bir soyadı girin</div>
                         </div>
-                        <div class="mb-3">
+
+                        <div class="my-3">
                             <label for="email" class="form-label text-grey font-raleway">Eposta</label>
                             <input type="email" class="form-control effect-9" id="email" name="email" required>
                             <span class="focus-border"><i></i></span>
+                            <div class="error-message text-danger mt-1" style="display: none;" id="indexEmail">Geçerli bir e-posta girin</div>
                         </div>
-                        <div class="mb-3">
+                        <div class="my-3">
                             <label for="message" class="form-label text-grey font-raleway">Mesajınız</label>
                             <textarea class="form-control effect-9" id="message" name="message" rows="4" required></textarea>
                             <span class="focus-border"><i></i></span>

@@ -693,19 +693,6 @@ input:focus, textarea:focus {
         padding-left: 90px !important;
     }
 
-    .custom-row {
-        display: flex;
-        flex-wrap: nowrap;
-    }
-
-    .left-column, .right-column {
-        flex: 1;
-    }
-
-    .left-column {
-        margin-right: 40px;
-    }
-
     .max-w336 {
         max-width: 336px;
     }

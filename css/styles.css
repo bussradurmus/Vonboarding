@@ -26,7 +26,8 @@ body, html {
 }
 .page-container:has(.home-page) .page,
 .page-container:has(.hakkimizda-page),
-.page-container:has(.kayit-page){
+.page-container:has(.kayit-page),
+.page-container:has(.login-page){
     background-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/bg-img.png');
     background-size: cover;
     background-position: center;
@@ -528,7 +529,8 @@ footer {
     background: rgba(98, 108, 133, 0.5);
 }
 .page-container:has(.hakkimizda-page) .hero-banner,
-.page-container:has(.kayit-page) .hero-banner{
+.page-container:has(.kayit-page) .hero-banner,
+.page-container:has(.login-page) .hero-banner{
     background-image: unset !important;
     height: max-content;
 }
@@ -881,6 +883,12 @@ input:focus, textarea:focus {
     }
 }
 
+@media (min-width: 577px) {
+    .w550 {
+        width: 550px;
+    }
+}
+
 @media (max-width: 576px) {
     main {
         padding: 0 16px;
@@ -1091,14 +1099,17 @@ input:focus, textarea:focus {
     width: 32px;
     height: 32px;
 }
-.is-invalid {
-    border-color: red;
+.error-border {
+    border-color: #E33E38;
+    --_i: 0 !important;
+
 }
 
 .error-message {
     font-size: 14px;
     margin-top: 5px;
 }
-.text-danger{
-    display: none;
+.timer-text{
+    text-decoration: underline;
+    text-decoration-color: white !important;
 }

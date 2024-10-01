@@ -109,7 +109,7 @@ require 'master/header.php';
                         Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
                     <div class="d-flex justify-content-center align-items-center mt-4 vbutton-container">
                         <button class="btn btn-primary btn-lg me-24">Hemen Başla</button>
-                        <button class="btn button-outline">Dökümantasyon</button>
+                        <a href="https://vallet.gitbook.io/vonboarding" class="btn button-outline">Dökümantasyon</a>
                     </div>
 
             </div>

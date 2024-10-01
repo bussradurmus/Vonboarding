@@ -48,7 +48,7 @@ $baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
                             </div>
                         </li>
                         <li class="nav-item me-xl-2 ms-xl-2">
-                            <a class="nav-link text-white fs-16 font-raleway" href="javascript:void(0)">Dökümantasyon</a>
+                            <a class="nav-link text-white fs-16 font-raleway" href="https://vallet.gitbook.io/vonboarding">Dökümantasyon</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
                             </div>

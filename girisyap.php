@@ -10,7 +10,7 @@ require 'master/header.php';
             <div class="form-container text-center w550">
                 <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
                 <h3 class="form-title fw-bold mb-3 text-white">Vonboarding’e Giriş Yapın</h3>
-                <p class="form-subtitle mb-5 font-raleway text-white">Giriş yapmak için e-posta adresinizi ve şifrenizi girin</p>
+                <p class="form-subtitle mb-5 font-raleway text-lgrey">Giriş yapmak için e-posta adresinizi ve şifrenizi girin</p>
 
                 <!-- E-posta Alanı -->
                 <div class="mb-3 text-start">
@@ -45,8 +45,8 @@ require 'master/header.php';
         <div class="container d-flex justify-content-center mt-150">
             <div class="form-container text-center w550">
                 <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title fw-bold mb-3 text-white">Vonboarding’e Giriş Yapın</h3>
-                <p class="form-subtitle mb-5 text-white font-raleway">Lütfen <span class="fw-bold"> +90 532 *** ** 55</span> numaralı telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>
+                <h3 class="form-title fw-bold mb-3 text-white">SMS Doğrulama</h3>
+                <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen <span class="fw-bold"> +90 532 *** ** 55</span> numaralı telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>
 
                 <!-- SMS Kodu Giriş Alanı -->
                 <div class="mb-3 text-start d-flex flex-column align-items-center">

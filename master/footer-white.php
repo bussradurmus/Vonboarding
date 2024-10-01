@@ -63,7 +63,7 @@ global $baseUrl;
             </div>
             <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-end">
                 <a href="<?= $baseUrl ?>" class="mb-2 text-grey fs-16 lh-19">Ana Sayfa</a>
-                <a href="javascript:void(0)" class="mb-2 text-grey fs-16 lh-19">Dokümantasyon</a>
+                <a href="<?= $baseUrl ?>hakkimizda.php" class="mb-2 text-grey fs-16 lh-19">Hakkımızda</a>
                 <a href="<?= $baseUrl ?>/blog.php" class="mb-2 text-grey fs-16 lh-19">Blog</a>
             </div>
         </div>

@@ -194,6 +194,7 @@ header {
     font-size: 32px;
     line-height: 16.73px;
     text-align: center;
+    margin-bottom: 20px;
 }
 .metric-label {
     font-weight: 400;
@@ -994,7 +995,7 @@ input:focus, textarea:focus {
     .vbutton-container {
         flex-direction: column;
     }
-
+    .vbutton-container a,
     .vbutton-container button,
     .resp-with100,
     .form-button {
@@ -1109,7 +1110,8 @@ input:focus, textarea:focus {
     font-size: 14px;
     margin-top: 5px;
 }
-.timer-text{
+.timer-text,
+#timerRg{
     text-decoration: underline;
     text-decoration-color: white !important;
 }

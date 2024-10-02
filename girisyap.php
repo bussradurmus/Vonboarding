@@ -29,9 +29,9 @@ require 'master/header.php';
                     <div class="error-message text-danger" id="passwordError" style="display: none;">Lütfen şifrenizi girin</div>
                 </div>
 
-                <div class="my-4">
+                <div class="my-5">
                     <a href="#" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
-                    <div class="d-flex justify-content-between mt-3 ">
+                    <div class="d-flex justify-content-between mt-5 ">
                         <button type="button" class="btn btn-primary w-100" id="loginNextButton" disabled>Devam Et</button>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ require 'master/header.php';
 
                 <!-- SMS Kodu Giriş Alanı -->
                 <div class="mb-3 text-start d-flex flex-column align-items-center">
-                    <label class="font-raleway mb-2 text-lgrey fw-bold">SMS Kodu</label>
+                    <label class="font-raleway mb-4 text-lgrey fw-bold">SMS Kodu</label>
                     <div class="d-flex justify-content-evenly gap-2">
                         <input type="text" maxlength="1" class="form-control sms-input" required>
                         <input type="text" maxlength="1" class="form-control sms-input" required>
@@ -79,6 +79,7 @@ require 'master/header.php';
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
 <script src="js/script.js?v=<?= time() ?>"></script>
 <script src="js/form.js?v=<?= time() ?>"></script>
 <script src="js/login.js?v=<?= time() ?>"></script>

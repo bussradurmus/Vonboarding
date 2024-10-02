@@ -1,149 +1,170 @@
 $(document).ready(function () {
-    //GIRIS FORMS - Step 1
-    var $emailInput = $('#loginEmail');
-    var $passwordInput = $('#passwordInput');
-    var $emailError = $('#emailError');
-    var $passwordError = $('#passwordError');
-    var $loginNextButton = $('#loginNextButton');
+    let smsToken = ''; // SMS Token'ı global olarak saklıyoruz
 
-    // Email doğrulama fonksiyonu - Step 1
+    //GIRIS FORMS - Step 1
+    let $emailInput = $('#loginEmail');
+    let $passwordInput = $('#passwordInput');
+    let $loginNextButton = $('#loginNextButton');
+    let $emailError = $('#emailError');
+    let $passwordError = $('#passwordError');
+    let $baseUrl = "https://vonboarding-eykf.vercel.app/dashboard";
+
+    // Email doğrulama fonksiyonu
     function validateEmail() {
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test($emailInput.val())) {
             $emailError.show();
-            $emailInput.addClass('error-border');  // Hatalı e-posta olduğunda sınıf ekle
+            $emailInput.addClass('error-border');
             return false;
         } else {
             $emailError.hide();
-            $emailInput.removeClass('error-border');  // Geçerli e-posta olduğunda sınıfı kaldır
+            $emailInput.removeClass('error-border');
             return true;
         }
     }
 
-
-    // Şifre doğrulama fonksiyonu - Step 1
+    // Şifre doğrulama fonksiyonu
     function validatePassword() {
         if ($passwordInput.val().length < 2) {
             $passwordError.show();
-            $passwordInput.css('border-color', 'red');
+            $passwordInput.addClass('error-border');
             return false;
         } else {
             $passwordError.hide();
-            $passwordInput.css('border-color', '');
+            $passwordInput.removeClass('error-border');
             return true;
         }
     }
 
-    // Form validasyonu kontrolü - Step 1
+    // Form validasyonu kontrolü
     function checkFormValidity() {
-        var isEmailValid = validateEmail(); // Email kontrolü
-        var isPasswordValid = validatePassword(); // Şifre kontrolü
-
-        // Email hatalıysa şifreyi kontrol etme, sadece email hatasını göster
-        if (!isEmailValid) {
-            $loginNextButton.prop('disabled', true);
-            return; // E-mail hatalıysa, şifre doğrulaması yapılmaz
-        }
-
-        // Şifre hatalıysa sadece şifre hatasını göster
-        if (!isPasswordValid) {
-            $loginNextButton.prop('disabled', true);
-            return;
-        }
-
-        // Her iki alan da geçerliyse butonu aktif yap
+        let isEmailValid = validateEmail();
+        let isPasswordValid = validatePassword();
         if (isEmailValid && isPasswordValid) {
             $loginNextButton.prop('disabled', false);
+        } else {
+            $loginNextButton.prop('disabled', true);
         }
     }
 
-    // Email ve şifre input'larına event listener - Step 1
-    $emailInput.on('input', function() {
-        validateEmail();
-        //checkFormValidity();
-    });
-
-    $passwordInput.on('input', function() {
+    // Email ve şifre alanlarına event listener ekleyin
+    $emailInput.on('input', validateEmail);
+    $passwordInput.on('input', function () {
         validatePassword();
         checkFormValidity();
     });
 
-    // Step 2 - SMS inputlar arasında otomatik geçiş
+    // Devam Et butonuna tıklama işlemi
+    $('#loginNextButton').on('click', async function () {
+        let email = $emailInput.val();
+        let password = $passwordInput.val();
+        let hashedPassword = sha256(password); // Şifreyi hashle
+
+        let payload = {
+            email: email,
+            password: hashedPassword
+        };
+
+        // AJAX isteği ile sunucuya istek gönderiyoruz
+        $.ajax({
+            url: "https://recep.valletbeta2.site/onbV2/login",
+            method: "POST",
+            headers: {
+                'WEBAPP': 'true'
+            },
+            data: payload,
+            success: function (response) {
+                if (response.status === 'success') {
+                    if (response.data.smsToken) {
+                        smsToken = response.data.smsToken; // SMS token'ı sakla
+                        $('#login-step-1').hide(); // İlk adımı gizle
+                        $('#login-step-2').show(); // İkinci adımı göster
+                        startTimer(); // Zamanlayıcıyı başlat
+                    } else {
+                        // Token'ı localStorage'a kaydet
+                        localStorage.setItem('authToken', response.data.token);
+
+                        // Başarılı giriş yapıldığında panele yönlendirme
+                        setTimeout(function () {
+                            window.location.href = `${$baseUrl}/${response.data.redirect}`;
+                        }, 100);
+                    }
+                } else {
+                    alert(response.message);
+                }
+            },
+            error: function () {
+                alert('Bir hata oluştu. Lütfen tekrar deneyin.');
+            }
+        });
+    });
+
+    // SMS doğrulaması Step 2
     $('.sms-input').on('input', function () {
-        var inputLength = $(this).val().length;
-        var maxLength = $(this).attr('maxlength');
+        let inputLength = $(this).val().length;
+        let maxLength = $(this).attr('maxlength');
 
         if (inputLength >= maxLength) {
-            $(this).next('.sms-input').focus();  // Bir sonraki inputa odaklan
+            $(this).next('.sms-input').focus();
         }
 
-        // Kullanıcı ilk inputa yazmaya başladığında tüm kırmızı border ve hata mesajını temizle
-        if ($('.sms-input').first().val().length === 1) {
-            $('.sms-input').removeClass('is-invalid'); // Tüm inputlardan kırmızı borderı kaldır
-            $('#smsLoginError').hide(); // Hata mesajını gizle
-        }
-
-        checkSmsCode(); // Her inputa giriş yapıldığında SMS kodu yeniden kontrol edilir
+        checkSmsCode();
     });
 
-    // Geri silme işlemi sırasında otomatik olarak önceki inputa odaklanma
-    $('.sms-input').on('keydown', function (e) {
-        if (e.key === 'Backspace' && $(this).val().length === 0) {
-            $(this).prev('.sms-input').focus();  // Bir önceki inputa geri odaklan
-        }
-    });
+    let countdown = 180;
+    let smsCode = '';
 
-    let timer;
-    let countdown = 180; // 180 saniye
-    let smsCode = ''; // Kullanıcının girdiği SMS kodunu toplamak için
-
-    // Step 2 açıldığında zamanlayıcı başlar
     function startTimer() {
-        timer = setInterval(function () {
+        let timer = setInterval(function () {
             countdown--;
-            $('p.timer-text').text(`Tekrar gönder (${countdown}sn)`);
+            $('p.timer-text').text(`Tekrar gönder (${countdown}sn)`); // Sayacın görseli
             if (countdown <= 0) {
                 clearInterval(timer);
                 $('p.timer-text').text('Tekrar gönder');
-                $('#loginFinishButton').prop('disabled', true); // Zaman dolduğunda buton devre dışı
+                $('#loginFinishButton').prop('disabled', true);
             }
         }, 1000);
     }
 
-    $('#loginNextButton').on('click', function () {
-        $('#login-step-1').hide();
-        // Step 2 açıldığında zamanlayıcı başlat
-        $('#login-step-2').show(function () {
-            startTimer();
-        });
-    });
-
-    // SMS kodunu kontrol et - Step 2
+    // SMS kodunu kontrol et
     function checkSmsCode() {
-        smsCode = ''; // Kodları sıfırla
+        smsCode = '';
         $('.sms-input').each(function () {
-            smsCode += $(this).val(); // Her inputun değerini toplar
+            smsCode += $(this).val();
         });
 
-        if (smsCode.length === 6) { // Eğer tüm inputlar doluysa
-            if (smsCode === '111111') {
-                $('.sms-input').removeClass('is-invalid'); // Hatalı değil
-                $('#smsLoginError').hide(); // Hata mesajını gizle
-                $('#loginFinishButton').prop('disabled', false); // Butonu etkinleştir
-            } else {
-                $('.sms-input').addClass('is-invalid'); // Tüm inputları kırmızı yap
-                $('#smsLoginError').show(); // Hata mesajını göster
-                $('#loginFinishButton').prop('disabled', true); // Butonu devre dışı bırak
-            }
-        } else {
-            $('#loginFinishButton').prop('disabled', true); // Tüm alanlar dolmadan butonu devre dışı bırak
+        if (smsCode.length === 6) {
+            $.ajax({
+                url: "https://recep.valletbeta2.site/onbV2/login/sms-validate",
+                method: "POST",
+                headers: {
+                    'SMSTOKEN': smsToken,
+                    'WEBAPP': 'true'
+                },
+                data: {
+                    dogrulamaKodu: smsCode
+                },
+                success: function (response) {
+                    if (response.status === 'success') {
+                        // Token'ı localStorage'a kaydet
+                        localStorage.setItem('authToken', response.data.token);
+
+                        // Başarılı SMS doğrulamasından sonra panele yönlendirme
+                        setTimeout(function () {
+                            window.location.href = `${$baseUrl}/${response.data.redirect}`;
+                        }, 100);
+                    } else {
+                        $('#smsLoginError').show();
+                        $('.sms-input').addClass('is-invalid');
+                    }
+                },
+                error: function () {
+                    alert('Bir hata oluştu. Lütfen tekrar deneyin.');
+                }
+            });
         }
     }
 
-    // Giriş butonuna tıklayınca yönlendirme - Step 2
-    $('#loginFinishButton').on('click', function () {
-        if (smsCode === '111111') {
-            window.location.href = "https://busra.valletbeta2.site/Vonboarding/"; // Anasayfaya yönlendirme
-        }
-    });
+    // Giriş Yap butonuna tıklama işlemi
+    $('#loginFinishButton').on('click', checkSmsCode);
 });

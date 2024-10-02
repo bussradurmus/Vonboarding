@@ -8,15 +8,8 @@ $(document).ready(function () {
             $this.find('.navbar-toggler-icon').css('background-image', 'url(data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3E%3Cpath stroke=\'white\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' stroke-width=\'2\' d=\'M6 6l18 18M6 24L24 6\'/%3E%3C/svg%3E)');
         }
     });
-    const navItems = document.querySelectorAll('.nav-item');
 
 
-    const currentPath = window.location.pathname;
-    $('.nav-item a').each(function () {
-        if ($(this).attr('href') === currentPath) {
-            $(this).parent().addClass('active');
-        }
-    });
 
     // Türkçe karakterleri destekleyen isim/soyisim doğrulama
     function validateName(name) {
@@ -74,15 +67,15 @@ $(document).ready(function () {
     });
 
     // Form gönderme işlemi sırasında doğrulama
-    $('form').on('submit', function (event) {
-        event.preventDefault();  // Sayfa yenilenmesini engelle
-        if (checkFormValidity()) {
-            alert('Form başarıyla gönderildi!');
-            // Buraya form gönderme işlemi yapılabilir
-        } else {
-            alert('Lütfen formu doğru doldurun.');
-        }
-    });
+    // $('form').on('submit', function (event) {
+    //     event.preventDefault();  // Sayfa yenilenmesini engelle
+    //     if (checkFormValidity()) {
+    //         alert('Form başarıyla gönderildi!');
+    //         // Buraya form gönderme işlemi yapılabilir
+    //     } else {
+    //         alert('Lütfen formu doğru doldurun.');
+    //     }
+    // });
 });
 
 // Sıralı animasyonları tetikleyen fonksiyon

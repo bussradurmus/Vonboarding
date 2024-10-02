@@ -54,7 +54,7 @@ require 'master/header.php';
         </div>
         <div class="container  max-w1140">
             <div class="mt-150 ">
-                <div class="px-0 d-flex justify-content-center flex-lg-row flex-column">
+                <div class="px-0 d-flex gap-5 justify-content-center flex-lg-row flex-column">
                     <div class="mb-5">
                         <h2 class="text-uppercase letterSpace-45 mb-4">MISY<span class="text-blue">ON</span>UMUZ</h2>
                         <p class="font-raleway fs-18 text-lgrey">Belgeleri yükleyin ve keyfinize bakın, başvurunuz anında onaylansın. Tüm süreçler otomatik olarak işlesin, siz sadece sonuçları takip

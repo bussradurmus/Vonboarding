@@ -9,48 +9,49 @@ require 'master/header.php';
     <main>
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
-                <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                <p class="form-subtitle text-lgrey mb-5 font-raleway">Kayıt olmak için bilgilerinizi girin</p>
-                <div class="progress-container mb-3">
-                    <div class="fs-14 font-raleway d-flex justify-content-between">
-                        <div class="text-left">
-                            <div class="step" data-step="1">
-                                <div class="step-text">Bilgileriniz</div>
+                <div class="step-header">
+                    <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
+                    <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kayıt olmak için bilgilerinizi girin</p>
+                    <div class="progress-container mb-3">
+                        <div class="fs-14 font-raleway d-flex justify-content-between">
+                            <div class="text-left">
+                                <div class="step" data-step="1">
+                                    <div class="step-text">Bilgileriniz</div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <div class="step" data-step="2">
+                                    <div class="step-text">SMS Doğrulama</div>
+                                </div>
+                            </div>
+                            <div class="text-end">
+                                <div class="step" data-step="3">
+                                    <div class="step-text ">Şifre Belirleme</div>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="step" data-step="4">
+                                    <div class="step-text">Kimlik</div>
+                                </div>
                             </div>
                         </div>
-                        <div class="text-center">
-                            <div class="step" data-step="2">
-                                <div class="step-text">SMS Doğrulama</div>
+                        <div class="progress-bar-container">
+                            <div class="progress-line">
+                                <div class="progress-line-active"></div>
+                            </div>
+                            <div class="progress-dots">
+                                <div class="dot" data-step="1"></div>
+                                <div class="dot" data-step="2"></div>
+                                <div class="dot" data-step="3"></div>
+                                <div class="dot" data-step="4"></div>
                             </div>
                         </div>
-                        <div class="text-end">
-                            <div class="step" data-step="3">
-                                <div class="step-text ">Şifre Belirleme</div>
-                            </div>
-                        </div>
-                        <div class="text-right">
-                            <div class="step" data-step="4">
-                                <div class="step-text">Kimlik</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-line">
-                            <div class="progress-line-active"></div>
-                        </div>
-                        <div class="progress-dots">
-                            <div class="dot" data-step="1"></div>
-                            <div class="dot" data-step="2"></div>
-                            <div class="dot" data-step="3"></div>
-                            <div class="dot" data-step="4"></div>
-                        </div>
-                    </div>
 
+                    </div>
                 </div>
-
                 <form novalidate>
-                    <div class="row">
+                    <div class="row mt-3">
                         <div class="col-md-6 mb-4 text-start">
                             <label class="font-raleway mb-2 text-lgrey fw-medium">Adınız</label>
                             <input type="text" class="form-control" id="firstNameRg" required>
@@ -94,41 +95,43 @@ require 'master/header.php';
     <main>
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
-                <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                <p class="form-subtitle text-lgrey mb-5 font-raleway">Lütfen +90 532 *** ** 55 numaralı telefonunuza gönderdiğimiz 6 haneli SMS kodunu giriniz</p>
-                <!-- Progress Bar -->
-                <div class="progress-container mb-3">
-                    <div class="fs-14 font-raleway d-flex justify-content-between">
-                        <div class="step" data-step="1">
-                            <div class="step-text">Bilgileriniz</div>
+                <div class="step-header">
+                    <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
+                    <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Lütfen +90 532 *** ** 55 numaralı telefonunuza gönderdiğimiz 6 haneli SMS kodunu giriniz</p>
+                    <!-- Progress Bar -->
+                    <div class="progress-container mb-3">
+                        <div class="fs-14 font-raleway d-flex justify-content-between">
+                            <div class="step" data-step="1">
+                                <div class="step-text">Bilgileriniz</div>
+                            </div>
+                            <div class="step active" data-step="2">
+                                <div class="step-text">SMS Doğrulama</div>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-text">Şifre Belirleme</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-text">Kimlik</div>
+                            </div>
                         </div>
-                        <div class="step active" data-step="2">
-                            <div class="step-text">SMS Doğrulama</div>
-                        </div>
-                        <div class="step" data-step="3">
-                            <div class="step-text">Şifre Belirleme</div>
-                        </div>
-                        <div class="step" data-step="4">
-                            <div class="step-text">Kimlik</div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-line">
-                            <div class="progress-line-active"></div>
-                        </div>
-                        <div class="progress-dots">
-                            <div class="dot" data-step="1"></div>
-                            <div class="dot active" data-step="2"></div>
-                            <div class="dot" data-step="3"></div>
-                            <div class="dot" data-step="4"></div>
+                        <div class="progress-bar-container">
+                            <div class="progress-line">
+                                <div class="progress-line-active"></div>
+                            </div>
+                            <div class="progress-dots">
+                                <div class="dot" data-step="1"></div>
+                                <div class="dot active" data-step="2"></div>
+                                <div class="dot" data-step="3"></div>
+                                <div class="dot" data-step="4"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- SMS doğrulama formu -->
                 <form>
-                    <div class="mb-3 text-start d-flex flex-column align-items-center">
-                        <label class="font-raleway mb-2 text-lgrey">SMS Kodu</label>
+                    <div class="my-5 text-start d-flex flex-column align-items-center">
+                        <label class="font-raleway mb-4 text-lgrey">SMS Kodu</label>
                         <div class="d-flex justify-content-evenly gap-2">
                             <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
                             <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
@@ -139,7 +142,7 @@ require 'master/header.php';
                         </div>
                         <div class="error-message text-danger" id="smsRgError" style="display: none;">SMS kodu geçerli değil</div>
                     </div>
-                    <p class="text-white my-3" id="timerRg">Tekrar gönder (180sn)</p>
+                    <p class="text-white my-5" id="timerRg">Tekrar gönder (180sn)</p>
                     <div class="d-flex justify-content-between button-container my-5">
                         <button type="button" class="btn button-outline fs-14 font-raleway fw-semibold back-button">Geri Dön</button>
                         <button type="button" class="btn btn-primary" id="nextButtonStep2" disabled>Devam Et</button>
@@ -154,42 +157,43 @@ require 'master/header.php';
     <main>
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
-                <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                <p class="form-subtitle text-lgrey mb-5 font-raleway">Şifrenizi belirleyin</p>
+                <div class="step-header">
+                    <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
+                    <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Şifrenizi belirleyin</p>
 
-                <!-- Progress Bar -->
-                <div class="progress-container mb-3">
-                    <div class="fs-14 font-raleway d-flex justify-content-between">
-                        <div class="step" data-step="1">
-                            <div class="step-text">Bilgileriniz</div>
+                    <!-- Progress Bar -->
+                    <div class="progress-container mb-3">
+                        <div class="fs-14 font-raleway d-flex justify-content-between">
+                            <div class="step" data-step="1">
+                                <div class="step-text">Bilgileriniz</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-text">SMS Doğrulama</div>
+                            </div>
+                            <div class="step active" data-step="3">
+                                <div class="step-text">Şifre Belirleme</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-text">Kimlik</div>
+                            </div>
                         </div>
-                        <div class="step" data-step="2">
-                            <div class="step-text">SMS Doğrulama</div>
-                        </div>
-                        <div class="step active" data-step="3">
-                            <div class="step-text">Şifre Belirleme</div>
-                        </div>
-                        <div class="step" data-step="4">
-                            <div class="step-text">Kimlik</div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-line">
-                            <div class="progress-line-active"></div>
-                        </div>
-                        <div class="progress-dots">
-                            <div class="dot" data-step="1"></div>
-                            <div class="dot" data-step="2"></div>
-                            <div class="dot active" data-step="3"></div>
-                            <div class="dot" data-step="4"></div>
+                        <div class="progress-bar-container">
+                            <div class="progress-line">
+                                <div class="progress-line-active"></div>
+                            </div>
+                            <div class="progress-dots">
+                                <div class="dot" data-step="1"></div>
+                                <div class="dot" data-step="2"></div>
+                                <div class="dot active" data-step="3"></div>
+                                <div class="dot" data-step="4"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Şifre belirleme formu -->
                 <form>
-                    <div class="mb-3 text-start position-relative">
+                    <div class="my-3 text-start position-relative">
                         <label class="font-raleway mb-2 text-lgrey">Şifreniz</label>
                         <input type="password" class="form-control" id="passwordInput" required>
                         <span class="password-toggle" id="togglePassword">
@@ -199,14 +203,14 @@ require 'master/header.php';
                     <div class="my-3 text-start position-relative">
                         <label class="font-raleway mb-2 text-lgrey">Şifrenizi tekrar girin</label>
                         <input type="password" class="form-control" id="confirmPasswordInput" required>
-                        <span class="password-toggle" id="toggleConfirmPassword" >
+                        <span class="password-toggle" id="toggleConfirmPassword">
                           <img src="<?= $baseUrl ?>/assets/images/hidePassword.svg" alt="Password Image">
                         </span>
                         <div class="error-message text-danger mt-1" style="display: none;" id="passwordRgError">Girdiğiniz şifreler eşleşmemektedir</div>
                     </div>
 
                     <!-- 2FA Switch -->
-                    <div class="form-check form-switch ps-0 d-flex align-items-center justify-content-between mt-3">
+                    <div class="form-check form-switch ps-0 d-flex align-items-center justify-content-between mt-4">
                         <label class="form-check-label font-raleway fw-bold text-white" for="twoFactorSwitch">2FA Doğrulama (SMS doğrulama)</label>
                         <input class="form-check-input custom-switch" type="checkbox" id="twoFactorSwitch" checked>
                     </div>
@@ -226,39 +230,40 @@ require 'master/header.php';
     <main>
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
-                <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik Yükleme</p>
+                <div class="step-header">
+                    <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
+                    <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik Yükleme</p>
 
-                <!-- Progress Bar -->
-                <div class="progress-container mb-3">
-                    <div class="fs-14 font-raleway d-flex justify-content-between">
-                        <div class="step" data-step="1">
-                            <div class="step-text">Bilgileriniz</div>
+                    <!-- Progress Bar -->
+                    <div class="progress-container mb-3">
+                        <div class="fs-14 font-raleway d-flex justify-content-between">
+                            <div class="step" data-step="1">
+                                <div class="step-text">Bilgileriniz</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-text">SMS Doğrulama</div>
+                            </div>
+                            <div class="step active" data-step="3">
+                                <div class="step-text">Şifre Belirleme</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-text">Kimlik</div>
+                            </div>
                         </div>
-                        <div class="step" data-step="2">
-                            <div class="step-text">SMS Doğrulama</div>
-                        </div>
-                        <div class="step active" data-step="3">
-                            <div class="step-text">Şifre Belirleme</div>
-                        </div>
-                        <div class="step" data-step="4">
-                            <div class="step-text">Kimlik</div>
-                        </div>
-                    </div>
-                    <div class="progress-bar-container">
-                        <div class="progress-line">
-                            <div class="progress-line-active"></div>
-                        </div>
-                        <div class="progress-dots">
-                            <div class="dot" data-step="1"></div>
-                            <div class="dot" data-step="2"></div>
-                            <div class="dot active" data-step="3"></div>
-                            <div class="dot" data-step="4"></div>
+                        <div class="progress-bar-container">
+                            <div class="progress-line">
+                                <div class="progress-line-active"></div>
+                            </div>
+                            <div class="progress-dots">
+                                <div class="dot" data-step="1"></div>
+                                <div class="dot" data-step="2"></div>
+                                <div class="dot active" data-step="3"></div>
+                                <div class="dot" data-step="4"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
                 <!-- Kimlik Yükleme Ön Yüz -->
                 <div class="my-5 d-flex justify-content-evenly align-items-center text-start file-upload-box" id="frontIdCard">
                     <img src="<?= $baseUrl ?>assets/images/kimlik1.svg" alt="IDCARD IMAGE">
@@ -281,12 +286,10 @@ require 'master/header.php';
                     </div>
                 </div>
 
-
-
                 <!-- Uyarı Mesajı -->
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-3">
                     <img src="<?= $baseUrl ?>assets/images/info.svg" alt="Information Icon">
-                <p class="text-lgrey font-raleway mt-3 ms-2">Kimlik resimlerinizi, jpeg, png, pdf olarak yükleyebilirsiniz.</p>
+                    <p class="text-lgrey font-raleway mt-3 ms-2">Kimlik resimlerinizi, jpeg, png, pdf olarak yükleyebilirsiniz.</p>
                 </div>
                 <!-- Geri Dön ve Devam Et Butonları -->
                 <div class="d-flex justify-content-between button-container my-5">
@@ -303,9 +306,10 @@ require 'master/header.php';
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
                 <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title text-white fw-bold mb-4">Tebrikler! Kaydınız Tamamlandı.</h3>
+                <h3 class="form-title text-white fw-bold mb-3">Tebrikler! Kaydınız Tamamlandı.</h3>
                 <img src="<?= $baseUrl ?>assets/images/party-popper.png" alt="Image" class="mb-4">
-                <p class="form-subtitle text-lgrey mb-5 font-raleway">Vonboarding’in tüm özelliklerini kullanabilmeniz için, hesabınızın onaylanması gerekmektedir. Onay sürecini <span class="fw-bold">Vonboarding’e giriş</span> yaparak takip edebilirsiniz.</p>
+                <p class="form-subtitle text-lgrey mb-5 font-raleway">Vonboarding’in tüm özelliklerini kullanabilmeniz için, hesabınızın onaylanması gerekmektedir. Onay sürecini <span class="fw-bold">Vonboarding’e giriş</span>
+                    yaparak takip edebilirsiniz.</p>
 
                 <div class="d-flex justify-content-between button-container my-5">
                     <a href="<?= $baseUrl ?>" type="button" class="btn btn-primary w-100" id="completed">Anladım</a>

@@ -15,7 +15,7 @@ require 'master/header.php';
         </div>
         <h1 class="mb-4 text-white fw-bold"> Başvuru Süreçlerini Hızlandırın,<br>İşinizi Büyütün!</h1>
         <p class="mb-4 text-lgrey font-raleway">Başvuruların inceleme ve platform üzerinden yönetim,
-            Veriboarding <br> ile daha hızlı ve verimli çözümlere ulaşabilirsiniz.</p>
+            Vonboarding <br> ile daha hızlı ve verimli çözümlere ulaşabilirsiniz.</p>
         <button class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold padding18-24">Hemen Başla</button>
     </div>
 </div>

@@ -234,7 +234,7 @@ require 'master/header.php';
                 <div class="step-header">
                     <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
                     <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik resimlerini yükleyin/p>
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik resimlerini yükleyin</p>
 
                     <!-- Progress Bar -->
                     <div class="progress-container mb-3">

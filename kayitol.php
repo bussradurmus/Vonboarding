@@ -16,7 +16,7 @@ require 'master/header.php';
                     <div class="progress-container mb-3">
                         <div class="fs-14 font-raleway d-flex justify-content-between">
                             <div class="text-left">
-                                <div class="step" data-step="1">
+                                <div class="step active" data-step="1">
                                     <div class="step-text">Bilgileriniz</div>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@ require 'master/header.php';
                                 <div class="progress-line-active"></div>
                             </div>
                             <div class="progress-dots">
-                                <div class="dot" data-step="1"></div>
+                                <div class="dot active" data-step="1"></div>
                                 <div class="dot" data-step="2"></div>
                                 <div class="dot" data-step="3"></div>
                                 <div class="dot" data-step="4"></div>
@@ -120,7 +120,7 @@ require 'master/header.php';
                                 <div class="progress-line-active"></div>
                             </div>
                             <div class="progress-dots">
-                                <div class="dot" data-step="1"></div>
+                                <div class="dot active" data-step="1"></div>
                                 <div class="dot active" data-step="2"></div>
                                 <div class="dot" data-step="3"></div>
                                 <div class="dot" data-step="4"></div>
@@ -183,8 +183,8 @@ require 'master/header.php';
                                 <div class="progress-line-active"></div>
                             </div>
                             <div class="progress-dots">
-                                <div class="dot" data-step="1"></div>
-                                <div class="dot" data-step="2"></div>
+                                <div class="dot active" data-step="1"></div>
+                                <div class="dot active" data-step="2"></div>
                                 <div class="dot active" data-step="3"></div>
                                 <div class="dot" data-step="4"></div>
                             </div>
@@ -197,8 +197,9 @@ require 'master/header.php';
                         <label class="font-raleway mb-2 text-lgrey">Şifreniz</label>
                         <input type="password" class="form-control" id="passwordInput" required>
                         <span class="password-toggle" id="togglePassword">
-                <img src="<?= $baseUrl ?>/assets/images/hidePassword.svg" alt="Password Image">
-            </span>
+                          <img src="<?= $baseUrl ?>/assets/images/hidePassword.svg" alt="Password Image">
+                        </span>
+                        <div class="error-message text-danger mt-1" style="display: none;" id="password1RgError">Şifreniz en az 8 karakter olmalı</div>
                     </div>
                     <div class="my-3 text-start position-relative">
                         <label class="font-raleway mb-2 text-lgrey">Şifrenizi tekrar girin</label>
@@ -233,7 +234,7 @@ require 'master/header.php';
                 <div class="step-header">
                     <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
                     <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik Yükleme</p>
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik resimlerini yükleyin/p>
 
                     <!-- Progress Bar -->
                     <div class="progress-container mb-3">
@@ -244,10 +245,10 @@ require 'master/header.php';
                             <div class="step" data-step="2">
                                 <div class="step-text">SMS Doğrulama</div>
                             </div>
-                            <div class="step active" data-step="3">
+                            <div class="step " data-step="3">
                                 <div class="step-text">Şifre Belirleme</div>
                             </div>
-                            <div class="step" data-step="4">
+                            <div class="step active" data-step="4">
                                 <div class="step-text">Kimlik</div>
                             </div>
                         </div>
@@ -256,10 +257,10 @@ require 'master/header.php';
                                 <div class="progress-line-active"></div>
                             </div>
                             <div class="progress-dots">
-                                <div class="dot" data-step="1"></div>
-                                <div class="dot" data-step="2"></div>
+                                <div class="dot active" data-step="1"></div>
+                                <div class="dot active" data-step="2"></div>
                                 <div class="dot active" data-step="3"></div>
-                                <div class="dot" data-step="4"></div>
+                                <div class="dot active" data-step="4"></div>
                             </div>
                         </div>
                     </div>
@@ -268,7 +269,7 @@ require 'master/header.php';
                 <div class="my-5 d-flex justify-content-evenly align-items-center text-start file-upload-box" id="frontIdCard">
                     <img src="<?= $baseUrl ?>assets/images/kimlik1.svg" alt="IDCARD IMAGE">
                     <div class="d-flex align-items-center" id="frontUploadBox">
-                        <label class="font-raleway mb-2 text-lgrey me-2">Kimlik Ön Yüzünü Yükleyiniz</label>
+                        <label class="font-raleway mb-2 text-white w-75 fw-bold">Kimlik Ön Yüzünü Yükleyiniz</label>
                         <input type="file" id="frontIDUpload" class="form-control-file" accept=".jpeg, .png, .pdf" style="display: none;">
                         <img src="<?= $baseUrl ?>assets/images/upload.svg" alt="Upload IMAGE" class="up-img">
                         <img src="<?= $baseUrl ?>assets/images/x-icon.svg" alt="Delete IMAGE" class="del-img" style="display: none;">
@@ -279,7 +280,7 @@ require 'master/header.php';
                 <div class="mb-3 d-flex justify-content-evenly align-items-center text-start file-upload-box" id="backIdCard">
                     <img src="<?= $baseUrl ?>assets/images/kimlik2.svg" alt="IDCARD IMAGE">
                     <div class="d-flex align-items-center" id="backUploadBox">
-                        <label class="font-raleway mb-2 text-lgrey me-2">Kimlik Arka Yüzünü Yükleyiniz</label>
+                        <label class="font-raleway mb-2 text-white w-75 fw-bold">Kimlik Arka Yüzünü Yükleyiniz</label>
                         <input type="file" id="backIDUpload" class="form-control-file" accept=".jpeg, .png, .pdf" style="display: none;">
                         <img src="<?= $baseUrl ?>assets/images/upload.svg" alt="Upload IMAGE" class="up-img">
                         <img src="<?= $baseUrl ?>assets/images/x-icon.svg" alt="Delete IMAGE" class="del2-img" style="display: none;">

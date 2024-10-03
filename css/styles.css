@@ -1082,6 +1082,7 @@ input:focus, textarea:focus {
     border: 1px dashed #626C85;
     padding: 20px;
     cursor: pointer;
+    min-height: 160px;
 }
 .up-img{
     width: 32px;

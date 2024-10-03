@@ -64,7 +64,7 @@ require 'master/header.php';
                 <p class="text-white mt-5 mb-4 link-underline timer-text">Tekrar gönder (180sn)</p>
 
                 <!-- Geri Dön ve Devam Et Butonları -->
-                <div class="d-flex justify-content-between mt-5">
+                <div class="d-flex justify-content-between mt-5" style="display: none !important;">
                     <button type="button" class="btn btn-primary w-100" id="loginFinishButton" disabled>Giriş Yap</button>
                 </div>
             </div>

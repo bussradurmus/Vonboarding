@@ -71,24 +71,35 @@ $(document).ready(function () {
     // Step 2: SMS doğrulama fonksiyonları
     function validateSmsCode() {
         let smsCode = '';
+        // Tüm input'lardan değerleri al ve birleştir
         $('.sms-rg-input').each(function () {
             smsCode += $(this).val();
         });
 
-        if (smsCode === correctCode) {
-            $('.sms-rg-input').removeClass('error-border');
-            $('#smsRgError').hide();
-            $('#nextButtonStep2').prop('disabled', false); // Butonu etkinleştir
-            return true;
+        // Tüm input'lar dolu mu diye kontrol et
+        if (smsCode.length === 6) {
+            // SMS doğrulama kodu '111111' ise
+            if (smsCode === '111111') {
+                // Doğruysa işlemleri yap
+                $('.sms-rg-input').removeClass('error-border');
+                $('#smsRgError').hide(); // Hata mesajını gizle
+                $('#nextButtonStep2').prop('disabled', false); // Butonu aktif yap
+                return true;
+            } else {
+                // Yanlışsa hatayı göster
+                $('.sms-rg-input').addClass('error-border');
+                $('#smsRgError').show(); // Hata mesajını göster
+                $('#nextButtonStep2').prop('disabled', true); // Butonu devre dışı bırak
+                return false;
+            }
         } else {
-            $('.sms-rg-input').addClass('error-border');
-            $('#smsRgError').show();
-            $('#nextButtonStep2').prop('disabled', true); // Butonu devre dışı bırak
+            // Eğer 6 haneden az ise butonu devre dışı bırak
+            $('#nextButtonStep2').prop('disabled', true);
             return false;
         }
     }
 
-    // SMS inputlar arasında otomatik geçiş ve geri gitme (silme)
+// SMS inputlar arasında otomatik geçiş ve geri gitme (silme)
     $('.sms-rg-input').on('input', function () {
         let $this = $(this);
         if ($this.val().length === 1) {
@@ -101,6 +112,7 @@ $(document).ready(function () {
         }
     });
 
+
     // SMS doğrulaması için timer başlatma ve 180 saniye geri sayım
     function startTimer() {
         let timeLeft = timerDuration;
@@ -111,7 +123,7 @@ $(document).ready(function () {
                 //alert('Süre doldu, tekrar deneyin.');
                 $('#nextButtonStep2').prop('disabled', true); // Timer bittiğinde butonu devre dışı bırak
             }
-            $('p#timerRg').text(`Tekrar gönder (${timeLeft}sn)`); // Timer'ı güncelle
+            $('#timerRg').text(`Tekrar gönder (${timeLeft}sn)`); // Timer'ı güncelle
         }, 1000);
     }
 
@@ -132,26 +144,38 @@ $(document).ready(function () {
     function validatePasswords() {
         let password = $('#passwordInput').val();
         let confirmPassword = $('#confirmPasswordInput').val();
+        let isValid = true; // İki durumu kontrol etmek için genel bir validasyon durumu
 
-        if (password !== confirmPassword) {
+        // Şifre en az 8 karakter kontrolü (sadece passwordInput için)
+        if (password.length < 8) {
+            $('#passwordInput').addClass('error-border');
+            $('#password1RgError').show(); // Hata mesajını göster
+            isValid = false; // Hatalı olduğu için isValid false yapılır
+        } else {
+            $('#passwordInput').removeClass('error-border');
+            $('#password1RgError').hide(); // Hata mesajını gizle
+        }
+
+        // Şifrelerin eşleşip eşleşmediğini kontrol et (sadece confirmPasswordInput için)
+        if (confirmPassword.length > 0 && password !== confirmPassword) {
             $('#confirmPasswordInput').addClass('error-border');
-            $('#passwordRgError').show();  // Hata mesajını göster
-            $('#nextButtonStep3').prop('disabled', true); // Butonu devre dışı bırak
-            return false;
+            $('#passwordRgError').show(); // Hata mesajını göster
+            isValid = false; // Hatalı olduğu için isValid false yapılır
         } else {
             $('#confirmPasswordInput').removeClass('error-border');
-            $('#passwordRgError').hide();  // Hata mesajını gizle
-            $('#nextButtonStep3').prop('disabled', false); // Butonu aktif yap
-            return true;
+            $('#passwordRgError').hide(); // Hata mesajını gizle
         }
+
+        // Eğer iki şart da sağlanıyorsa butonu aktif hale getir
+        $('#nextButtonStep3').prop('disabled', !isValid);
+
+        return isValid;
     }
 
-    // Şifre alanlarında değişiklik yapıldığında (2. input) kontrol yap
-    $('#confirmPasswordInput').on('blur', function () {
-        validatePasswords();
-    });
+// Şifre alanlarının her birine yazıldığında bu fonksiyonu çağırabilirsin
+    $('#passwordInput, #confirmPasswordInput').on('blur', validatePasswords);
 
-    // Step 3'te "Devam Et" butonuna tıklandığında 4. adıma geçiş
+// Step 3'te "Devam Et" butonuna tıklandığında 4. adıma geçiş
     $('#nextButtonStep3').click(function (event) {
         event.preventDefault();
         if (validatePasswords()) {  // Şifreler eşleşiyorsa
@@ -259,22 +283,6 @@ $(document).ready(function () {
 
     // Progress barı güncelleme fonksiyonu
     function updateProgressBar(step) {
-        $('.step').each(function () {
-            var stepNum = $(this).data('step');
-            if (stepNum <= step) {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            }
-        });
-        $('.dot').each(function () {
-            var stepNum = $(this).data('step');
-            if (stepNum <= step) {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            }
-        });
 
         var totalSteps = 4;
         var percentage = (step - 1) / (totalSteps - 1) * 100;

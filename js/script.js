@@ -8,10 +8,7 @@ $(document).ready(function () {
             $this.find('.navbar-toggler-icon').css('background-image', 'url(data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3E%3Cpath stroke=\'white\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' stroke-width=\'2\' d=\'M6 6l18 18M6 24L24 6\'/%3E%3C/svg%3E)');
         }
     });
-
-
-
-    // Türkçe karakterleri destekleyen isim/soyisim doğrulama
+// Türkçe karakterleri destekleyen isim/soyisim doğrulama
     function validateName(name) {
         return /^[a-zA-ZçÇğĞıİöÖşŞüÜ\s]+$/.test(name);  // Türkçe karakterleri ve boşlukları kabul eden regex
     }
@@ -24,7 +21,7 @@ $(document).ready(function () {
         return message.trim().length > 0; // Mesaj alanının boş olmadığını kontrol et
     }
 
-    // Her input alanı için hata kontrolü yapan fonksiyon
+// Her input alanı için hata kontrolü yapan fonksiyon
     function validateInput(input, validationFn, errorMsgDiv) {
         const value = input.val();  // Input değerini al
         if (value && validationFn(value.trim())) {  // Değer boş değilse ve doğrulamadan geçiyorsa
@@ -36,46 +33,54 @@ $(document).ready(function () {
             errorMsgDiv.show();
             return false;
         }
-        return true;  // Eğer kullanıcı inputa hiç veri girmemişse
+        return false;  // Eğer kullanıcı inputa hiç veri girmemişse ve boşsa geçersiz say
     }
 
-    // Form alanlarının geçerliliğini kontrol et ve hatalıları göster
-    function checkFormValidity() {
+// Formun tüm alanlarının doğruluğunu kontrol eden fonksiyon
+    function validateForm() {
         const isFirstNameValid = validateInput($('#firstName'), validateName, $('#indexName'));
         const isLastNameValid = validateInput($('#lastName'), validateName, $('#indexSurame'));
         const isEmailValid = validateInput($('#email'), validateEmail, $('#indexEmail'));
         const isMessageValid = validateInput($('#message'), validateMessage, $('#indexMessage'));
 
-        return isFirstNameValid && isLastNameValid && isEmailValid && isMessageValid;  // Tüm alanlar geçerli mi?
+        // Eğer tüm alanlar geçerliyse butonu aktif et, aksi halde devre dışı bırak
+        if (isFirstNameValid && isLastNameValid && isEmailValid && isMessageValid) {
+            $('.form-button').removeAttr('disabled');  // Butonu aktif et
+        } else {
+            $('.form-button').attr('disabled', 'disabled');  // Butonu devre dışı bırak
+        }
     }
 
-    // Her alan için blur (alan dışına çıkma) olayına bağlı doğrulama
+// Her alan için blur (alan dışına çıkma) olayına bağlı doğrulama
     $('#firstName').on('blur', function () {
         validateInput($(this), validateName, $('#indexName'));
+        validateForm();  // Formu kontrol et
     });
 
     $('#lastName').on('blur', function () {
         validateInput($(this), validateName, $('#indexSurame'));
+        validateForm();  // Formu kontrol et
     });
 
     $('#email').on('blur', function () {
         validateInput($(this), validateEmail, $('#indexEmail'));
+        validateForm();  // Formu kontrol et
     });
 
     $('#message').on('blur', function () {
         validateInput($(this), validateMessage, $('#indexMessage'));
+        validateForm();  // Formu kontrol et
     });
 
-    // Form gönderme işlemi sırasında doğrulama
-    // $('form').on('submit', function (event) {
-    //     event.preventDefault();  // Sayfa yenilenmesini engelle
-    //     if (checkFormValidity()) {
-    //         alert('Form başarıyla gönderildi!');
-    //         // Buraya form gönderme işlemi yapılabilir
-    //     } else {
-    //         alert('Lütfen formu doğru doldurun.');
-    //     }
-    // });
+// Mesaj alanı için input event'ine bağlı kontrol
+    $('#message').on('input', function () {
+        validateForm();  // Mesaj kutusu her değiştiğinde formu tekrar kontrol et
+    });
+
+// Sayfa yüklendiğinde butonu devre dışı bırak
+    $(document).ready(function () {
+        $('#iletisim .form-button').attr('disabled', 'disabled');
+    });
 });
 
 // Sıralı animasyonları tetikleyen fonksiyon

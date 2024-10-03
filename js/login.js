@@ -7,7 +7,40 @@ $(document).ready(function () {
     let $loginNextButton = $('#loginNextButton');
     let $emailError = $('#emailError');
     let $passwordError = $('#passwordError');
-    let $baseUrl = "https://vonboarding-eykf.vercel.app/dashboard";
+    let $baseUrl = "https://gokhan.valletbeta2.site/dashboard";
+
+    // Çerez oluşturma fonksiyonu
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            let date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires
+            + "; path=/"
+            + "; domain=.valletbeta2.site" // Subdomain'ler arası paylaşım için domain ayarı
+            + "; Secure"               // Sadece HTTPS üzerinden gönderilsin
+            + "; SameSite=None";        // Subdomain'ler arasında paylaşım için SameSite=None ayarı
+    }
+
+
+    // Çerez okuma fonksiyonu
+    function getCookie(name) {
+        let nameEQ = name + "=";
+        let ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // Çerez silme fonksiyonu
+    function deleteCookie(name) {
+        document.cookie = name + '=; Max-Age=-99999999;';
+    }
 
     // Email doğrulama fonksiyonu
     function validateEmail() {
@@ -81,9 +114,9 @@ $(document).ready(function () {
                         $('#login-step-2').show(); // İkinci adımı göster
                         startTimer(); // Zamanlayıcıyı başlat
                     } else {
-                        // Token'ı localStorage'a kaydet
-                        localStorage.setItem('authToken', response.data.token);
-
+                        // Token'ı çerezde sakla (örneğin 7 gün boyunca)
+                        setCookie('authToken', response.data.token, 7);
+console.log(setCookie('authToken', response.data.token))
                         // Başarılı giriş yapıldığında panele yönlendirme
                         setTimeout(function () {
                             window.location.href = `${$baseUrl}/${response.data.redirect}`;
@@ -146,8 +179,8 @@ $(document).ready(function () {
                 },
                 success: function (response) {
                     if (response.status === 'success') {
-                        // Token'ı localStorage'a kaydet
-                        localStorage.setItem('authToken', response.data.token);
+                        // Token'ı çerezde sakla
+                        setCookie('authToken', response.data.token, 7);
 
                         // Başarılı SMS doğrulamasından sonra panele yönlendirme
                         setTimeout(function () {

@@ -103,14 +103,14 @@ require 'master/header.php';
     <main>
         <div class="vonboarding-box container">
             <div class="d-flex flex-column justify-content-center align-items-center">
-                    <h2 class="mb-3 letterSpace-45">V<span class="text-blue">ON</span>BOARDING</h2>
-                    <p class="font-raleway text-lgrey fs-18 max-w560 text-center">Vonboarding, tüm ödeme kuruluşları için
-                        entegrasyon süreçlerini tek bir yerden yürütüp, onboarding süreçlerinizi hızlandırır.
-                        Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
-                    <div class="d-flex justify-content-center align-items-center mt-4 vbutton-container">
-                        <button class="btn btn-primary btn-lg me-24">Hemen Başla</button>
-                        <a href="https://vallet.gitbook.io/vonboarding" class="btn button-outline">Dökümantasyon</a>
-                    </div>
+                <h2 class="mb-3 letterSpace-45">V<span class="text-blue">ON</span>BOARDING</h2>
+                <p class="font-raleway text-lgrey fs-18 max-w560 text-center">Vonboarding, tüm ödeme kuruluşları için
+                    entegrasyon süreçlerini tek bir yerden yürütüp, onboarding süreçlerinizi hızlandırır.
+                    Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
+                <div class="d-flex justify-content-center align-items-center mt-4 vbutton-container">
+                    <button class="btn btn-primary btn-lg me-24">Hemen Başla</button>
+                    <a href="https://vallet.gitbook.io/vonboarding" class="btn button-outline">Dökümantasyon</a>
+                </div>
 
             </div>
         </div>
@@ -149,7 +149,7 @@ require 'master/header.php';
                     <h2 class="mb-3 letterSpace-45">K<span class="text-blue">ON</span>TROL SİZDE</h2>
                     <div class="w-100 d-flex justify-content-end">
                         <p class="text-lgrey font-raleway fs-18 max-w457 pe-18">
-                            Tüm banka izinlerini tek ekranda yönetin. Başvurusüreçlerini hızlandırın ve tüm
+                            Tüm banka izinlerini tek ekranda yönetin. Başvuru süreçlerini hızlandırın ve tüm
                             süreçleri anlık olarak takip edin. Böylece, her adımda tam kontrol sahibi olarak
                             operasyonel verimliliğinizi artırın.
                         </p>
@@ -204,7 +204,7 @@ require 'master/header.php';
                                 </div>
                             </div>
                             <p class="text-white fs-18 font-raleway max-w336 ">Gerekli belgeleri Vonboarding sistemine yükleyerek
-                                sanal pos sürecini yönetin.</p>
+                                sanal POS sürecini yönetin.</p>
                             <img src="<?= $baseUrl ?>assets/images/Line 8.png" alt="Line" class="w-100 mb-5 mt-3">
                         </div>
                     </div>
@@ -296,7 +296,7 @@ require 'master/header.php';
                 <div class="col-lg-8">
                     <div class="accordion" id="faqAccordion">
                         <div class="accordion-item mb-3">
-                            <h2 class="accordion-header mb-3 " id="headingOne">
+                            <h2 class="accordion-header mb-4" id="headingOne">
                                 <button class="accordion-button fw-bold fs-20" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true"
                                         aria-controls="collapseOne">
@@ -306,85 +306,105 @@ require 'master/header.php';
                             <div id="collapseOne" class="accordion-collapse collapse show"
                                  aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Vonboarding, ödeme kuruluşları için üye işyeri başvurularını ve bildirim süreçlerini tek bir yerden yöneten modern bir servistir. Şirketler ve ödeme kuruluşları
+                                    arasında bir köprü görevi görerek, başvuru süreçlerini hızlandırır ve gerekli tüm belgeleri ödeme kuruluşuna aktarır. Böylece tüm taraflar için operasyonel yük
+                                    azalır ve işletmeler işini büyütmek için daha fazla zaman kazanır.
                                 </div>
                             </div>
                         </div>
                         <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
-                            <h2 class="accordion-header mb-3 " id="headingTwo">
+                            <h2 class="accordion-header mb-4 " id="headingTwo">
                                 <button class="accordion-button collapsed fs-20 fw-bold" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                    Vonboarding nasıl çalışır?
+                                    Vonboarding hangi ödeme kuruluşları ile entegre çalışıyor?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Vallet, Elekse, Paybyme, Fzypay
                                 </div>
                             </div>
                         </div>
                         <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
-                            <h2 class="accordion-header " id="headingThree">
+                            <h2 class="accordion-header mb-4" id="headingThree">
                                 <button class="accordion-button collapsed fw-bold fs-20" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                    Vonboarding nasıl çalışır?
+                                    Üçüncü Parti başvurusu yaparken hangi belgeler gerekli?
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse "
                                  aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Üçüncü parti başvurusu için gerekli belgeler aşağıdaki gibidir:
+                                    <ul>
+                                        <li>İsim, Soy isim</li>
+                                        <li>E-Posta Adresi</li>
+                                        <li>İletişim Numarası</li>
+                                        <li>Kimlik Fotoğrafı (Ön ve Arka Yüz Olmak Üzere)</li>
+                                    </ul>
+
                                 </div>
                             </div>
                         </div>
                         <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
-                            <h2 class="accordion-header " id="headingFour">
+                            <h2 class="accordion-header mb-4" id="headingFour">
                                 <button class="accordion-button collapsed fs-20 fw-bold" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                    Vonboarding nasıl çalışır?
+                                    Vonboarding üzerinden başvurumu yaptıktan sonra süreç ne kadar sürede tamamlanır?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Başvurunuzu tamamladıktan sonra, sistem başvurunuzu ilgili ödeme kuruluşuna iletir ve değerlendirme süreci başlar. Genellikle başvuru süreci, belgelerinizin
+                                    eksiksiz olması durumunda 3 iş günü içerisinde tamamlanır. Süreçle ilgili tüm bilgilendirmeler e-posta, SMS ya da arama ile tarafınıza iletilir.
                                 </div>
                             </div>
                         </div>
                         <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
 
                         <div class="accordion-item mb-3 mt-3">
-                            <h2 class="accordion-header fs-18 " id="headingFive">
+                            <h2 class="accordion-header mb-4 " id="headingFive">
                                 <button class="accordion-button collapsed fw-bold fs-20" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFive" aria-expanded="false"
                                         aria-controls="collapseFive">
-                                    Vonboarding nasıl çalışır?
+                                    Vonboarding, üye işyeri başvurusu ve bildirim süreçlerinde nasıl bir güvenlik sağlar?
                                 </button>
                             </h2>
                             <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Vonboarding, üye işyeri başvuru ve bildirim süreçlerinde en yüksek güvenlik standartlarını uygular. Kişisel ve finansal verileriniz, güvenli sunucularda saklanır ve
+                                    yalnızca yetkili kişiler tarafından erişilebilir. Ayrıca, tüm veriler şifrelenmiş bir şekilde işlenir ve KVKK (Kişisel Verilerin Korunması Kanunu) kapsamında
+                                    korunur.
+                                </div>
+                            </div>
+                        </div>
+                        <img src="<?= $baseUrl ?>assets/images/acordion-line.svg" alt="Line" class="opacity-50">
+
+                        <div class="accordion-item mb-3 mt-3">
+                            <h2 class="accordion-header mb-4 " id="headingSix">
+                                <button class="accordion-button collapsed fw-bold fs-20" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false"
+                                        aria-controls="collapseSix">
+                                    Başvuru sürecinde karşılaştığım bir sorunu nasıl çözebilirim? Vonboarding destek ekibi ile nasıl iletişime geçebilirim?
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                 data-bs-parent="#faqAccordion">
+                                <div class="accordion-body fs-18 font-raleway">
+                                    Başvuru sürecinde yaşadığınız herhangi bir sorun veya aksaklık için Vonboarding Destek Ekibi’ne ulaşabilirsiniz. Destek ekibine, platform üzerindeki İletişim Formu
+                                    aracılığıyla veya e-posta yoluyla (<a href="mailto:destek@vonboarding.com" class="text-blue">destek@vonboarding.com</a>) erişebilirsiniz.
                                 </div>
                             </div>
                         </div>
@@ -440,7 +460,7 @@ require 'master/header.php';
                         </div>
 
                         <div class="my-3">
-                            <label for="email" class="form-label text-grey font-raleway">Eposta</label>
+                            <label for="email" class="form-label text-grey font-raleway">E-Posta</label>
                             <input type="email" class="form-control effect-9" id="email" name="email" required>
                             <span class="focus-border"><i></i></span>
                             <div class="error-message text-danger mt-1" style="display: none;" id="indexEmail">Geçerli bir e-posta girin</div>

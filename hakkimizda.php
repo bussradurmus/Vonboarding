@@ -12,21 +12,21 @@ require 'master/header.php';
             <div class="col-lg-8 col-md-10 mx-auto hero-content text-center mt-150 mb-5">
                 <h1 class="mb-4 text-white fw-bold">HAKKIMIZDA</h1>
                 <div class="d-flex justify-content-center">
-                    <p class="mb-4 text-lgrey font-raleway fs-18 max-w560">Vonboarding, geleneksel ve karmaşık başvuru süreçlerini kolaylaştırarak, şirketler ve ödeme kuruluşları arasında bir köprü
+                    <p class="mb-4 text-lgrey font-raleway fs-18 max-w796">Vonboarding, geleneksel ve karmaşık başvuru süreçlerini kolaylaştırarak, şirketler ve ödeme kuruluşları arasında bir köprü
                         görevi görür. Bu sayede, üye işyeri başvuruları daha hızlı sonuçlanır, gerekli belgeler ve bilgiler anında ödeme kuruluşuna iletilir, operasyonel süreçler kısalır ve zaman
                         kaybı en aza indirilir.</p>
                 </div>
             </div>
         </div>
         <div class="container  max-w1140">
-            <h2 class="mb-5 text-grey letterSpace-45 text-uppercase mt-150">EKOSİSTEMİMİZİN YENİ TEKLİSİ! <br>
+            <h2 class="mb-5 text-grey letterSpace-45 text-uppercase mt-150 text-center lh-13">EKOSİSTEMİMİZİN YENİ TEKLİSİ! <br>
                 VONBOARDING</h2>
         </div>
         <div class="container  max-w1140">
             <div class="row g-5">
                 <div class="col-md-6">
                     <div class="hakkimizda-box">
-                        <h3 class="fw-600 fs-32 mb-3 text-white">KULLANICI DOSTU ARAYÜZ</h3>
+                        <h3 class="fw-600 fs-32 mb-3 text-white">KULLANICI DOSTU</h3>
                         <p class="text-lgrey fs-18">Vonboarding, kullanıcı dostu arayüzü ve teknolojik altyapısıyla işletmelere başvuru süreçlerinde rehberlik eder ve gereksiz işlemleri ortadan
                             kaldırarak verimliliği artırır. </p>
                         <img src="<?= $baseUrl ?>/assets/images/hakkimizda1.svg" alt="Image" class="img-fluid">

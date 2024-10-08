@@ -25,9 +25,9 @@ require 'master/header.php';
                                     <div class="step-text">Şifre Belirleme</div>
                                 </div>
                             </div>
-                            <div class="text-end">
+                            <div class="text-end  w-15">
                                 <div class="step" data-step="3">
-                                    <div class="step-text ">Kimlik</div>
+                                    <div class="step-text">Kimlik</div>
                                 </div>
                             </div>
                             <div class="text-right">
@@ -109,7 +109,7 @@ require 'master/header.php';
                             <div class="step active" data-step="2">
                                 <div class="step-text">Şifre Belirleme</div>
                             </div>
-                            <div class="step " data-step="3">
+                            <div class="step text-end w-15" data-step="3">
                                 <div class="step-text">Kimlik</div>
                             </div>
                             <div class="step" data-step="4">
@@ -183,7 +183,7 @@ require 'master/header.php';
                             <div class="step" data-step="2">
                                 <div class="step-text">Şifre Belirleme</div>
                             </div>
-                            <div class="step active" data-step="3">
+                            <div class="step active text-end w-15" data-step="3">
                                 <div class="step-text">Kimlik</div>
                             </div>
                             <div class="step" data-step="4">
@@ -257,7 +257,7 @@ require 'master/header.php';
                             <div class="step" data-step="2">
                                 <div class="step-text">Şifre Belirleme</div>
                             </div>
-                            <div class="step " data-step="3">
+                            <div class="step text-end  w-15" data-step="3">
                                 <div class="step-text">Kimlik</div>
                             </div>
                             <div class="step active" data-step="4">
@@ -322,7 +322,7 @@ require 'master/header.php';
 </div>
 
 <!-- Hata Mesajı Modali -->
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
+<div class="toast-container position-fixed top-0 end-0 p-3">
     <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
             <div class="toast-body">

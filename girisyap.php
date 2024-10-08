@@ -30,8 +30,8 @@ require 'master/header.php';
                 </div>
 
                 <div class="my-5">
-                    <a href="#" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
-                    <div class="d-flex justify-content-between mt-5 ">
+                    <a href="<?= $baseUrl ?>sifremi-unuttum.php" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
+                    <div class="d-flex justify-content-between mt-5 font-raleway">
                         <button type="button" class="btn btn-primary w-100" id="loginNextButton" disabled>Devam Et</button>
                     </div>
                 </div>
@@ -45,7 +45,8 @@ require 'master/header.php';
             <div class="form-container text-center w550">
                 <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
                 <h3 class="form-title fw-bold mb-3 text-white">SMS Doğrulama</h3>
-                <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen <span class="fw-bold"> +90 532 *** ** 55</span> numaralı telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>
+                <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen telefonunuza gönderdiğimiz 6 haneli <span
+                            class="fw-bold">sms kodunu</span> giriniz</p>
 
                 <!-- SMS Kodu Giriş Alanı -->
                 <div class="mb-3 text-start d-flex flex-column align-items-center">
@@ -70,8 +71,6 @@ require 'master/header.php';
         </div>
     </main>
 </div>
-
-
 
 
 </div>

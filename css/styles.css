@@ -27,6 +27,7 @@ body, html {
 .page-container:has(.home-page) .page,
 .page-container:has(.hakkimizda-page),
 .page-container:has(.kayit-page),
+.page-container:has(.forgot-password-page),
 .page-container:has(.login-page){
     background-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/bg-img.png');
     background-size: cover;
@@ -367,6 +368,7 @@ footer {
 .btn{
     height: 52px;
     font-family: 'Raleway';
+    font-size: 14px;
 }
 .page-container:has(.blog-detail-page) .hero-banner {
     background-image: url(https://busra.valletbeta2.site/Vonboarding/assets/images/blog-detail.png) !important;
@@ -378,7 +380,7 @@ footer {
     border-radius: 5px;
 }
 .page-container:has(.blog-detail-page) .page {
-    margin-top: -305px;
+    margin-top: -230px;
     z-index: 3333;
 }
 .page-container:has(.blog-detail-page) .user-info img {
@@ -387,23 +389,7 @@ footer {
     object-fit: contain;
 }
 .avantaj-box.border-bottom {
-    border-bottom: 1px solid #D1D1D1;
-}
-.dot-title {
-    position: relative;
-    padding-left: 10px;
-}
-.dot-title::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 6px;
-    height: 6px;
-    background-color: #1C64FE;
-    border-radius: 50%;
-    box-shadow: 0px 4.51px 7.67px 0px #1DC76033;
+    border-bottom: 1px solid #D1D1D1 !important;
 }
 .navbar {
     padding: 1rem 0;
@@ -419,11 +405,17 @@ footer {
     padding: 8px 16px;
     background: white;
 }
+.w-15{
+    width: 15%;
+}
 .max-content {
     width: max-content;
 }
 .max-w744 {
     max-width: 744px;
+}
+.max-w796 {
+    max-width: 796px;
 }
 .slick-prev,
 .slick-next {
@@ -510,6 +502,7 @@ footer {
     display: inline-block;
     overflow: hidden;
     border-radius: 20px 20px 0px 0px;
+    background-color: black;
 }
 .slick-center .img-container img {
     display: block;
@@ -535,6 +528,7 @@ footer {
 }
 .page-container:has(.hakkimizda-page) .hero-banner,
 .page-container:has(.kayit-page) .hero-banner,
+.page-container:has(.forgot-password-page) .hero-banner,
 .page-container:has(.login-page) .hero-banner{
     background-image: unset !important;
     height: max-content;
@@ -553,6 +547,14 @@ footer {
     bottom: 0;
     right: 0;
     border-bottom-right-radius: 21.05px;
+}
+.hakkimizda-box p.text-lgrey{
+    position: relative;
+    z-index: 3;
+    font-family: 'Raleway';
+}
+.lh-13{
+    line-height: 1.3 !important;
 }
 .circle-number {
     position: relative;
@@ -1110,9 +1112,10 @@ input:focus, textarea:focus {
 .step-header .form-subtitle{
     min-height: 50px;
 }
-
+.footerw-logo-box:hover .rotating-group,
+.footer-logo-box:hover .rotating-group,
 .header-logo-container:hover .rotating-group {
-    animation: rotateZ360 0.3s ease-out;
+    animation: rotateZ360 0.5s ease-out;
 }
 @keyframes rotateZ360 {
     from { transform: rotateY(0deg); }
@@ -1121,13 +1124,21 @@ input:focus, textarea:focus {
 .rotating-group {
     transform-origin: 107.7px 14.7px; /* Approximate center point of the joining line */
 }
+.footerw-logo-box .rotating-group {
+    transform-origin: 214.5515px 29.41215px; /* Approximate center point of the joining line */
+}
+.footerw-logo-box:hover .blue-object,
+.footer-logo-box:hover .blue-object,
 .header-logo-container:hover .blue-object {
     filter: url(#hover-shadow);
 }
-
+.footerw-logo-box:hover path.hover-blue:not(.blue-object),
+.footer-logo-box:hover path.hover-blue:not(.blue-object),
 .header-logo-container:hover path.hover-blue:not(.blue-object){
     fill: #1C64FE;
 }
+.footerw-logo-box:hover path.hover-dark-blue:not(.blue-object),
+.footer-logo-box:hover path.hover-dark-blue:not(.blue-object),
 .header-logo-container:hover path.hover-dark-blue:not(.blue-object){
     fill: #0245CA;
 }

@@ -1,5 +1,9 @@
 $(document).ready(function () {
     let smsToken = ''; // SMS Token'ı global olarak saklıyoruz
+    let countdown = 180; // Timer için başlangıç değeri
+    let timer; // Timer'ı global olarak tanımlıyoruz
+    let smsCode = '';
+    let smsTokenActive = true; // SMS kodunun geçerli olup olmadığını kontrol etmek için
 
     //GIRIS FORMS - Step 1
     let $emailInput = $('#loginEmail');
@@ -22,24 +26,6 @@ $(document).ready(function () {
             + "; domain=.valletbeta2.site" // Subdomain'ler arası paylaşım için domain ayarı
             + "; Secure"               // Sadece HTTPS üzerinden gönderilsin
             + "; SameSite=None";        // Subdomain'ler arasında paylaşım için SameSite=None ayarı
-    }
-
-
-    // Çerez okuma fonksiyonu
-    function getCookie(name) {
-        let nameEQ = name + "=";
-        let ca = document.cookie.split(';');
-        for (let i = 0; i < ca.length; i++) {
-            let c = ca[i];
-            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-        }
-        return null;
-    }
-
-    // Çerez silme fonksiyonu
-    function deleteCookie(name) {
-        document.cookie = name + '=; Max-Age=-99999999;';
     }
 
     // Email doğrulama fonksiyonu
@@ -87,48 +73,49 @@ $(document).ready(function () {
         checkFormValidity();
     });
 
-    // Devam Et butonuna tıklama işlemi
-    $('#loginNextButton').on('click', async function () {
-        let email = $emailInput.val();
-        let password = $passwordInput.val();
-        let hashedPassword = sha256(password); // Şifreyi hashle
+    // Devam Et butonuna tıklama işlemi (Aynı zamanda tekrar SMS gönderme işlemi de burada olacak)
+    $('#loginNextButton, p.timer-text').on('click', function () {
+        if (countdown <= 0 || $(this).is('#loginNextButton')) {
+            let email = $emailInput.val();
+            let password = $passwordInput.val();
+            let hashedPassword = sha256(password); // Şifreyi hashle
 
-        let payload = {
-            email: email,
-            password: hashedPassword
-        };
+            let payload = {
+                email: email,
+                password: hashedPassword
+            };
 
-        // AJAX isteği ile sunucuya istek gönderiyoruz
-        $.ajax({
-            url: "https://recep.valletbeta2.site/onbV2/login",
-            method: "POST",
-            headers: {
-                'WEBAPP': 'true'
-            },
-            data: payload,
-            success: function (response) {
-                if (response.status === 'success') {
-                    if (response.data.smsToken) {
-                        smsToken = response.data.smsToken; // SMS token'ı sakla
-                        $('#login-step-1').hide(); // İlk adımı gizle
-                        $('#login-step-2').show(); // İkinci adımı göster
-                        startTimer(); // Zamanlayıcıyı başlat
+            // AJAX isteği ile sunucuya istek gönderiyoruz
+            $.ajax({
+                url: "https://recep.valletbeta2.site/onbV2/login",
+                method: "POST",
+                headers: {
+                    'WEBAPP': 'true'
+                },
+                data: payload,
+                success: function (response) {
+                    if (response.status === 'success') {
+                        if (response.data.smsToken) {
+                            smsToken = response.data.smsToken; // SMS token'ı sakla
+                            smsTokenActive = true; // Token aktif hale geliyor
+                            $('#login-step-1').hide(); // İlk adımı gizle
+                            $('#login-step-2').show(); // İkinci adımı göster
+                            startTimer(); // Zamanlayıcıyı başlat
+                        } else {
+                            setCookie('authToken', response.data.token, 7);
+                            setTimeout(function () {
+                                window.location.href = `${$baseUrl}/${response.data.redirect}`;
+                            }, 100);
+                        }
                     } else {
-                        // Token'ı çerezde sakla (örneğin 7 gün boyunca)
-                        setCookie('authToken', response.data.token, 7);
-                        // Başarılı giriş yapıldığında panele yönlendirme
-                        setTimeout(function () {
-                            window.location.href = `${$baseUrl}/${response.data.redirect}`;
-                        }, 100);
+                        alert(response.message);
                     }
-                } else {
-                    alert(response.message);
+                },
+                error: function () {
+                    alert('Bir hata oluştu. Lütfen tekrar deneyin.');
                 }
-            },
-            error: function () {
-                alert('Bir hata oluştu. Lütfen tekrar deneyin.');
-            }
-        });
+            });
+        }
     });
 
     // SMS doğrulaması Step 2
@@ -143,17 +130,16 @@ $(document).ready(function () {
         checkSmsCode();
     });
 
-    let countdown = 180;
-    let smsCode = '';
-
     function startTimer() {
-        let timer = setInterval(function () {
+        countdown = 180; // 180 saniyelik timer
+        $('p.timer-text').text(`Tekrar gönder (${countdown}sn)`); // Sayaç gösterimi
+        timer = setInterval(function () {
             countdown--;
-            $('p.timer-text').text(`Tekrar gönder (${countdown}sn)`); // Sayacın görseli
+            $('p.timer-text').text(`Tekrar gönder (${countdown}sn)`); // Sayaç gösterimi
             if (countdown <= 0) {
-                clearInterval(timer);
-                $('p.timer-text').text('Tekrar gönder');
-                $('#loginFinishButton').prop('disabled', true);
+                clearInterval(timer); // Zamanlayıcıyı durdur
+                $('p.timer-text').text('Tekrar gönder').css('cursor','pointer');
+                smsTokenActive = false; // SMS token süresi doldu
             }
         }, 1000);
     }
@@ -165,7 +151,7 @@ $(document).ready(function () {
             smsCode += $(this).val();
         });
 
-        if (smsCode.length === 6) {
+        if (smsCode.length === 6 && smsTokenActive) {
             $.ajax({
                 url: "https://recep.valletbeta2.site/onbV2/login/sms-validate",
                 method: "POST",
@@ -178,10 +164,7 @@ $(document).ready(function () {
                 },
                 success: function (response) {
                     if (response.status === 'success') {
-                        // Token'ı çerezde sakla
                         setCookie('authToken', response.data.token, 7);
-
-                        // Başarılı SMS doğrulamasından sonra panele yönlendirme
                         setTimeout(function () {
                             window.location.href = `${$baseUrl}/${response.data.redirect}`;
                         }, 100);
@@ -194,6 +177,8 @@ $(document).ready(function () {
                     alert('Bir hata oluştu. Lütfen tekrar deneyin.');
                 }
             });
+        } else if (!smsTokenActive) {
+            alert('Süre doldu, lütfen yeni bir SMS isteyin.');
         }
     }
 

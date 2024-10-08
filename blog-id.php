@@ -4,11 +4,14 @@ require 'master/header.php';
 ?>
 
 <div class="hero-text-container blog-detail-page">
-    <div class="col-lg-8 col-md-10 mx-auto hero-content text-center">
-        <h6 class="fw-bold fs-16 text-center text-lgrey">20 Temmuz 2024</h6>
-        <h1 class="mb-4 text-white fw-bold fs-40 w-1052">Vonboarding Nedir?</h1>
-        <div class="d-flex justify-content-center">
-            <p class="mb-4 text-lgrey max-w560">Vonboarding, işletmelerin sanal POS ve ödeme sistemi sağlayıcılarına olan başvurularını tek bir yerden yönetmelerini sağlayan bir platformdur. </p>
+    <div class="col-lg-8 col-md-10 mx-auto hero-content text-center max-w796">
+        <h6 class="fs-16 text-center text-lgrey">8 Ekim 2024</h6>
+        <h1 class="mb-4 text-white fw-bold fs-40 w-1052">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h1>
+        <div class="d-flex flex-column align-items-center">
+            <p class=" text-lgrey mb-0">Günümüzde finansal dünyada başarılı olmak için hız, verimlilik ve operasyonel süreçlerin sorunsuz bir şekilde yönetilmesi büyük önem taşıyor. İşte tam
+                da bu noktada, Vonboarding devreye giriyor. İşletmelerin ve ödeme kuruluşlarının başvuru ve entegrasyon süreçlerini hızlandırarak, zaman ve kaynak kullanımını en verimli hale getiren
+                modern bir çözüm sunuyor.</p>
+            <p class="text-lgrey fw-bold text-center">Peki avantajları neler? </p>
         </div>
     </div>
 </div>
@@ -21,32 +24,40 @@ require 'master/header.php';
                     <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Makale Resmi" class="w-100">
                 </div>
                 <div class="col-12 mt-100">
-                    <h2 class="fs-32 fw-500 text-dgrey mb-3">V<span class="text-blue">ON</span>BOARDING</h2>
-                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Here</span> are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form,
-                        by injected humour, or
-                        randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden
-                        in the middle of text. All the Lorem Ipsum generators on.</p>
-                    <p class="fs-18 font-raleway text-user-color mb-4"><span
-                                class="fw-bold"><span
-                                    class="ms-5">It</span> is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                        The point of
-                        using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Verimli ve Hızlı Başvuru Yönetimi</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Geleneksel</span>başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının
+                        incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding,
+                        tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur.<span class="fw-bold"> Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur.</span>
+                        Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde
+                        sonuçlandırılır. </p>
+                </div>
+                <div class="col-12 mt-4">
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Entegre ve Şeffaf Süreç Yönetimi</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding,</span>
+                        sadece başvuru sürecini hızlandırmakla kalmaz; aynı zamanda süreçlerinizi tek bir ekran üzerinden yönetme olanağı sunar. Üye işyeri başvuruları ve banka
+                        izinlerinin yönetimini merkezi bir platformda yaparak her adımda tam kontrol sahibi olabilirsiniz. Tüm başvuru süreçlerini anlık olarak izleyebilir ve güncellemeleri anında
+                        takip edebilirsiniz.<span class="fw-bold"> Bu sayede operasyonel verimliliğinizi artırarak kaynaklarınızı daha verimli bir şekilde kullanabilirsiniz.</span></p>
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-12 mb-4">
                     <img src="<?= $baseUrl ?>/assets/images/blog-detail2.png" alt="Makale Resmi" class="w-100">
                 </div>
-                <div class="col-12 mt-3">
-                    <p class="fs-18 font-raleway text-user-color mb-4"><span class="ms-5">Here</span> are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or
-                        randomised words which </p>
-                    <p class="fs-18 font-raleway text-user-color mb-4"><span class="ms-5">Here</span> are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                        alteration in some form, by injected humour, or
-                        randomised words which don't
-                        look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the
-                        Lorem Ipsum generators on.</p>
+                <div class="col-12 mt-4">
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">İşinizi Büyütün: Müşterilerinize Değer Katın</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding,</span>işletmelerin iş süreçlerini hızlandırırken aynı zamanda büyümelerine de katkıda bulunur.
+                        Müşterilerinize Vonboarding aracılığıyla sanal POS sistemlerini önererek,
+                        onların işlerini kolaylaştırabilir ve ek gelir fırsatları yaratabilirsiniz. Sanal POS entegrasyonlarının sunduğu pratik çözümler sayesinde müşterileriniz işlemlerini daha hızlı
+                        gerçekleştirebilir ve ticari faaliyetlerini geliştirebilirler. Müşterilerinize değer katarken,<span class="fw-bold"> bu entegrasyonlardan elde edeceğiniz gelirlerin de keyfini çıkarabilirsiniz.</span>
+                    </p>
+                </div>
+                <div class="col-12 mt-4">
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Tüm Banka İzinlerini Tek Ekrandan Yönetin</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding </span>Vonboarding ile başvuru sürecinin her aşamasında tam kontrol sahibi olabilirsiniz. <span
+                                class="fw-bold">Tüm
+                        banka izinlerini tek bir ekrandan yönetin ve başvurularınızın durumunu kolayca takip edin.</span> Anlık bildirimler sayesinde her aşamadan haberdar olun ve potansiyel
+                        gecikmeleri
+                        ortadan kaldırın. Başvuru sürecindeki hız ve verimlilik, sadece operasyonel yükünüzü azaltmakla kalmaz, aynı zamanda müşteri memnuniyetini de artırır.</p>
                 </div>
             </div>
 
@@ -59,37 +70,22 @@ require 'master/header.php';
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="col-12">
-                    <h2 class="fs-32 fw-500 text-dark mb-4">V<span class="text-blue">ON</span>BOARDING Avantajları</h2>
-                    <div class="avantaj-box">
-                        <h3 class="fw-bold fs-18 font-raleway dot-title">Kolay Kullanım</h3>
-                        <p class="fs-18 font-raleway text-user-color mb-4 mt-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it
-                            over 2000
-                            years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
-                    </div>
-                    <div class="avantaj-box">
-                        <h3 class="fw-bold fs-18 font-raleway dot-title">Hızlı Çözüm</h3>
-                        <p class="fs-18 font-raleway text-user-color mb-4 mt-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it
-                            over 2000
-                            years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
-                    </div>
-                    <div class="avantaj-box pb-3 border-bottom">
-                        <h3 class="fw-bold fs-18 font-raleway dot-title">Kolay Entegrasyon</h3>
-                        <p class="fs-18 font-raleway text-user-color mb-4 mt-2">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-                            from 45 BC, making it
-                            over 2000
-                            years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia</p>
-                    </div>
+                <div class="col-12 mt-4 avantaj-box border-bottom">
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Ek Gelir Fırsatları ve Değer Yaratan Çözümler</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color">Vonboarding, müşterilerinize sunduğunuz sanal POS hizmetleri ile ek gelir elde etme fırsatları sunar. Gerekli belgeleri platforma
+                        yükleyerek sanal POS başvuru sürecini yönetin ve işlemleri hızla sonuçlandırın. <span class="fw-bold"> Bu sayede müşterilerinize değer katarken, siz de ek gelir fırsatlarından yararlanın.</span> Sanal POS
+                        entegrasyonlarından elde ettiğiniz gelirlerle işinizi büyütmeye odaklanın.</p>
+                    <p class="fs-18 font-raleway mb-4 text-user-color">Vonboarding, başvuru ve entegrasyon süreçlerinizde yaşadığınız zorlukları ortadan kaldıran,
+                        verimliliği artıran ve büyüme hedeflerinize ulaşmanızı kolaylaştıran modern bir çözümdür. Operasyonel yüklerinizi hafifletmek ve iş süreçlerinizi optimize etmek için
+                        Vonboarding ile tanışın, zamandan ve kaynaklarınızdan tasarruf ederek işinizi bir sonraki seviyeye taşıyın!</p>
                 </div>
             </div>
             <div class="d-flex justify-content-between flex-column flex-sm-row gap-3 gap-sm-0 align-items-center align-items-sm-start hover-effect">
                 <div class="d-flex user-info fs-14 align-items-center">
-                    <img src="<?= $baseUrl ?>/assets/images/pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
+                    <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
                     <div class="d-flex flex-column">
-                        <span class="fw-bold text-user-color max-content">Metehan Akcan</span>
-                        <span class="text-date max-content">20 Temmuz 2024</span>
+                        <span class="fw-bold text-user-color max-content">Tilbe Çınar</span>
+                        <span class="text-date max-content">8 Ekim 2024</span>
                     </div>
                 </div>
                 <div class="d-flex gap-2">
@@ -130,7 +126,7 @@ require 'master/header.php';
         </div>
 
         <div class="container pt-5 max-w1140 mt-3">
-            <h2 class="fs-32 fw-500 text-center">Diğer Makalelerimiz</h2>
+            <h2 class="fs-32 fw-semibold text-center">Diğer Makalelerimiz</h2>
             <div class="row">
                 <div class="col-12">
                     <div class="slick">
@@ -139,16 +135,16 @@ require 'master/header.php';
                                 <a href="blog-id.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/slider-img.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
                                         <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
                                         <p class="truncated-text font-raleway">
-                                            Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...
+                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
                                             <span class="text-date max-content fs-14">20 Temmuz 2024</span>
-                                            <div class="d-flex font-raleway fw-500 text-blue fs-14">
+                                            <div class="d-flex font-raleway fw-semibold text-blue fs-14">
                                                 <div class="max-content continue-text">Devamını Oku</div>
                                                 <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="12" cy="12" r="12" fill="#1C64FE"/>
@@ -175,16 +171,16 @@ require 'master/header.php';
                                 <a href="blog-id.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/slider-img.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
                                         <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
                                         <p class="truncated-text font-raleway">
-                                            Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...
+                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
                                             <span class="text-date max-content fs-14">20 Temmuz 2024</span>
-                                            <div class="d-flex font-raleway fw-500 text-blue fs-14">
+                                            <div class="d-flex font-raleway fw-semibold text-blue fs-14">
                                                 <div class="max-content continue-text">Devamını Oku</div>
                                                 <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="12" cy="12" r="12" fill="#1C64FE"/>
@@ -211,16 +207,16 @@ require 'master/header.php';
                                 <a href="blog-id.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/slider-img.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
                                         <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
                                         <p class="truncated-text font-raleway">
-                                            Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...
+                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
                                             <span class="text-date max-content fs-14">20 Temmuz 2024</span>
-                                            <div class="d-flex font-raleway fw-500 text-blue fs-14">
+                                            <div class="d-flex font-raleway fw-semibold text-blue fs-14">
                                                 <div class="max-content continue-text">Devamını Oku</div>
                                                 <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="12" cy="12" r="12" fill="#1C64FE"/>
@@ -247,16 +243,16 @@ require 'master/header.php';
                                 <a href="blog-id.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/slider-img.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
                                         <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
                                         <p class="truncated-text font-raleway">
-                                            Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form...
+                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
                                             <span class="text-date max-content fs-14">20 Temmuz 2024</span>
-                                            <div class="d-flex font-raleway fw-500 text-blue fs-14">
+                                            <div class="d-flex font-raleway fw-semibold text-blue fs-14">
                                                 <div class="max-content continue-text">Devamını Oku</div>
                                                 <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <circle cx="12" cy="12" r="12" fill="#1C64FE"/>

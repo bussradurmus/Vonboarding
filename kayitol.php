@@ -22,17 +22,17 @@ require 'master/header.php';
                             </div>
                             <div class="text-center">
                                 <div class="step" data-step="2">
-                                    <div class="step-text">SMS Doğrulama</div>
+                                    <div class="step-text">Şifre Belirleme</div>
                                 </div>
                             </div>
                             <div class="text-end">
                                 <div class="step" data-step="3">
-                                    <div class="step-text ">Şifre Belirleme</div>
+                                    <div class="step-text ">Kimlik</div>
                                 </div>
                             </div>
                             <div class="text-right">
                                 <div class="step" data-step="4">
-                                    <div class="step-text">Kimlik</div>
+                                    <div class="step-text">SMS Doğrulama</div>
                                 </div>
                             </div>
                         </div>
@@ -98,68 +98,6 @@ require 'master/header.php';
                 <div class="step-header">
                     <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
                     <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Lütfen +90 532 *** ** 55 numaralı telefonunuza gönderdiğimiz 6 haneli SMS kodunu giriniz</p>
-                    <!-- Progress Bar -->
-                    <div class="progress-container mb-3">
-                        <div class="fs-14 font-raleway d-flex justify-content-between">
-                            <div class="step" data-step="1">
-                                <div class="step-text">Bilgileriniz</div>
-                            </div>
-                            <div class="step active" data-step="2">
-                                <div class="step-text">SMS Doğrulama</div>
-                            </div>
-                            <div class="step" data-step="3">
-                                <div class="step-text">Şifre Belirleme</div>
-                            </div>
-                            <div class="step" data-step="4">
-                                <div class="step-text">Kimlik</div>
-                            </div>
-                        </div>
-                        <div class="progress-bar-container">
-                            <div class="progress-line">
-                                <div class="progress-line-active"></div>
-                            </div>
-                            <div class="progress-dots">
-                                <div class="dot active" data-step="1"></div>
-                                <div class="dot active" data-step="2"></div>
-                                <div class="dot" data-step="3"></div>
-                                <div class="dot" data-step="4"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- SMS doğrulama formu -->
-                <form>
-                    <div class="my-5 text-start d-flex flex-column align-items-center">
-                        <label class="font-raleway mb-4 text-lgrey">SMS Kodu</label>
-                        <div class="d-flex justify-content-evenly gap-2">
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                        </div>
-                        <div class="error-message text-danger" id="smsRgError" style="display: none;">SMS kodu geçerli değil</div>
-                    </div>
-                    <p class="text-white my-5" id="timerRg">Tekrar gönder (180sn)</p>
-                    <div class="d-flex justify-content-between button-container my-5">
-                        <button type="button" class="btn button-outline fs-14 font-raleway fw-semibold back-button">Geri Dön</button>
-                        <button type="button" class="btn btn-primary" id="nextButtonStep2" disabled>Devam Et</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </main>
-</div>
-
-<div id="step-3" class="page position-relative kayit-page mt-150 step-container" style="display:none;">
-    <main>
-        <div class="container d-flex justify-content-center">
-            <div class="form-container text-center w550">
-                <div class="step-header">
-                    <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                    <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
                     <p class="form-subtitle text-lgrey mb-5 font-raleway">Şifrenizi belirleyin</p>
 
                     <!-- Progress Bar -->
@@ -168,14 +106,14 @@ require 'master/header.php';
                             <div class="step" data-step="1">
                                 <div class="step-text">Bilgileriniz</div>
                             </div>
-                            <div class="step" data-step="2">
-                                <div class="step-text">SMS Doğrulama</div>
-                            </div>
-                            <div class="step active" data-step="3">
+                            <div class="step active" data-step="2">
                                 <div class="step-text">Şifre Belirleme</div>
                             </div>
-                            <div class="step" data-step="4">
+                            <div class="step " data-step="3">
                                 <div class="step-text">Kimlik</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-text">SMS Doğrulama</div>
                             </div>
                         </div>
                         <div class="progress-bar-container">
@@ -185,7 +123,7 @@ require 'master/header.php';
                             <div class="progress-dots">
                                 <div class="dot active" data-step="1"></div>
                                 <div class="dot active" data-step="2"></div>
-                                <div class="dot active" data-step="3"></div>
+                                <div class="dot " data-step="3"></div>
                                 <div class="dot" data-step="4"></div>
                             </div>
                         </div>
@@ -219,7 +157,7 @@ require 'master/header.php';
                     <!-- Geri Dön ve Devam Et Butonları -->
                     <div class="d-flex justify-content-between button-container my-5">
                         <button type="button" class="btn button-outline fs-14 font-raleway fw-semibold back-button">Geri Dön</button>
-                        <button type="button" class="btn btn-primary" id="nextButtonStep3">Devam Et</button>
+                        <button type="button" class="btn btn-primary" id="nextButtonStep2">Devam Et</button>
                     </div>
                 </form>
             </div>
@@ -227,14 +165,14 @@ require 'master/header.php';
     </main>
 </div>
 
-<div id="step-4" class="page position-relative kayit-page mt-150 step-container" style="display:none;">
+<div id="step-3" class="page position-relative kayit-page mt-150 step-container" style="display:none;">
     <main>
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
                 <div class="step-header">
                     <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
                     <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
-                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik resimlerini yükleyin</p>
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Kimlik resimlerini yükleyin </p>
 
                     <!-- Progress Bar -->
                     <div class="progress-container mb-3">
@@ -243,13 +181,13 @@ require 'master/header.php';
                                 <div class="step-text">Bilgileriniz</div>
                             </div>
                             <div class="step" data-step="2">
-                                <div class="step-text">SMS Doğrulama</div>
-                            </div>
-                            <div class="step " data-step="3">
                                 <div class="step-text">Şifre Belirleme</div>
                             </div>
-                            <div class="step active" data-step="4">
+                            <div class="step active" data-step="3">
                                 <div class="step-text">Kimlik</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-text">SMS Doğrulama</div>
                             </div>
                         </div>
                         <div class="progress-bar-container">
@@ -260,7 +198,7 @@ require 'master/header.php';
                                 <div class="dot active" data-step="1"></div>
                                 <div class="dot active" data-step="2"></div>
                                 <div class="dot active" data-step="3"></div>
-                                <div class="dot active" data-step="4"></div>
+                                <div class="dot " data-step="4"></div>
                             </div>
                         </div>
                     </div>
@@ -295,8 +233,71 @@ require 'master/header.php';
                 <!-- Geri Dön ve Devam Et Butonları -->
                 <div class="d-flex justify-content-between button-container my-5">
                     <button type="button" class="btn button-outline fs-14 font-raleway fw-semibold back-button">Geri Dön</button>
-                    <button type="button" class="btn btn-primary" id="finishButton" disabled>Kaydı Tamamla</button>
+                    <button type="button" class="btn btn-primary" id="nextButtonStep3" disabled>Devam Et</button>
                 </div>
+
+            </div>
+        </div>
+    </main>
+</div>
+
+<div id="step-4" class="page position-relative kayit-page mt-150 step-container" style="display:none;">
+    <main>
+        <div class="container d-flex justify-content-center">
+            <div class="form-container text-center w550">
+                <div class="step-header">
+                    <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
+                    <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
+                    <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen <span class="fw-bold user-phone"> +90 532 *** ** 55</span> numaralı telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>                    <!-- Progress Bar -->
+                    <div class="progress-container mb-3">
+                        <div class="fs-14 font-raleway d-flex justify-content-between">
+                            <div class="step" data-step="1">
+                                <div class="step-text">Bilgileriniz</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-text">Şifre Belirleme</div>
+                            </div>
+                            <div class="step " data-step="3">
+                                <div class="step-text">Kimlik</div>
+                            </div>
+                            <div class="step active" data-step="4">
+                                <div class="step-text">SMS Doğrulama</div>
+                            </div>
+                        </div>
+                        <div class="progress-bar-container">
+                            <div class="progress-line">
+                                <div class="progress-line-active"></div>
+                            </div>
+                            <div class="progress-dots">
+                                <div class="dot active" data-step="1"></div>
+                                <div class="dot active" data-step="2"></div>
+                                <div class="dot active" data-step="3"></div>
+                                <div class="dot active" data-step="4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SMS doğrulama formu -->
+                <form>
+                    <div class="my-5 text-start d-flex flex-column align-items-center">
+                        <label class="font-raleway mb-4 text-lgrey">SMS Kodu</label>
+                        <div class="d-flex justify-content-evenly gap-2">
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
+                        </div>
+                        <div class="error-message text-danger" id="smsRgError" style="display: none;">SMS kodu geçerli değil</div>
+                    </div>
+                    <p class="text-white my-5" id="timerRg">Tekrar gönder (180sn)</p>
+                    <div class="d-flex justify-content-between button-container my-5">
+                        <button type="button" class="btn button-outline fs-14 font-raleway fw-semibold back-button">Geri Dön</button>
+                        <button type="button" class="btn btn-primary" id="finishButton" disabled>Kaydı Tamamla</button>
+                    </div>
+
+                </form>
             </div>
         </div>
     </main>
@@ -319,13 +320,32 @@ require 'master/header.php';
         </div>
     </main>
 </div>
+
+<!-- Hata Mesajı Modali -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Hata mesajı burada gözükecek.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
 <script src="js/script.js?v=<?= time() ?>"></script>
 <script src="js/form.js?v=<?= time() ?>"></script>
 <script src="js/register.js?v=<?= time() ?>"></script>
 </body>
 
 </html>
+
+
+
+

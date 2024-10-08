@@ -39,7 +39,6 @@ require 'master/header.php';
     </main>
 </div>
 
-
 <div id="login-step-2" class="login-page" style="display:none;">
     <main>
         <div class="container d-flex justify-content-center mt-150">

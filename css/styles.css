@@ -364,6 +364,10 @@ footer {
     height: 60px;
     width: 60px;
 }
+.btn{
+    height: 52px;
+    font-family: 'Raleway';
+}
 .page-container:has(.blog-detail-page) .hero-banner {
     background-image: url(https://busra.valletbeta2.site/Vonboarding/assets/images/blog-detail.png) !important;
     background-color: unset;
@@ -1073,13 +1077,13 @@ input:focus, textarea:focus {
 .hover-link-underline:hover{
     text-decoration: underline;
 }
-#step-2 input,
-#login-step-2 input{
+#step-4 input,
+#login-step-4 input{
     max-width: 50px;
 }
 .file-upload-box{
     border-radius: 30px;
-    border: 1px dashed #626C85;
+    border-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/border-dashed.png') 30 / 19px round;
     padding: 20px;
     cursor: pointer;
     min-height: 160px;
@@ -1106,3 +1110,25 @@ input:focus, textarea:focus {
 .step-header .form-subtitle{
     min-height: 50px;
 }
+
+.header-logo-container:hover .rotating-group {
+    animation: rotateZ360 0.3s ease-out;
+}
+@keyframes rotateZ360 {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(380deg); }
+}
+.rotating-group {
+    transform-origin: 107.7px 14.7px; /* Approximate center point of the joining line */
+}
+.header-logo-container:hover .blue-object {
+    filter: url(#hover-shadow);
+}
+
+.header-logo-container:hover path.hover-blue:not(.blue-object){
+    fill: #1C64FE;
+}
+.header-logo-container:hover path.hover-dark-blue:not(.blue-object){
+    fill: #0245CA;
+}
+

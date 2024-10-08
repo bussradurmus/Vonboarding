@@ -11,12 +11,12 @@ require 'master/header.php';
     <div class="col-lg-8 col-md-10 mx-auto hero-content">
         <div class="mb-4 text-white">
             <img src="<?= $baseUrl ?>assets/images/Frame.svg" alt="Wallet" class="me-2">
-            <span class="text-underline text-lgrey fw-bold font-raleway">Güvencesiyle </span>
+            <span class="text-underline text-lgrey fw-bold font-raleway">Güvencesiyle</span>
         </div>
         <h1 class="mb-4 text-white fw-bold"> Başvuru Süreçlerini Hızlandırın,<br>İşinizi Büyütün!</h1>
         <p class="mb-4 text-lgrey font-raleway">Başvuruların inceleme ve platform üzerinden yönetim,
             Vonboarding <br> ile daha hızlı ve verimli çözümlere ulaşabilirsiniz.</p>
-        <button class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold padding18-24">Hemen Başla</button>
+        <button class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold">Hemen Başla</button>
     </div>
 </div>
 <div class="container metrics-container align-content-center text-white position-relative mt-4">
@@ -108,7 +108,7 @@ require 'master/header.php';
                     entegrasyon süreçlerini tek bir yerden yürütüp, onboarding süreçlerinizi hızlandırır.
                     Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
                 <div class="d-flex justify-content-center align-items-center mt-4 vbutton-container">
-                    <button class="btn btn-primary btn-lg me-24">Hemen Başla</button>
+                    <a class="btn btn-primary me-24">Hemen Başla</a>
                     <a href="https://vallet.gitbook.io/vonboarding" class="btn button-outline">Dökümantasyon</a>
                 </div>
 

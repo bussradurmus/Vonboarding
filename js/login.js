@@ -116,7 +116,6 @@ $(document).ready(function () {
                     } else {
                         // Token'ı çerezde sakla (örneğin 7 gün boyunca)
                         setCookie('authToken', response.data.token, 7);
-console.log(setCookie('authToken', response.data.token))
                         // Başarılı giriş yapıldığında panele yönlendirme
                         setTimeout(function () {
                             window.location.href = `${$baseUrl}/${response.data.redirect}`;

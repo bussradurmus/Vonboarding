@@ -8,6 +8,17 @@ $(document).ready(function () {
             $this.find('.navbar-toggler-icon').css('background-image', 'url(data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 30 30\'%3E%3Cpath stroke=\'white\' stroke-linecap=\'round\' stroke-miterlimit=\'10\' stroke-width=\'2\' d=\'M6 6l18 18M6 24L24 6\'/%3E%3C/svg%3E)');
         }
     });
+
+    const currentPath = window.location.href; // Tam URL'yi alıyoruz
+    console.log(currentPath); // Debug amaçlı console.log
+
+    $('.nav-item a').each(function () {
+        const href = $(this).attr('href'); // Her bir href'i alıyoruz
+        if (href && (currentPath === href)) { // Tam URL eşleşiyor mu veya URL, href ile başlıyor mu kontrol ediyoruz
+            $(this).parent().addClass('active'); // Eşleşiyorsa 'active' sınıfını ekle
+        }
+    });
+
 // Türkçe karakterleri destekleyen isim/soyisim doğrulama
     function validateName(name) {
         return /^[a-zA-ZçÇğĞıİöÖşŞüÜ\s]+$/.test(name);  // Türkçe karakterleri ve boşlukları kabul eden regex

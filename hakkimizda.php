@@ -1,3 +1,4 @@
+
 <?php
 global $baseUrl;
 require 'master/header.php';
@@ -11,15 +12,15 @@ require 'master/header.php';
             <div class="col-lg-8 col-md-10 mx-auto hero-content text-center mt-150 mb-5">
                 <h1 class="mb-4 text-white fw-bold">HAKKIMIZDA</h1>
                 <div class="d-flex justify-content-center">
-                    <p class="mb-4 text-lgrey font-raleway fs-18 max-w560"> Vonboarding, geleneksel ve karmaşık başvuru süreçlerini kolaylaştırarak, şirketler ve ödeme kuruluşları arasında bir köprü
+                    <p class="mb-4 text-lgrey font-raleway fs-18 max-w560">Vonboarding, geleneksel ve karmaşık başvuru süreçlerini kolaylaştırarak, şirketler ve ödeme kuruluşları arasında bir köprü
                         görevi görür. Bu sayede, üye işyeri başvuruları daha hızlı sonuçlanır, gerekli belgeler ve bilgiler anında ödeme kuruluşuna iletilir, operasyonel süreçler kısalır ve zaman
-                        kaybı
-                        en aza indirilir.</p>
+                        kaybı en aza indirilir.</p>
                 </div>
             </div>
         </div>
         <div class="container  max-w1140">
-            <h2 class="mb-5 text-grey letterSpace-45 text-uppercase mt-150">EKOSİSTEMİMİZİN YENİ TEKLİSİ!</h2>
+            <h2 class="mb-5 text-grey letterSpace-45 text-uppercase mt-150">EKOSİSTEMİMİZİN YENİ TEKLİSİ! <br>
+                VONBOARDING</h2>
         </div>
         <div class="container  max-w1140">
             <div class="row g-5">
@@ -34,27 +35,24 @@ require 'master/header.php';
                 <div class="col-md-6">
                     <div class="hakkimizda-box">
                         <h3 class="fw-600 fs-32 text-white">TEK PLATFORM</h3>
-                        <p class="text-lgrey fs-18">Tüm süreçleri tek bir platformdan yönetme imkanı sunarak, ödeme kuruluşları ve işletmeler arasında şeffaf bir iletişim sağlar. Böylece işletmeler,
-                            işlerini büyütmek ve müşteri memnuniyetini artırmak için daha fazla zaman ve enerji kazanır.</p>
+                        <p class="text-lgrey fs-18">Tüm süreçleri tek bir platformdan yönetme imkanı sunarak, ödeme kuruluşları ve işletmeler arasında şeffaf bir iletişim sağlar. Böylece işletmeler, işlerini büyütmek ve müşteri memnuniyetini artırmak için daha fazla zaman ve enerji kazanır.</p>
                         <img src="<?= $baseUrl ?>/assets/images/hakkimizda2.svg" alt="Image" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="hakkimizda-box">
                         <h3 class="fw-600 fs-32 text-white">EK GELİR FIRSATI</h3>
-                        <p class="text-lgrey fs-18">Müşterilerinize Vonboarding aracılığıyla sanal POS sistemlerini önererek, onların işlerini kolaylaştırabilir ve ek gelir fırsatları
-                            yaratabilirsiniz.</p>
-                        <img src="<?= $baseUrl ?>/assets/images/hakkimizda4.svg" alt="Image" class="img-fluid">
+                        <p class="text-lgrey fs-18">Müşterilerinize Vonboarding aracılığıyla sanal POS sistemlerini önererek, onların işlerini kolaylaştırabilir ve ek gelir fırsatları yaratabilirsiniz.</p>
+                        <img src="<?= $baseUrl ?>/assets/images/hakkimizda3.svg" alt="Image" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="hakkimizda-box">
                         <h3 class="fw-600 fs-32 text-white">YÜKSEK GÜVENLİK</h3>
-                        <p class="text-lgrey fs-18">Tamamen kendi kurduğumuz özel şifreleme sistemimiz sayesinde dolandırıcılık risklerini en aza indiren güvenlik önlemleri sunar.</p>
-                        <img src="<?= $baseUrl ?>/assets/images/hakkimizda3.svg" alt="Image" class="img-fluid">
+                        <p class="text-lgrey fs-18">Tamamen kendi kurduğumuz özel şifreleme sistemimiz sayesinde dolandırıcılık risklerini en aza indiren güvenlik önlemleri sunar. </p>
+                        <img src="<?= $baseUrl ?>/assets/images/hakkimizda4.svg" alt="Image" class="img-fluid">
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="container  max-w1140">
@@ -64,14 +62,12 @@ require 'master/header.php';
                         <h2 class="text-uppercase letterSpace-45 mb-4">MISY<span class="text-blue">ON</span>UMUZ</h2>
                         <p class="font-raleway fs-18 text-lgrey">Üye işyeri başvuru ve bildirim süreçlerini tek bir noktada toplayan ve şirketler ile ödeme kuruluşları arasında güçlü bir köprü görevi
                             görmek. İşletmelerin başvuru süreçlerini modern bir anlayışla ele alarak, operasyonel yüklerini minimuma indiriyor ve süreçlerin daha şeffaf, hızlı ve verimli olmasını
-                            sağlıyoruz.
-                        </p>
+                            sağlıyoruz.</p>
                     </div>
                     <div>
                         <h2 class="text-uppercase letterSpace-45 mb-4">VİZY<span class="text-blue">ON</span>UMUZ</h2>
                         <p class="font-raleway fs-18 text-lgrey">Dijital çağın hızla gelişen dünyasında, finans ve ödeme süreçlerinin karmaşıklığını ortadan kaldırarak, üye işyeri başvuru süreçlerini
-                            en hızlı ve sorunsuz hale getirmek ve işletmelerin büyüme yolculuğunda zamandan ve kaynaklardan maksimum verim elde etmelerini sağlamak.
-                        </p>
+                            en hızlı ve sorunsuz hale getirmek ve işletmelerin büyüme yolculuğunda zamandan ve kaynaklardan maksimum verim elde etmelerini sağlamak. </p>
                     </div>
                 </div>
             </div>
@@ -136,4 +132,3 @@ require 'master/header.php';
 </body>
 
 </html>
-

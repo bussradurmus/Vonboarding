@@ -1070,7 +1070,9 @@ input:focus, textarea:focus {
     color: #FFFFFF;
     font-weight: bold;
 }
-
+input.form-control.sms-input.text-center {
+    width: 50px;
+}
 .dot.active {
     background-color: var(--primary-color);
 }
@@ -1087,7 +1089,7 @@ input:focus, textarea:focus {
 .file-upload-box{
     border-radius: 30px;
     border-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/border-dashed.png') 30 / 19px round;
-    padding: 20px;
+    padding: 40px 20px;
     cursor: pointer;
     min-height: 160px;
 }
@@ -1163,4 +1165,11 @@ input:focus, textarea:focus {
     border: 1px solid #e2e3e7;
     padding: 32px;
     border-radius: 16px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color:white;
 }

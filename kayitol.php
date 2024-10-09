@@ -73,7 +73,6 @@ require 'master/header.php';
                         <div class="d-flex">
                             <select class="form-select w-25">
                                 <option value="+90">+90</option>
-                                <option value="+1">+1</option>
                             </select>
                             <input type="tel" class="form-control ms-2" id="phoneRg" required>
                         </div>

@@ -357,11 +357,6 @@ $(document).ready(function () {
                         $('.step-container').hide();
                         $('#completedSection').show();
                     }
-                },
-                error: function (xhr, status, error) {
-                    // AJAX isteği başarısız olursa
-                    $('#smsRgError').text('Bir hata oluştu. Lütfen tekrar deneyin.').show();
-                    $('.sms-rg-input').addClass('error-border');
                 }
             });
         } else {
@@ -445,7 +440,11 @@ $(document).ready(function () {
         }
     });
     $('#passwordInput, #confirmPasswordInput').on('blur', checkStep2Validity);
-    $('.sms-rg-input').on('input', validateSmsCode);
+    $('.sms-rg-input').on('input', function () {
+        $('#smsRgError').hide();
+        $('.sms-rg-input').removeClass('error-border');
+        validateSmsCode();
+    });
     showStep(currentStep);
     updateProgressBar(currentStep);
 });

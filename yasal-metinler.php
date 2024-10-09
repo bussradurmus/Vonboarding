@@ -15,25 +15,25 @@ require 'master/header.php';
     <div class="container mt-100">
         <div class="row">
             <!-- Sidebar -->
-            <div class="col-lg-3 mb-md-5">
+            <div class="col-lg-3 mb-5 mb-lg-0">
                 <div class="tab-container">
-                    <div class="text-dark fw-bold mb-4">
-                        <img src="<?= $baseUrl ?>assets/images/contract.svg" alt="Contract Icon">
+                    <div class="text-dark fw-bold mb-4 d-flex align-items-end">
+                        <img src="<?= $baseUrl ?>assets/images/contract.svg" alt="Contract Icon" class="me-2">
                         Sözleşmeler
                     </div>
-                    <a href="#kvkk" class="list-group-item list-group-item-action contract-nav-link mb-2 text-user-color active" id="kvkk-link">
+                    <a href="#kvkk-content" class="list-group-item list-group-item-action contract-nav-link mb-2 text-user-color active" id="kvkk-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 12 5" fill="none" class="nav-icon">
                             <rect width="12" height="5" rx="2.5" fill="#1C64FE"/>
                         </svg>
                         KVKK Metni
                     </a>
-                    <a href="#cookie" class="list-group-item list-group-item-action contract-nav-link text-user-color mb-2" id="cookie-link">
+                    <a href="#cookie-content" class="list-group-item list-group-item-action contract-nav-link text-user-color mb-2" id="cookie-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 12 5" fill="none" class="nav-icon">
                             <rect width="12" height="5" rx="2.5" fill="#1C64FE"/>
                         </svg>
                         Çerez Yönetimi
                     </a>
-                    <a href="#privacy" class="list-group-item list-group-item-action contract-nav-link text-user-color mb-2" id="privacy-link">
+                    <a href="#privacy-content" class="list-group-item list-group-item-action contract-nav-link text-user-color mb-2" id="privacy-link">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 12 5" fill="none" class="nav-icon">
                             <rect width="12" height="5" rx="2.5" fill="#1C64FE"/>
                         </svg>

@@ -25,7 +25,7 @@ require 'master/header.php';
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding Nedir?</h5>
+                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h5>
                                     <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
@@ -140,7 +140,7 @@ require 'master/header.php';
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
-                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding Nedir?</h5>
+                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h5>
                                 </div>
                             </div>
                         </a>

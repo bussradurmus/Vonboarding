@@ -80,7 +80,7 @@ require 'master/header.php';
                         <div class="error-message text-danger mt-1" style="display: none;" id="phoneRgError">Lütfen geçerli bir telefon numarası girin</div>
                     </div>
                     <div class="d-flex justify-content-between button-container my-5">
-                        <button type="button" class="btn button-outline fs-14 font-raleway fw-semibold" id="back">Vazgeç</button>
+                        <a href="<?= $baseUrl ?>" class="btn button-outline fs-14 font-raleway fw-semibold" id="back">Vazgeç</a>
                         <button type="button" class="btn btn-primary" id="nextButtonPrg" disabled>Devam Et</button>
                     </div>
                 </form>
@@ -282,12 +282,12 @@ require 'master/header.php';
                     <div class="my-5 text-start d-flex flex-column align-items-center">
                         <label class="font-raleway mb-4 text-lgrey">SMS Kodu</label>
                         <div class="d-flex justify-content-evenly gap-2">
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input sms-rg-input text-center" required>
                         </div>
                         <div class="error-message text-danger" id="smsRgError" style="display: none;">SMS kodu geçerli değil</div>
                     </div>
@@ -322,7 +322,7 @@ require 'master/header.php';
 </div>
 
 <!-- Hata Mesajı Modali -->
-<div class="toast-container position-fixed top-0 end-0 p-3">
+<div class="toast-container position-fixed top-50 end-50 p-3">
     <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
             <div class="toast-body">

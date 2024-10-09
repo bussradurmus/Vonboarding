@@ -30,7 +30,7 @@ require 'master/header.php';
                 </div>
 
                 <div class="my-5">
-                    <a href="<?= $baseUrl ?>sifremi-unuttum.php" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
+                    <a href="https://vonboarding-eykf.vercel.app/forgot-password" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
                     <div class="d-flex justify-content-between mt-5 font-raleway">
                         <button type="button" class="btn btn-primary w-100" id="loginNextButton" disabled>Devam Et</button>
                     </div>
@@ -52,12 +52,12 @@ require 'master/header.php';
                 <div class="mb-3 text-start d-flex flex-column align-items-center">
                     <label class="font-raleway mb-4 text-lgrey fw-bold">SMS Kodu</label>
                     <div class="d-flex justify-content-evenly gap-2">
-                        <input type="text" maxlength="1" class="form-control sms-input" required>
-                        <input type="text" maxlength="1" class="form-control sms-input" required>
-                        <input type="text" maxlength="1" class="form-control sms-input" required>
-                        <input type="text" maxlength="1" class="form-control sms-input" required>
-                        <input type="text" maxlength="1" class="form-control sms-input" required>
-                        <input type="text" maxlength="1" class="form-control sms-input" required>
+                        <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                        <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                        <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                        <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                        <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                        <input type="text" maxlength="1" class="form-control sms-input text-center" required>
                     </div>
                     <div class="error-message text-danger" id="smsLoginError" style="display: none;">SMS kodu geçerli değil</div>
                 </div>

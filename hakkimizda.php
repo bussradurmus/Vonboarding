@@ -20,7 +20,7 @@ require 'master/header.php';
         </div>
         <div class="container  max-w1140">
             <h2 class="mb-5 text-grey letterSpace-45 text-uppercase mt-150 text-center lh-13">EKOSİSTEMİMİZİN YENİ TEKLİSİ! <br>
-                VONBOARDING</h2>
+                V<span class="text-blue">ON</span>BOARDING</h2>
         </div>
         <div class="container  max-w1140">
             <div class="row g-5">
@@ -107,7 +107,7 @@ require 'master/header.php';
                                         class="text-blue">on</span> Başlasın!</h3>
                             <p class="text-grey fs-18 lh-23">Ödeme sistemlerine sorunsuz entegrasyon için hemen <br>Vonboarding’e
                                 katılın ve süreci hızlandırın!</p>
-                            <button class="btn btn-primary mt-4 fs-14 resp-with100">Hemen Başla</button>
+                            <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
                         </div>
                     </div>
 

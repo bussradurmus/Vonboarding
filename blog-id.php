@@ -138,7 +138,7 @@ require 'master/header.php';
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
-                                        <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
+                                        <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
                                         <p class="truncated-text font-raleway">
                                            Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
@@ -174,7 +174,7 @@ require 'master/header.php';
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
-                                        <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
+                                        <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
                                         <p class="truncated-text font-raleway">
                                            Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
@@ -210,7 +210,7 @@ require 'master/header.php';
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
-                                        <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
+                                        <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
                                         <p class="truncated-text font-raleway">
                                            Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
@@ -246,7 +246,7 @@ require 'master/header.php';
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
                                     </div>
                                     <div class="slide-content">
-                                        <h4 class="fs-18 fw-bold">Vonboarding Nedir?</h4>
+                                        <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
                                         <p class="truncated-text font-raleway">
                                            Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>

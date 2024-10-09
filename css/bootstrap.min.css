@@ -5436,9 +5436,11 @@ textarea.form-control-lg {
 
 .list-group-item.active {
     z-index: 2;
-    color: var(--bs-list-group-active-color);
+    color: background: #434550;
+    font-weight: 500;
     background-color: var(--bs-list-group-active-bg);
-    border-color: var(--bs-list-group-active-border-color)
+    border-color: var(--bs-list-group-active-border-color);
+    width: max-content;
 }
 
 .list-group-item + .list-group-item {

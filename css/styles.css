@@ -17,6 +17,7 @@ a {
 body, html {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 .page-container {
     display: flex;
@@ -798,7 +799,7 @@ input:focus, textarea:focus {
 
 @media (min-width: 769px) {
     .slick .item .bg {
-        height: 475px;
+        height: 600px;
         margin: 0 -40px;
         -webkit-transform: scale3d(0.8, 0.8, 1);
         transform: scale3d(0.8, 0.8, 1);
@@ -1073,7 +1074,7 @@ input:focus, textarea:focus {
 .dot.active {
     background-color: var(--primary-color);
 }
-.button-container button{
+.button-container .btn{
     width: 43%;
 }
 .hover-link-underline:hover{
@@ -1138,18 +1139,11 @@ input:focus, textarea:focus {
 .header-logo-container:hover path.hover-dark-blue:not(.blue-object){
     fill: #0245CA;
 }
-.contract-page .content-section {
-    display: none;
-}
-.contract-page .content-section.active {
-    display: block;
-}
-.nav-icon {
+.contract-page .nav-icon {
     margin-right: 8px;
     display: none;
     vertical-align: middle;
 }
-
 .contract-nav-link.active .nav-icon {
     display: inline-block;
 }

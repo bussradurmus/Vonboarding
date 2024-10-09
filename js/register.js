@@ -103,11 +103,40 @@ $(document).ready(function () {
         formData.append(key, value);
     }
 
-    $('#frontUploadBox .up-img').click(function () {
-        $('#frontIDUpload').click();
+    // Geri Butonu İçin Tıklama Olayı
+    $('.back-button').click(function () {
+        if (currentStep > 1) {
+            currentStep--;
+            showStep(currentStep);
+            updateProgressBar(currentStep);
+
+            // Eğer 4. adımdan geri dönülüyorsa, timer'ı durdurun
+            if (currentStep === 3) {
+                clearInterval(timerInterval);
+                $('#timerRg').text('Tekrar gönder (180sn)').css('cursor', 'default');
+                $('#finishButton').prop('disabled', true);
+            }
+        }
     });
 
-    $('#frontIDUpload').on('change', function () {
+    // Kutuya tıklama olayını bağla
+    function bindFrontIdCardClick() {
+        $('#frontIdCard').on('click.upload', function () {
+            $('#frontIDUpload').click();
+        });
+    }
+
+    // Kutuya tıklama olayını kaldır
+    function unbindFrontIdCardClick() {
+        $('#frontIdCard').off('click.upload');
+    }
+
+    // Sayfa yüklendiğinde tıklama olayını bağla
+    bindFrontIdCardClick();
+
+    // Dosya seçildiğinde
+    $('#frontIDUpload').on('change', function (event) {
+        event.stopPropagation();
         let file = this.files[0];
         if (file && isValidFileType(file)) {
             isFrontUploaded = true;
@@ -117,12 +146,24 @@ $(document).ready(function () {
             $('#frontUploadBox label').text(fileName);
             updateFormData('userKimlikOn', file);
             checkStep3Validity();
+
+            // Dosya yüklendikten sonra tıklama olayını kaldır
+            unbindFrontIdCardClick();
+            // İsteğe bağlı: Kutuya 'disabled' sınıfı ekleyerek stil değişikliği yapabilirsiniz
+            $('#frontIdCard').addClass('disabled');
         } else {
             alert('Yalnızca JPEG, PNG veya PDF dosyaları yükleyebilirsiniz.');
         }
     });
 
-    $('#frontUploadBox .del-img').click(function () {
+    // Dosya seçme input'una tıklanınca olayın yukarı yayılmasını engelle
+    $('#frontIDUpload').click(function(event) {
+        event.stopPropagation();
+    });
+
+    // Silme ikonuna tıklayınca
+    $('#frontUploadBox .del-img').click(function (event) {
+        event.stopPropagation();
         $('#frontIDUpload').val('');
         isFrontUploaded = false;
         $('#frontUploadBox .up-img').show();
@@ -130,13 +171,29 @@ $(document).ready(function () {
         $('#frontUploadBox label').text('Kimlik Ön Yüzünü Yükleyiniz');
         formData.delete('userKimlikOn');
         checkStep3Validity();
-    });
 
-    $('#backUploadBox .up-img').click(function () {
-        $('#backIDUpload').click();
+        // Dosya silindikten sonra tıklama olayını tekrar bağla
+        bindFrontIdCardClick();
+        // İsteğe bağlı: Kutuya 'disabled' sınıfını kaldırarak stil değişikliğini geri alabilirsiniz
+        $('#frontIdCard').removeClass('disabled');
     });
+// Arka Yüz için fonksiyonlar ve olaylar
+    function bindBackIdCardClick() {
+        $('#backIdCard').on('click.upload', function () {
+            $('#backIDUpload').click();
+        });
+    }
 
-    $('#backIDUpload').on('change', function () {
+    function unbindBackIdCardClick() {
+        $('#backIdCard').off('click.upload');
+    }
+
+// Sayfa yüklendiğinde tıklama olayını bağla
+    bindBackIdCardClick();
+
+// Dosya seçildiğinde
+    $('#backIDUpload').on('change', function (event) {
+        event.stopPropagation();
         let file = this.files[0];
         if (file && isValidFileType(file)) {
             isBackUploaded = true;
@@ -146,12 +203,24 @@ $(document).ready(function () {
             $('#backUploadBox label').text(fileName);
             updateFormData('userKimlikArka', file);
             checkStep3Validity();
+
+            // Dosya yüklendikten sonra tıklama olayını kaldır
+            unbindBackIdCardClick();
+            // Kutuya 'disabled' sınıfı ekleyerek stil değişikliği yapabilirsiniz
+            $('#backIdCard').addClass('disabled');
         } else {
             alert('Yalnızca JPEG, PNG veya PDF dosyaları yükleyebilirsiniz.');
         }
     });
 
-    $('#backUploadBox .del2-img').click(function () {
+// Dosya seçme input'una tıklanınca olayın yukarı yayılmasını engelle
+    $('#backIDUpload').click(function(event) {
+        event.stopPropagation();
+    });
+
+// Silme ikonuna tıklayınca
+    $('#backUploadBox .del2-img').click(function (event) {
+        event.stopPropagation();
         $('#backIDUpload').val('');
         isBackUploaded = false;
         $('#backUploadBox .up-img').show();
@@ -159,6 +228,11 @@ $(document).ready(function () {
         $('#backUploadBox label').text('Kimlik Arka Yüzünü Yükleyiniz');
         formData.delete('userKimlikArka');
         checkStep3Validity();
+
+        // Dosya silindikten sonra tıklama olayını tekrar bağla
+        bindBackIdCardClick();
+        // 'disabled' sınıfını kaldırarak kutuyu tekrar tıklanabilir hale getiriyoruz
+        $('#backIdCard').removeClass('disabled');
     });
 
     $('.sms-rg-input').on('input', function () {
@@ -214,27 +288,14 @@ $(document).ready(function () {
                 contentType: 'application/json',
                 success: function (response) {
                     if (response.status === "error") {
-                        $('#errorToast .toast-body').text(response.message);
-                        var toast = new bootstrap.Toast($('#errorToast'));
-                        toast.show();
+                        $('#phoneRgError').text(response.message).show();
+                        $('#phoneRg').addClass('error-border');
                     } else {
                         console.log('SMS gönderildi, kodu girin.');
                         smsToken = response.data.smsToken;
                         currentStep = 2;
                         showStep(currentStep);
                         updateProgressBar(currentStep);
-                    }
-                },
-                error: function(xhr, status, error) {
-                    const response = xhr.responseJSON;
-                    if (response && response.message) {
-                        $('#errorToast .toast-body').text(response.message);
-                        var toast = new bootstrap.Toast($('#errorToast'));
-                        toast.show();
-                    } else {
-                        $('#errorToast .toast-body').text(response.message);
-                        var toast = new bootstrap.Toast($('#errorToast'));
-                        toast.show();
                     }
                 }
             });
@@ -281,22 +342,34 @@ $(document).ready(function () {
                 processData: false,
                 contentType: false,
                 success: function (response) {
-                    $('.step-container').hide();
-                    $('#completedSection').show();
+                    if (response.status === "error") {
+                        // Hata durumunda mesajı '#smsRgError' div'ine yazdır ve göster
+                        if (response.message === "Hatalı Token.") {
+                            $('#smsRgError').text("SMS kodu hatalı.").show();
+                            $('.sms-rg-input').addClass('error-border');
+                        } else {
+                            $('#smsRgError').text(response.message).show();
+                            $('.sms-rg-input').addClass('error-border');
+                        }
+                        // Gerekirse input alanlarını da hata durumuna getirebilirsiniz
+                        $('.sms-rg-input').addClass('error-border');
+                    } else {
+                        $('.step-container').hide();
+                        $('#completedSection').show();
+                    }
                 },
-                error: function (response) {
-                    let errorMessage = response.responseJSON && response.responseJSON.message ? response.responseJSON.message : 'Bir hata oluştu. Lütfen tekrar deneyin.';
-                    $('#errorToast .toast-body').text(errorMessage);
-                    var toast = new bootstrap.Toast($('#errorToast'));
-                    toast.show();
+                error: function (xhr, status, error) {
+                    // AJAX isteği başarısız olursa
+                    $('#smsRgError').text('Bir hata oluştu. Lütfen tekrar deneyin.').show();
+                    $('.sms-rg-input').addClass('error-border');
                 }
             });
         } else {
-            $('#errorToast .toast-body').text('180 saniye doldu. Lütfen tekrar SMS isteyin.');
-            var toast = new bootstrap.Toast($('#errorToast'));
-            toast.show();
+            $('#smsRgError').text('SMS kodunu eksiksiz giriniz.').show();
+            $('.sms-rg-input').addClass('error-border');
         }
     });
+
 
     function startTimer() {
         let timeLeft = timerDuration;
@@ -330,25 +403,12 @@ $(document).ready(function () {
                 contentType: 'application/json',
                 success: function (response) {
                     if (response.status === "error") {
-                        $('#errorToast .toast-body').text(response.message);
-                        var toast = new bootstrap.Toast($('#errorToast'));
-                        toast.show();
+                        $('#phoneRgError').text(response.message).show();
+                        $('#phoneRg').addClass('error-border');
                     } else {
                         console.log('SMS yeniden gönderildi.');
                         smsToken = response.data.smsToken;
                         startTimer(); // Timer'ı yeniden başlat
-                    }
-                },
-                error: function(xhr, status, error) {
-                    const response = xhr.responseJSON;
-                    if (response && response.message) {
-                        $('#errorToast .toast-body').text(response.message);
-                        var toast = new bootstrap.Toast($('#errorToast'));
-                        toast.show();
-                    } else {
-                        $('#errorToast .toast-body').text(response.message);
-                        var toast = new bootstrap.Toast($('#errorToast'));
-                        toast.show();
                     }
                 }
             });
@@ -367,6 +427,23 @@ $(document).ready(function () {
     }
 
     $('#firstNameRg, #lastNameRg, #emailRg, #phoneRg').on('blur', checkStep1Validity);
+    $('#phoneRg').on('input', function () {
+        let phoneInput = $(this);
+        let phoneValue = phoneInput.val();
+
+        // Hata mesajını ve hata stilini kaldır
+        $('#phoneRgError').hide();
+        phoneInput.removeClass('error-border');
+
+        // Eğer telefon numarası 10 haneye ulaştıysa validasyonu yap
+        if (phoneValue.length === 10) {
+            // Validasyonu tekrar yap
+            checkStep1Validity();
+        } else {
+            // Telefon numarası 10 haneden az ise "Devam Et" butonunu devre dışı bırak
+            $('#nextButtonPrg').prop('disabled', true);
+        }
+    });
     $('#passwordInput, #confirmPasswordInput').on('blur', checkStep2Validity);
     $('.sms-rg-input').on('input', validateSmsCode);
     showStep(currentStep);

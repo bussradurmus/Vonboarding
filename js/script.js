@@ -92,20 +92,66 @@ $(document).ready(function () {
   $('#iletisim .form-button').attr('disabled', 'disabled');
 
 
-    //yasal sözleşmeler sayfası tab geçişleri yönetimi
-    $('.contract-nav-link').click(function() {
-        $('.contract-nav-link').removeClass('active');
-        $(this).addClass('active');
+    // Header yüksekliği kadar bir offset ekleyerek kaydırma fonksiyonu
+    function scrollToHash(hash) {
+        var target = $(hash);
+        if (target.length) {
+            var headerHeight = $('header').outerHeight() || 100; // Header yüksekliği
+            $('html, body').animate({
+                scrollTop: target.offset().top - headerHeight
+            }, 800); // Yumuşak kaydırma süresi
+        }
+    }
 
-        // Hide all content sections
+    // URL'deki hash'e uygun bölümü ve sekmeyi aktif yap
+    function activateSectionByHash() {
+        var hash = window.location.hash;
+        if (hash) {
+            // Tüm sekmeleri kapat
+            $('.contract-nav-link').removeClass('active');
+            $('.content-section').removeClass('active');
+
+            // Hash'e göre ilgili içeriği ve sekmeyi aç
+            $(hash).addClass('active');
+            $('a[href="' + hash + '"]').addClass('active');
+
+            // Hash'e göre sayfayı kaydır
+            scrollToHash(hash);
+        } else {
+            // Eğer hash yoksa, varsayılan olarak ilk bölümü aç
+            $('#kvkk-content').addClass('active');
+            $('#kvkk-link').addClass('active');
+        }
+    }
+
+    // Sayfa yüklendiğinde hash'e göre doğru bölümü aç
+    activateSectionByHash();
+
+    // Link tıklanıldığında doğru sekmeyi aç
+    $('.contract-nav-link').click(function(e) {
+        e.preventDefault(); // Varsayılan link davranışını engelle
+
+        // Tüm sekmeleri kapat
+        $('.contract-nav-link').removeClass('active');
         $('.content-section').removeClass('active');
 
-        // Show the selected section
-        var target = $(this).attr('href') + '-content';
+        // Tıklanan sekmeyi aktif yap
+        $(this).addClass('active');
+        var target = $(this).attr('href');
         $(target).addClass('active');
 
-        return false; // Prevent default link behavior
+        // Hash'e göre sayfayı kaydır
+        scrollToHash(target);
+
+        // URL hash'ini güncelle
+        window.location.hash = target;
     });
+
+    // Sayfa hash değiştiğinde (örneğin footer'dan gelen bir tıklama), doğru bölümü aç
+    $(window).on('hashchange', function() {
+        activateSectionByHash();
+    });
+
 });
 
 // Sıralı animasyonları tetikleyen fonksiyon

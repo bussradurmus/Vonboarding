@@ -13,7 +13,7 @@ require 'master/header.php';
 </div>
 </div>
 
-<div class="page position-relative blog-page">
+<div class="page position-relative blog-page bg-lavander">
     <main>
         <div class="container mt-100 max-w1140">
             <div class="row">

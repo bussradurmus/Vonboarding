@@ -232,7 +232,7 @@ $(document).ready(function () {
                         var toast = new bootstrap.Toast($('#errorToast'));
                         toast.show();
                     } else {
-                        $('#errorToast .toast-body').text('Bir hata oluştu. Lütfen tekrar deneyin.');
+                        $('#errorToast .toast-body').text(response.message);
                         var toast = new bootstrap.Toast($('#errorToast'));
                         toast.show();
                     }
@@ -346,7 +346,7 @@ $(document).ready(function () {
                         var toast = new bootstrap.Toast($('#errorToast'));
                         toast.show();
                     } else {
-                        $('#errorToast .toast-body').text('Bir hata oluştu. Lütfen tekrar deneyin.');
+                        $('#errorToast .toast-body').text(response.message);
                         var toast = new bootstrap.Toast($('#errorToast'));
                         toast.show();
                     }

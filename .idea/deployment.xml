@@ -6,7 +6,7 @@
       <paths name="vonboarding">
         <serverdata>
           <mappings>
-            <mapping deploy="/public_html/Vonboarding" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/Vonboarding" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

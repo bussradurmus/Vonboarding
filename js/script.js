@@ -89,8 +89,22 @@ $(document).ready(function () {
     });
 
 // Sayfa yüklendiğinde butonu devre dışı bırak
-    $(document).ready(function () {
-        $('#iletisim .form-button').attr('disabled', 'disabled');
+  $('#iletisim .form-button').attr('disabled', 'disabled');
+
+
+    //yasal sözleşmeler sayfası tab geçişleri yönetimi
+    $('.contract-nav-link').click(function() {
+        $('.contract-nav-link').removeClass('active');
+        $(this).addClass('active');
+
+        // Hide all content sections
+        $('.content-section').removeClass('active');
+
+        // Show the selected section
+        var target = $(this).attr('href') + '-content';
+        $(target).addClass('active');
+
+        return false; // Prevent default link behavior
     });
 });
 

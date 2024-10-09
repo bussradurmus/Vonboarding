@@ -332,7 +332,7 @@ footer {
 .page-container:has(.blog-detail-page) .hero-text-container {
     margin-bottom: 90px;
 }
-.blog-page {
+.bg-lavander {
     background-color: #F0F0F2;
 }
 .blog-page h2 {
@@ -1127,11 +1127,7 @@ input:focus, textarea:focus {
 .footerw-logo-box .rotating-group {
     transform-origin: 214.5515px 29.41215px; /* Approximate center point of the joining line */
 }
-.footerw-logo-box:hover .blue-object,
-.footer-logo-box:hover .blue-object,
-.header-logo-container:hover .blue-object {
-    filter: url(#hover-shadow);
-}
+
 .footerw-logo-box:hover path.hover-blue:not(.blue-object),
 .footer-logo-box:hover path.hover-blue:not(.blue-object),
 .header-logo-container:hover path.hover-blue:not(.blue-object){
@@ -1142,4 +1138,35 @@ input:focus, textarea:focus {
 .header-logo-container:hover path.hover-dark-blue:not(.blue-object){
     fill: #0245CA;
 }
+.contract-page .content-section {
+    display: none;
+}
+.contract-page .content-section.active {
+    display: block;
+}
+.nav-icon {
+    margin-right: 8px;
+    display: none;
+    vertical-align: middle;
+}
 
+.contract-nav-link.active .nav-icon {
+    display: inline-block;
+}
+
+.contract-nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.contract-page .content-section {
+    display: none;
+}
+.contract-page .content-section.active {
+    display: block;
+}
+.tab-container{
+    border: 1px solid #e2e3e7;
+    padding: 32px;
+    border-radius: 16px;
+}

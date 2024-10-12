@@ -320,18 +320,6 @@ require 'master/header.php';
     </main>
 </div>
 
-<!-- Hata Mesajı Modali -->
-<div class="toast-container position-fixed top-50 end-50 p-3">
-    <div id="errorToast" class="toast align-items-center text-bg-danger border-0" role="alert" aria-live="assertive" aria-atomic="true">
-        <div class="d-flex">
-            <div class="toast-body">
-                Hata mesajı burada gözükecek.
-            </div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-        </div>
-    </div>
-</div>
-
 
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

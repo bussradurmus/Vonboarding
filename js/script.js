@@ -91,6 +91,32 @@ $(document).ready(function () {
 // Sayfa yüklendiğinde butonu devre dışı bırak
   $('#iletisim .form-button').attr('disabled', 'disabled');
 
+// #iletisim form öğesinin varlığını kontrol et
+    const formElement = document.querySelector('#iletisim form');
+
+    if (formElement) {
+        // Eğer form varsa addEventListener fonksiyonunu çalıştır
+        formElement.addEventListener('submit', function (e) {
+            e.preventDefault(); // Formun gönderilmesini engelle
+
+            // Formun doğrulamasını yap
+            let form = this;
+            if (form.checkValidity()) {
+                // Form geçerliyse butonun üzerine mesajı göster
+                $('#submitText').removeClass('d-none');
+
+                // 3 saniye sonra mesajı tekrar gizle
+                setTimeout(function() {
+                    $('#submitText').addClass('d-none');
+                }, 3000); // 3000 milisaniye (3 saniye)
+            } else {
+                form.reportValidity(); // Geçersizse HTML5 validasyonunu göster
+            }
+        });
+    }
+
+
+
 
     // Header yüksekliği kadar bir offset ekleyerek kaydırma fonksiyonu
     function scrollToHash(hash) {

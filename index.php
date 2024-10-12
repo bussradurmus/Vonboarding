@@ -143,7 +143,7 @@ require 'master/header.php';
         <div class="container mt-150">
             <div class="row align-items-center position-relative img-text flex-column-reverse flex-lg-row text-center text-lg-start">
                 <div class="col-lg-6 img-content d-flex justify-content-center mb-4 mb-lg-0">
-                    <img src="<?= $baseUrl ?>assets/images/img-frame.svg" alt="Image" class="img-fluid">
+                    <img src="<?= $baseUrl ?>assets/images/panelmock2-min.png" alt="Image" class="img-fluid">
                 </div>
                 <div class="col-lg-6 text-content d-flex flex-column justify-content-center text-center text-lg-end">
                     <h2 class="mb-3 letterSpace-45">K<span class="text-blue">ON</span>TROL SİZDE</h2>
@@ -169,7 +169,7 @@ require 'master/header.php';
                     </p>
                 </div>
                 <div class="col-lg-6 img-content d-flex justify-content-center">
-                    <img src="<?= $baseUrl ?>assets/images/img-frame.svg" alt="Image" class="img-fluid">
+                    <img src="<?= $baseUrl ?>assets/images/panelmock1-min.png" alt="Image" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -470,6 +470,7 @@ require 'master/header.php';
                             <textarea class="form-control effect-9" id="message" name="message" rows="4" required></textarea>
                             <span class="focus-border"><i></i></span>
                         </div>
+                        <div class=" text-white d-none text-center" style="font-size: 28px;" id="submitText">Mesajınızı aldık, en kısa sürede dönüş yapacağız.</div>
                         <button type="submit" class="btn btn-primary form-button mt-3">Gönder</button>
                     </form>
                 </div>

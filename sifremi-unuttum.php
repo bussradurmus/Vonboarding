@@ -10,8 +10,9 @@ require 'master/header.php';
         <div class="container d-flex justify-content-center mt-150">
             <div class="form-container text-center w550">
                 <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title fw-bold mb-3 text-white">Şifrenizi Sıfırlayın</h3>
+
                 <div id="fp-step-1">
+                    <h3 class="form-title fw-bold mb-3 text-white">Şifrenizi Sıfırlayın</h3>
                     <p class="form-subtitle mb-5 font-raleway text-lgrey">Şifrenizi sıfırlamak için kayıtlı e-posta adresinizi girin.</p>
 
                     <!-- E-posta Alanı -->
@@ -29,50 +30,37 @@ require 'master/header.php';
                 </div>
 
                 <div id="fp-step-2" class="d-none">
-                    <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen <span class="fw-bold fp-user-phone"> +90 532 *** ** 55</span> numaralı telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>
+                    <h3 class="form-title fw-bold mb-3 text-white">SMS Doğrulama</h3>
+                    <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>
 
                     <!-- SMS Kodu Giriş Alanı -->
                     <div class="mb-3 text-start d-flex flex-column align-items-center">
                         <label class="font-raleway mb-4 text-lgrey fw-bold">SMS Kodu</label>
                         <div class="d-flex justify-content-evenly gap-2">
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
+                            <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input text-center" required>
+                            <input type="text" maxlength="1" class="form-control sms-input text-center" required>
                         </div>
-                        <div class="error-message text-danger" id="smsLoginError" style="display: none;">SMS kodu geçerli değil</div>
+                        <div class="error-message text-danger" id="smsLoginErrorFp" style="display: none;">SMS kodu geçerli değil</div>
                     </div>
                     <p class="text-white mt-5 mb-4 link-underline timer-text" id="fpTimer">Tekrar gönder (180sn)</p>
 
-                    <!-- Geri Dön ve Devam Et Butonları -->
+                    <!-- Devam Et Butonu -->
                     <div class="d-flex justify-content-between mt-5">
                         <button type="button" class="btn btn-primary w-100" id="fpNextButton2" disabled>Devam Et</button>
                     </div>
                 </div >
 
-                <div id="fp-step-2" class="d-none">
-                    <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen <span class="fw-bold fp-user-phone"> +90 532 *** ** 55</span> numaralı telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>
+                <div id="fp-step-3" class="d-none">
+                    <h3 class="form-title text-white fw-bold mb-3">Tebrikler! Yeni Şifreniz Oluşturuldu</h3>
+                    <img src="<?= $baseUrl ?>assets/images/party-popper.png" alt="Image" class="mb-4">
+                    <p class="form-subtitle text-lgrey mb-5 font-raleway">Yeni şifreniz kayıtlı telefon numaranıza gönderilmiştir. Yeni şifrenizle giriş yapabilirsiniz.</p>
 
-                    <!-- SMS Kodu Giriş Alanı -->
-                    <div class="mb-3 text-start d-flex flex-column align-items-center">
-                        <label class="font-raleway mb-4 text-lgrey fw-bold">SMS Kodu</label>
-                        <div class="d-flex justify-content-evenly gap-2">
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                            <input type="text" maxlength="1" class="form-control sms-input" required>
-                        </div>
-                        <div class="error-message text-danger" id="smsLoginError" style="display: none;">SMS kodu geçerli değil</div>
-                    </div>
-                    <p class="text-white mt-5 mb-4 link-underline timer-text" id="fpTimer">Tekrar gönder (180sn)</p>
-
-                    <!-- Geri Dön ve Devam Et Butonları -->
-                    <div class="d-flex justify-content-between mt-5">
-                        <button type="button" class="btn btn-primary w-100" id="fpNextButton2" disabled>Devam Et</button>
+                    <div class="d-flex justify-content-between button-container my-5">
+                        <a href="<?= $baseUrl ?>/girisyap.php" type="button" class="btn btn-primary w-100" id="fpCompleted">Giriş Yap</a>
                     </div>
                 </div>
             </div>

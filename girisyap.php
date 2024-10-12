@@ -30,7 +30,7 @@ require 'master/header.php';
                 </div>
 
                 <div class="my-5">
-                    <a href="https://vonboarding-eykf.vercel.app/forgot-password" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
+                    <a href="<?= $baseUrl ?>sifremi-unuttum.php" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
                     <div class="d-flex justify-content-between mt-5 font-raleway">
                         <button type="button" class="btn btn-primary w-100" id="loginNextButton" disabled>Devam Et</button>
                     </div>

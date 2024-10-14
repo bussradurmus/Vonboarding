@@ -23,7 +23,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="my-5">
-                        <div class="d-flex justify-content-between mt-5 ">
+                        <div class="d-flex justify-content-between my-5 ">
                             <button type="button" class="btn btn-primary w-100" id="fpNextButton" disabled>Devam Et</button>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ require 'master/header.php';
 
                 <div id="fp-step-2" class="d-none">
                     <h3 class="form-title fw-bold mb-3 text-white">SMS Doğrulama</h3>
-                    <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen telefonunuza gönderdiğimiz 6 haneli <span class="fw-bold">sms kodunu</span> giriniz</p>
+                    <p class="form-subtitle mb-5 text-lgrey font-raleway">Lütfen telefonunuza gönderdiğimiz 6 haneli<span class="fw-bold"> sms kodunu</span> giriniz</p>
 
                     <!-- SMS Kodu Giriş Alanı -->
                     <div class="mb-3 text-start d-flex flex-column align-items-center">
@@ -49,7 +49,7 @@ require 'master/header.php';
                     <p class="text-white mt-5 mb-4 link-underline timer-text" id="fpTimer">Tekrar gönder (180sn)</p>
 
                     <!-- Devam Et Butonu -->
-                    <div class="d-flex justify-content-between mt-5">
+                    <div class="d-flex justify-content-between my-5">
                         <button type="button" class="btn btn-primary w-100" id="fpNextButton2" disabled>Devam Et</button>
                     </div>
                 </div >

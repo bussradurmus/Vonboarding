@@ -105,8 +105,13 @@ $(document).ready(function() {
             },
             success: function(response) {
                 if (response.status === "error") {
-                    $('#smsLoginErrorFp').text(response.message).show();
-                    $('.sms-input').addClass('error-border');
+                    if (response.message === "Hatalı Token.") {
+                        $('#smsLoginErrorFp').text("SMS kodu hatalı.").show();
+                        $('.sms-input').addClass('error-border');
+                    } else {
+                        $('#smsLoginErrorFp').text(response.message).show();
+                        $('.sms-input').addClass('error-border');
+                    }
                 } else {
                     $('#fp-step-2').addClass('d-none');
                     $('#fp-step-3').removeClass('d-none');

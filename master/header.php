@@ -96,7 +96,7 @@ $baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
                         </li>
                     </ul>
                     <div class="d-flex mb-2 ms-3 ms-xl-0">
-                        <a href="<?= $baseUrl ?>girisyap.php" class="btn text-white me-lg-2 ps-0 fs-14 font-raleway fw-semibold align-content-center" >Giriş Yap</a>
+                        <a href="https://gokhan.valletbeta2.site/login" class="btn text-white me-lg-2 ps-0 fs-14 font-raleway fw-semibold align-content-center" >Giriş Yap</a>
                         <a href="<?= $baseUrl ?>kayitol.php" class="btn button-outline fs-14 font-raleway fw-semibold">Kayıt Ol</a>
                     </div>
                 </div>

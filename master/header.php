@@ -1,5 +1,9 @@
 <?php
 $baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
+// Meta etiketleri için varsayılan değerler
+$metaTitle = $metaTitle ?? 'Varsayılan Sayfa Başlığı';
+$metaDescription = $metaDescription ?? 'Varsayılan açıklama metni';
+$metaKeywords = $metaKeywords ?? 'Varsayılan anahtar kelimeler';
 ?>
 <!DOCTYPE html>
 <html lang="tr">
@@ -7,6 +11,9 @@ $baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= htmlspecialchars($metaTitle) ?></title>
+    <meta name="description" content="<?= htmlspecialchars($metaDescription) ?>">
+    <meta name="keywords" content="<?= htmlspecialchars($metaKeywords) ?>">
     <title>Vonboarding</title>
     <link rel="icon" href="<?= $baseUrl ?>assets/images/fav.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -66,32 +73,32 @@ $baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
                         <li class="nav-item me-xl-2">
                             <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>">Ana Sayfa</a>
                             <div class="nav-underline">
-                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
+                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
                         </li>
                         <li class="nav-item me-xl-2 ms-xl-2">
                             <a class="nav-link text-white fs-16 font-raleway"
                                href="<?= $baseUrl ?>hakkimizda.php">Hakkımızda</a>
                             <div class="nav-underline">
-                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
+                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
                         </li>
                         <li class="nav-item me-xl-2 ms-xl-2">
                             <a class="nav-link text-white fs-16 font-raleway" href="https://vallet.gitbook.io/vonboarding">Dökümantasyon</a>
                             <div class="nav-underline">
-                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
+                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
                         </li>
                         <li class="nav-item me-lg-2 ms-xl-2">
                             <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>blog.php">Blog</a>
                             <div class="nav-underline">
-                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
+                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
                         </li>
                         <li class="nav-item ms-xl-2">
                             <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>index.php#iletisim">İletişim</a>
                             <div class="nav-underline">
-                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg" alt="Hover Line">
+                                <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
                         </li>
                     </ul>

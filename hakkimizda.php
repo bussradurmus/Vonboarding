@@ -1,6 +1,10 @@
 
 <?php
 global $baseUrl;
+$metaTitle = 'Hakkımızda - Vonboarding';
+$metaDescription = 'Vonboarding, başvuru süreçlerini hızlandıran ve şirketler ile ödeme kuruluşları arasında köprü görevi gören bir platformdur.';
+$metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
+
 require 'master/header.php';
 ?>
 

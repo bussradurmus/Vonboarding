@@ -3,14 +3,14 @@ global $baseUrl;
 require 'master/header.php';
 ?>
 <div class="video-filter">
-    <video class="d-none d-md-block w-100" autoplay muted loop>
+    <video class="d-none d-md-block w-100" autoplay muted loop title="Vonboarding Tanıtım Videosu">
         <source src="<?= $baseUrl ?>assets/images/5427792_Coll_wavebreak_Particles_1280x720_1.mp4" type="video/mp4">
     </video>
 </div>
 <div class="hero-text-container text-center">
     <div class="col-lg-8 col-md-10 mx-auto hero-content">
         <div class="mb-4 text-white">
-            <img src="<?= $baseUrl ?>assets/images/Frame.svg" alt="Wallet" class="me-2">
+            <img src="<?= $baseUrl ?>assets/images/Frame.svg" alt="Vallet Logo" class="me-2">
             <span class="text-underline text-lgrey fw-bold font-raleway">Güvencesiyle</span>
         </div>
         <h1 class="mb-4 text-white fw-bold"> Başvuru Süreçlerini Hızlandırın,<br>İşinizi Büyütün!</h1>
@@ -25,7 +25,7 @@ require 'master/header.php';
             <div class="carousel-item active">
                 <div class="metric-item d-flex align-items-center justify-content-center">
                     <div class="metric-icon">
-                        <img src="<?= $baseUrl ?>assets/images/onboarding.svg" alt="Icon">
+                        <img src="<?= $baseUrl ?>assets/images/onboarding.svg" alt="Onboarding İkon">
                     </div>
                     <div class="metric-box ms-3">
                         <div class="metric-value font-raleway fw-bold mb-3">+22000</div>
@@ -36,7 +36,7 @@ require 'master/header.php';
             <div class="carousel-item">
                 <div class="metric-item d-flex align-items-center justify-content-center">
                     <div class="metric-icon">
-                        <img src="<?= $baseUrl ?>assets/images/staffing 1.svg" alt="Icon">
+                        <img src="<?= $baseUrl ?>assets/images/staffing 1.svg" alt="Kuruluş İkon">
                     </div>
                     <div class="metric-box ms-3">
                         <div class="metric-value font-raleway fw-bold mb-3">4</div>
@@ -47,7 +47,7 @@ require 'master/header.php';
             <div class="carousel-item">
                 <div class="metric-item d-flex align-items-center justify-content-center">
                     <div class="metric-icon">
-                        <img src="<?= $baseUrl ?>assets/images/feedback 1.svg" alt="Icon">
+                        <img src="<?= $baseUrl ?>assets/images/feedback 1.svg" alt="Kullanıcı İkon">
                     </div>
                     <div class="metric-box ms-3">
                         <div class="metric-value font-raleway fw-bold mb-3">+300</div>
@@ -70,7 +70,7 @@ require 'master/header.php';
     <div class="d-none d-md-flex justify-content-around">
         <div class="metric-item d-flex align-items-center mb-3 mb-md-0">
             <div class="metric-icon">
-                <img src="<?= $baseUrl ?>assets/images/onboarding.svg" alt="Icon">
+                <img src="<?= $baseUrl ?>assets/images/onboarding.svg" alt="Onboarding İkon">
             </div>
             <div class="metric-box ms-3">
                 <div class="metric-value font-raleway fw-bold mb-3">+22000</div>
@@ -79,7 +79,7 @@ require 'master/header.php';
         </div>
         <div class="metric-item d-flex align-items-center mb-3 mb-md-0">
             <div class="metric-icon">
-                <img src="<?= $baseUrl ?>assets/images/staffing 1.svg" alt="Icon">
+                <img src="<?= $baseUrl ?>assets/images/staffing 1.svg" alt="Kuruluş İkon">
             </div>
             <div class="metric-box ms-3">
                 <div class="metric-value font-raleway fw-bold mb-3">4</div>
@@ -88,7 +88,7 @@ require 'master/header.php';
         </div>
         <div class="metric-item d-flex align-items-center">
             <div class="metric-icon">
-                <img src="<?= $baseUrl ?>assets/images/feedback 1.svg" alt="Icon">
+                <img src="<?= $baseUrl ?>assets/images/feedback 1.svg" alt="Kullanıcı İkon">
             </div>
             <div class="metric-box ms-3">
                 <div class="metric-value font-raleway fw-bold mb-3">+300</div>
@@ -116,34 +116,34 @@ require 'master/header.php';
         </div>
         <div class="logo-container mt-100">
             <!-- First set of logos -->
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
             <!-- Duplicate set of logos for seamless loop -->
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="Pay by Me"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnexpos"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
         </div>
 
         <div class="container mt-150">
             <div class="row align-items-center position-relative img-text flex-column-reverse flex-lg-row text-center text-lg-start">
                 <div class="col-lg-6 img-content d-flex justify-content-center mb-4 mb-lg-0">
-                    <img src="<?= $baseUrl ?>assets/images/panelmock2-min.png" alt="Image" class="img-fluid">
+                    <img src="<?= $baseUrl ?>assets/images/panelmock2-min.png" alt="Vonboarding Panel Resim" class="img-fluid">
                 </div>
                 <div class="col-lg-6 text-content d-flex flex-column justify-content-center text-center text-lg-end">
                     <h2 class="mb-3 letterSpace-45">K<span class="text-blue">ON</span>TROL SİZDE</h2>
@@ -169,7 +169,7 @@ require 'master/header.php';
                     </p>
                 </div>
                 <div class="col-lg-6 img-content d-flex justify-content-center">
-                    <img src="<?= $baseUrl ?>assets/images/panelmock1-min.png" alt="Image" class="img-fluid">
+                    <img src="<?= $baseUrl ?>assets/images/panelmock1-min.png" alt="Vonboarding Panel Resim" class="img-fluid">
                 </div>
             </div>
         </div>

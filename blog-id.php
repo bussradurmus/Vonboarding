@@ -15,6 +15,7 @@ require 'master/header.php';
         </div>
     </div>
 </div>
+
 </div>
 <div class="page position-relative">
     <main>
@@ -168,7 +169,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-id">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
@@ -204,7 +205,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-id">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
@@ -240,7 +241,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-id">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
@@ -292,9 +293,9 @@ require 'master/header.php';
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/script.js?v=<?= time() ?>"></script>
-<script src="js/blog-id.js?v=<?= time() ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/blog-id.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
 
 </body>
 

@@ -5,6 +5,7 @@ require 'master/header.php';
 <div>
     HAKKIMIZDA
 </div>
+
 <?php
 require 'master/footer.php';
 ?>

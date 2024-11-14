@@ -30,7 +30,7 @@ require 'master/header.php';
                 </div>
 
                 <div class="my-5">
-                    <a href="<?= $baseUrl ?>sifremi-unuttum.php" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
+                    <a href="<?= $baseUrl ?>sifremi-unuttum" class="text-lgrey text-underline fs-16 font-raleway">Şifremi Unuttum</a>
                     <div class="d-flex justify-content-between mt-5 font-raleway">
                         <button type="button" class="btn btn-primary w-100" id="loginNextButton" disabled>Devam Et</button>
                     </div>
@@ -78,9 +78,9 @@ require 'master/header.php';
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
-<script src="js/script.js?v=<?= time() ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
-<script src="js/login.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
+<script src="js/login.js?v=<?= $version ?>"></script>
 </body>
 
 </html>

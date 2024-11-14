@@ -48,9 +48,9 @@ global $baseUrl;
 
         <div class="row mt-5 mb-5 text-center text-md-start hover-effect">
             <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-start mb-4 mb-md-0">
-                <a href="<?= $baseUrl ?>yasal-metinler.php#kvkk-content" class="mb-2 text-grey fs-16 lh-19">KVKK Aydınlatma Metni</a>
-                <a href="<?= $baseUrl ?>yasal-metinler.php#cookie-content" class="mb-2 text-grey fs-16 lh-19">Çerez Yönetimi</a>
-                <a href="<?= $baseUrl ?>yasal-metinler.php#privacy-content" class="mb-2 text-grey fs-16 lh-19">Gizlilik Sözleşmesi</a>
+                <a href="<?= $baseUrl ?>yasal-metinler#kvkk-content" class="mb-2 text-grey fs-16 lh-19">KVKK Aydınlatma Metni</a>
+                <a href="<?= $baseUrl ?>yasal-metinler#cookie-content" class="mb-2 text-grey fs-16 lh-19">Çerez Yönetimi</a>
+                <a href="<?= $baseUrl ?>yasal-metinler#privacy-content" class="mb-2 text-grey fs-16 lh-19">Gizlilik Sözleşmesi</a>
             </div>
             <div class="col-12 col-md-4 d-flex justify-content-center gap-4 align-items-center mb-4 mb-md-0">
                 <a href="javascript:void(0)" class="mx-2">
@@ -91,8 +91,8 @@ global $baseUrl;
             </div>
             <div class="col-12 col-md-4 d-flex flex-column align-items-center align-items-md-end">
                 <a href="<?= $baseUrl ?>" class="mb-2 text-grey fs-16 lh-19">Ana Sayfa</a>
-                <a href="<?= $baseUrl ?>hakkimizda.php" class="mb-2 text-grey fs-16 lh-19">Hakkımızda</a>
-                <a href="<?= $baseUrl ?>blog.php" class="mb-2 text-grey fs-16 lh-19">Blog</a>
+                <a href="<?= $baseUrl ?>hakkimizda" class="mb-2 text-grey fs-16 lh-19">Hakkımızda</a>
+                <a href="<?= $baseUrl ?>blog" class="mb-2 text-grey fs-16 lh-19">Blog</a>
             </div>
         </div>
     </div>

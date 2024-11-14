@@ -111,7 +111,7 @@ require 'master/header.php';
                                         class="text-blue">on</span> Başlasın!</h3>
                             <p class="text-grey fs-18 lh-23">Ödeme sistemlerine sorunsuz entegrasyon için hemen <br>Vonboarding’e
                                 katılın ve süreci hızlandırın!</p>
-                            <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+                            <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol">Hemen Başla</a>
                         </div>
                     </div>
 
@@ -131,8 +131,8 @@ require 'master/header.php';
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script src="js/script.js?v=<?= time(); ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ require 'master/header.php';
 </div>
 
 <div id="step-1" class="page position-relative kayit-page mt-150 step-container">
+
     <main>
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
@@ -14,7 +15,7 @@ require 'master/header.php';
                     <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
                     <p class="form-subtitle text-lgrey mb-3 font-raleway">Ödeme kuruluşu olarak kayıt olmak için lütfen formu doldurun</p>
                 </div>
-                
+
                 <form novalidate>
                     <div class="row mt-3">
                         <div class="col-md-6 mb-4 text-start">
@@ -48,10 +49,9 @@ require 'master/header.php';
                         <button type="button" class="btn btn-primary" id="nextButtonPrg" disabled>Devam Et</button>
                     </div>
                 </form>
-                <p class="already-have-account step-text">Zaten bir hesabın var mı? <a href="<?= $baseUrl ?>girisyap.php" class="text-white ms-1 fw-bold hover-link-underline">Giriş Yap</a></p>
+                <p class="already-have-account step-text">Zaten bir hesabın var mı? <a href="<?= $baseUrl ?>girisyap" class="text-white ms-1 fw-bold hover-link-underline">Giriş Yap</a></p>
             </div>
     </main>
-
 
 </div>
 
@@ -80,9 +80,9 @@ require 'master/header.php';
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
-<script src="js/script.js?v=<?= time() ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
-<script src="js/register.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
+<script src="js/register.js?v=<?= $version ?>"></script>
 </body>
 
 </html>

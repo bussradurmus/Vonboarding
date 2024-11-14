@@ -16,7 +16,7 @@ require 'master/header.php';
         <h1 class="mb-4 text-white fw-bold"> Başvuru Süreçlerini Hızlandırın,<br>İşinizi Büyütün!</h1>
         <p class="mb-4 text-lgrey font-raleway">Başvuruların inceleme ve platform üzerinden yönetim,
             Vonboarding <br> ile daha hızlı ve verimli çözümlere ulaşabilirsiniz.</p>
-        <a class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+        <a class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold" href="<?= $baseUrl ?>kayitol">Hemen Başla</a>
     </div>
 </div>
 <div class="container metrics-container align-content-center text-white position-relative mt-4">
@@ -108,7 +108,7 @@ require 'master/header.php';
                     entegrasyon süreçlerini tek bir yerden yürütüp, onboarding süreçlerinizi hızlandırır.
                     Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
                 <div class="d-flex justify-content-center align-items-center mt-4 vbutton-container">
-                    <a class="btn btn-primary me-24" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+                    <a class="btn btn-primary me-24" href="<?= $baseUrl ?>kayitol">Hemen Başla</a>
                     <a href="https://vallet.gitbook.io/vonboarding" class="btn button-outline">Dökümantasyon</a>
                 </div>
 
@@ -424,7 +424,7 @@ require 'master/header.php';
                                     class="text-blue">on</span> Başlasın!</h3>
                         <p class="text-grey fs-18 lh-23">Ödeme sistemlerine sorunsuz entegrasyon için hemen <br>Vonboarding’e
                             katılın ve süreci hızlandırın!</p>
-                        <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+                        <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol">Hemen Başla</a>
                     </div>
                 </div>
 
@@ -489,8 +489,8 @@ require 'master/header.php';
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script src="js/script.js?v=<?= time() ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
 </body>
 
 </html>

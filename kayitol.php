@@ -83,7 +83,7 @@ require 'master/header.php';
                         <button type="button" class="btn btn-primary" id="nextButtonPrg" disabled>Devam Et</button>
                     </div>
                 </form>
-                <p class="already-have-account step-text">Zaten bir hesabın var mı? <a href="<?= $baseUrl ?>girisyap.php" class="text-white ms-1 fw-bold hover-link-underline">Giriş Yap</a></p>
+                <p class="already-have-account step-text">Zaten bir hesabın var mı? <a href="<?= $baseUrl ?>girisyap" class="text-white ms-1 fw-bold hover-link-underline">Giriş Yap</a></p>
             </div>
     </main>
 
@@ -326,9 +326,9 @@ require 'master/header.php';
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
-<script src="js/script.js?v=<?= time() ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
-<script src="js/register.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
+<script src="js/register.js?v=<?= $version ?>"></script>
 </body>
 
 </html>

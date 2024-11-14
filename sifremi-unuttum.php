@@ -60,7 +60,7 @@ require 'master/header.php';
                     <p class="form-subtitle text-lgrey mb-5 font-raleway">Yeni şifreniz kayıtlı telefon numaranıza gönderilmiştir. Yeni şifrenizle giriş yapabilirsiniz.</p>
 
                     <div class="d-flex justify-content-between button-container my-5">
-                        <a href="<?= $baseUrl ?>/girisyap.php" type="button" class="btn btn-primary w-100" id="fpCompleted">Giriş Yap</a>
+                        <a href="<?= $baseUrl ?>/girisyap" type="button" class="btn btn-primary w-100" id="fpCompleted">Giriş Yap</a>
                     </div>
                 </div>
             </div>
@@ -71,9 +71,9 @@ require 'master/header.php';
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-sha256@0.9.0/build/sha256.min.js"></script>
-<script src="js/script.js?v=<?= time() ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
-<script src="js/forgot-password.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
+<script src="js/forgot-password.js?v=<?= $version ?>"></script>
 </body>
 
 </html>

@@ -31,7 +31,7 @@ body, html {
 .page-container:has(.kayit-page),
 .page-container:has(.forgot-password-page),
 .page-container:has(.login-page) {
-    background-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/bg-img.png');
+    background-image: url('https://vonboarding.com/assets/images/bg-img.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ header {
     max-width: 560px;
 }
 .hero-banner {
-    background: url("https://busra.valletbeta2.site/Vonboarding/assets/images/hero.png") center no-repeat;
+    background: url("https://vonboarding.com/assets/images/hero.png") center no-repeat;
     background-size: cover;
     height: 800px;
     margin-bottom: -10px;
@@ -325,7 +325,7 @@ footer {
 }
 .page-container:has(.blog-page) .hero-banner {
     background-color: #010102;
-    background-image: url("https://busra.valletbeta2.site/Vonboarding/assets/images/blog-bg.png") !important;
+    background-image: url("https://vonboarding.com/assets/images/blog-bg.png") !important;
     height: max-content;
     background-size: cover;
     background-position: center;
@@ -374,7 +374,7 @@ footer {
     font-size: 14px;
 }
 .page-container:has(.blog-detail-page) .hero-banner {
-    background-image: url(https://busra.valletbeta2.site/Vonboarding/assets/images/blog-detail.png) !important;
+    background-image: url(https://vonboarding.com/assets/images/blog-detail.png) !important;
     background-color: unset;
     background-position: bottom;
 }
@@ -563,7 +563,7 @@ footer {
     position: relative;
     width: 48px;
     height: 48px;
-    background-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/circle-number.svg');
+    background-image: url('https://vonboarding.com/assets/images/circle-number.svg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -727,7 +727,7 @@ input.form-control.sms-input.text-center {
 }
 .file-upload-box {
     border-radius: 30px;
-    border-image: url('https://busra.valletbeta2.site/Vonboarding/assets/images/border-dashed.png') 30 / 19px round;
+    border-image: url('https://vonboarding.com/assets/images/border-dashed.png') 30 / 19px round;
     padding: 40px 20px;
     cursor: pointer;
     min-height: 160px;
@@ -1078,7 +1078,7 @@ input:-webkit-autofill:active {
         gap: unset !important;
     }
     .page-container:has(.blog-detail-page) .hero-banner {
-        background-image: url("https://busra.valletbeta2.site/Vonboarding/assets/images/blog-bg.png") !important;
+        background-image: url("https://vonboarding.com/assets/images/blog-bg.png") !important;
     }
     .page-container:has(.blog-detail-page) .page {
         margin-top: 30px;

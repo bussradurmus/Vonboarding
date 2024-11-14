@@ -21,7 +21,7 @@ require 'master/header.php';
                 <div class="col-lg-7 col-md-12">
                     <h2 class="fs-40 text-grey fw-bold ">Makalelerimiz</h2>
                     <div class="article-box mb-4 max-w678 mt-4">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -39,7 +39,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -57,7 +57,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-3.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -75,7 +75,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -93,7 +93,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -111,7 +111,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-3.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -136,7 +136,7 @@ require 'master/header.php';
                 <div class="col-lg-4 col-md-12">
                     <h2 class="fs-40 text-grey fw-bold last-title">Çok Okunanlar</h2>
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -148,7 +148,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -160,7 +160,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-3.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -172,7 +172,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -184,7 +184,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-id" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -250,8 +250,8 @@ require 'master/header.php';
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script src="js/script.js?v=<?= time() ?>"></script>
-<script src="js/form.js?v=<?= time() ?>"></script>
+<script src="js/script.js?v=<?= $version ?>"></script>
+<script src="js/form.js?v=<?= $version ?>"></script>
 </body>
 
 </html>

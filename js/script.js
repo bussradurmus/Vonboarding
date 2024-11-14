@@ -264,3 +264,17 @@ const imgContents = document.querySelectorAll('.img-content');
 imgContents.forEach(imgContent => {
     observerImg.observe(imgContent);
 });
+
+
+/*tolunay start*/
+document.addEventListener('DOMContentLoaded', function () {
+    const radioButtons = document.querySelectorAll('input[name="paymentRadios"]');
+const nextButton = document.getElementById('nextButtonPrg');
+
+radioButtons.forEach(radio => {
+  radio.addEventListener('change', () => {
+    nextButton.disabled = !document.querySelector('input[name="paymentRadios"]:checked');
+  });
+});
+});
+/*tolunay end*/

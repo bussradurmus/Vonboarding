@@ -2,6 +2,7 @@
     --primary-bgcolor: linear-gradient(91.51deg, rgba(255, 255, 255, 0.02) -6.42%, rgba(255, 255, 255, 0.02) 100.57%);
     --light-grey: #CBCED6;
     --grey: #626C85;
+    --baseurl:'https://vonboarding.com/';
     --primary-color: #1C64FE;
     --dark-grey: #313131;
 }
@@ -34,6 +35,7 @@ body, html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
 }
 .content {
     flex: 1;
@@ -810,6 +812,13 @@ input:-webkit-autofill:active {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: white;
 }
+
+/*tolunay start*/
+.custom-cursor{
+    cursor: pointer;
+}
+
+/*tolunay over*/
 @media screen and (min-width: 2000px) {
     .logo-item {
         width: 5.5%;

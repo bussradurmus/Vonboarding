@@ -132,7 +132,7 @@ require 'master/header.php';
                     <div class="slick">
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-id">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">

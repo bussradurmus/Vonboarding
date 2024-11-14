@@ -1,5 +1,6 @@
 <?php
-$baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
+$baseUrl = 'https://vonboarding.com/';
+$version = '1.0.0';
 // Meta etiketleri için varsayılan değerler
 $metaTitle = $metaTitle ?? 'Varsayılan Sayfa Başlığı';
 $metaDescription = $metaDescription ?? 'Varsayılan açıklama metni';
@@ -21,7 +22,7 @@ $metaKeywords = $metaKeywords ?? 'Varsayılan anahtar kelimeler';
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="<?= $baseUrl ?>css/bootstrap.min.css?v=<?= time() ?>"/>
+    <link rel="stylesheet" href="<?= $baseUrl ?>css/bootstrap.min.css?v=<?= $version ?>"/>
     <link rel="stylesheet" href="<?= $baseUrl ?>css/styles.css?v=<?= time() ?>"/>
 </head>
 

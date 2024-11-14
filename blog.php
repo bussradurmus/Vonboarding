@@ -1,5 +1,8 @@
 <?php
 global $baseUrl;
+$metaTitle = 'BLOG - VONBOARDING';
+$metaDescription = 'Vonboarding Blog: Ödeme kuruluşları için dijital başvuru yönetimi, sanal POS entegrasyonu ve başvuru süreçlerinin nasıl daha verimli ve şeffaf hale getirilebileceği hakkında kapsamlı bilgiler sunar. Entegre ödeme çözümleri Vonboarding başvuru süreçleri ve dijital dönüşümle ilgili en güncel bilgileri burada bulabilirsiniz';
+$metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 require 'master/header.php';
 ?>
 
@@ -21,12 +24,12 @@ require 'master/header.php';
                 <div class="col-lg-7 col-md-12">
                     <h2 class="fs-40 text-grey fw-bold ">Makalelerimiz</h2>
                     <div class="article-box mb-4 max-w678 mt-4">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-1.php" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h5>
-                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
+                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın!</h5>
+                                    <p class="fs-6 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
                                         <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">8 Ekim 2024</span>
@@ -39,15 +42,15 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-2.php" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-2n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding'de Gelir Fırsatları</h5>
-                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
+                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding ile Dijital Dönüşüm</h5>
+                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text"> Dijitalleşen dünyada, işletmelerin ihtiyaç duyduğu en önemli altyapılardan biri de güvenli, hızlı ve verimli ödeme sistemleridir. Vonboarding, bu alandaki ihtiyacı karşılamak için geliştirilmiş bir dijital başvuru yönetimi ve ödeme entegrasyon platformudur. Özellikle ödeme kuruluşları ve şirketler arasında güçlü bir köprü</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">8 Ekim 2024</span>
+                                        <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">14 Ekim 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -57,15 +60,15 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-3.php" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-3.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-3n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding'i Tercih Etmenin Avantajları</h5>
-                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
+                                    <h5 class="text-dark fs-18 fw-bold">Tek Panelden Başvuru Yönetimi</h5>
+                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Vonboarding, işletmelerin başvuru süreçlerini dijitalleştirerek, her adımı şeffaf bir şekilde takip etmelerini sağlar. Başvuru süreçlerini dijitalleştirme sayesinde işletmeler, başvuruları daha hızlı ve kolay bir şekilde yönetebilir. Ayrıca, tüm başvurular gerçek zamanlı takip ile izlenebilir ve işletmelere anlık bildirimler gönderilir.</p>
                                     <div class="user-info fs-14 ">
                                         <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">8 Ekim 2024</span>
+                                        <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">22 Ekim 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -75,15 +78,15 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-4.php" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-4n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding Nedir?</h5>
-                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
+                                    <h5 class="text-dark fs-18 fw-bold">Ödeme Kuruluşlarıyla Kolay Entegrasyon</h5>
+                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Dijitalleşen dünyada, ödeme sistemleri ve sanal POS çözümleri işletmeler için büyük önem taşıyor. Vonboarding, ödeme süreçlerini hızlandıran, güvenli hale getiren ve ödeme kuruluşları ile işletmeler arasında güçlü bir köprü oluşturan bir onboarding platformudur.</p>
                                     <div class="user-info fs-14 ">
-                                        <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">8 Ekim 2024</span>
+                                        <img src="<?= $baseUrl ?>/assets/images/user-pp2.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
+                                        <span class="fw-bold me-3 text-user-color">Nehir Bozbey</span> | <span class="ms-3 text-date">30 Ekim 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -93,15 +96,15 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-5.php" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-5n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding'de Gelir Fırsatları</h5>
-                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
+                                    <h5 class="text-dark fs-18 fw-bold">Ödeme Kuruluşlarını Tek Panelden Yönetin</h5>
+                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">İşletmelerin finansal süreçlerini yönetirken karşılaştıkları en büyük zorluklardan biri, farklı bankalar ve ödeme kuruluşlarıyla çalışmanın karmaşıklığıdır. Vonboarding, bu süreci tek panel üzerinden yönetmeyi mümkün kılarak işletmelere hız, kolaylık ve operasyonel verimlilik sunar. Bu yazımızda, Vonboarding’in kolayca banka ve ödeme kuruluşlarıyla entegre çalışabilme ve tek panelden yönetimi hakkında detayları bulabilirsiniz.</p>
                                     <div class="user-info fs-14 ">
-                                        <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">8 Ekim 2024</span>
+                                        <img src="<?= $baseUrl ?>/assets/images/user-pp2.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
+                                        <span class="fw-bold me-3 text-user-color">Nehir Bozbey</span> | <span class="ms-3 text-date">6 Kasım 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -111,15 +114,16 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-6.php" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-3.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-6n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
-                                    <h5 class="text-dark fs-18 fw-bold">Vonboarding'i Tercih Etmenin Avantajları</h5>
-                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.</p>
+                                    <h5 class="text-dark fs-18 fw-bold">Başvuru Süreçlerinde Verimliliği Yakalayın</h5>
+                                    <p class="fs-18 font-raleway text-grey max-w495 truncated-text">Vonboarding, süreci sadeleştirirken işletmelerin zamandan tasarruf etmesini sağlıyor. Peki, Vonboarding’i bu kadar özel yapan ne? Gelin, Vonboarding'in sunduğu avantajlara daha yakından bakalım.
+                                    </p>
                                     <div class="user-info fs-14 ">
-                                        <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
-                                        <span class="fw-bold me-3 text-user-color">Tilbe Çınar</span> | <span class="ms-3 text-date">8 Ekim 2024</span>
+                                        <img src="<?= $baseUrl ?>/assets/images/user-pp2.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
+                                        <span class="fw-bold me-3 text-user-color">Nehir Bozbey</span> | <span class="ms-3 text-date">12 Kasım 2024</span>
                                     </div>
                                 </div>
                             </div>
@@ -136,11 +140,11 @@ require 'master/header.php';
                 <div class="col-lg-4 col-md-12">
                     <h2 class="fs-40 text-grey fw-bold last-title">Çok Okunanlar</h2>
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-1.php" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
-                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h5>
+                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding ile Başvuru Süreçlerini Hızlandırın!</h5>
                                 </div>
                             </div>
                         </a>
@@ -148,11 +152,11 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-2.php" class="text-decoration-none text-dark">
                             <div class=" d-flex">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-2n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
-                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding'de Gelir Fırsatları</h5>
+                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding ile Dijital Dönüşüm</h5>
                                 </div>
                             </div>
                         </a>
@@ -160,11 +164,11 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-3.php" class="text-decoration-none text-dark">
                             <div class=" d-flex">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-3.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-3n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
-                                    <h5 class="fw-bold fs-18 text-dark">Sanal POS Entegrasyonu İçin Vonboarding'i Tercih Etmenin Avantajları</h5>
+                                    <h5 class="fw-bold fs-18 text-dark">Tek Panelden Başvuru Yönetimi</h5>
                                 </div>
                             </div>
                         </a>
@@ -172,11 +176,11 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-4.php" class="text-decoration-none text-dark">
                             <div class=" d-flex">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-4n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
-                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding Nedir?</h5>
+                                    <h5 class="fw-bold fs-18 text-dark">Ödeme Kuruluşlarıyla Kolay Entegrasyon</h5>
                                 </div>
                             </div>
                         </a>
@@ -184,11 +188,11 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-id.php" class="text-decoration-none text-dark">
+                        <a href="blog-5.php" class="text-decoration-none text-dark">
                             <div class=" d-flex">
-                                <img src="<?= $baseUrl ?>/assets/images/blog-2.png" alt="Makale Resmi" class="me-4">
+                                <img src="<?= $baseUrl ?>/assets/images/blog-5n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
-                                    <h5 class="fw-bold fs-18 text-dark">Vonboarding Nedir?</h5>
+                                    <h5 class="fw-bold fs-18 text-dark">Ödeme Kuruluşlarını Tek Panelden Yönetin</h5>
                                 </div>
                             </div>
                         </a>

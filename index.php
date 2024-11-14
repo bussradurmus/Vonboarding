@@ -1,5 +1,8 @@
 <?php
 global $baseUrl;
+$metaTitle = 'VONBOARDING: Hızlı Sanal Pos Entegrasyonu ve Başvuru Yönetimi';
+$metaDescription = 'Vonboarding ile başvuru süreçlerinizi daha verimli hale getirin! Ödeme kuruluşları için dijital başvuru yönetimi ile sanal POS entegrasyonunda tüm başvurularınızı tek bir panelden kolayca takip edebilirsiniz.';
+$metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 require 'master/header.php';
 ?>
 <div class="video-filter">
@@ -116,28 +119,32 @@ require 'master/header.php';
         </div>
         <div class="logo-container mt-100">
             <!-- First set of logos -->
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/weepay.svg" alt="WeePay Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/gpara.svg" alt="GPara Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"/></div>
+
             <!-- Duplicate set of logos for seamless loop -->
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"></div>
-            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/weepay.svg" alt="WeePay Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/gpara.svg" alt="GPara Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/weepay.svg" alt="WeePay Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/gpara.svg" alt="GPara Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/vallet.svg" alt="VALLET Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/esnekpos.svg" alt="Esnekpos Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/paybyme.svg" alt="PaybyMe Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/weepay.svg" alt="WeePay Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/gpara.svg" alt="GPara Resmi"/></div>
+            <div class="logo-item"><img src="<?= $baseUrl ?>/assets/images/fzypay.svg" alt="FzyPay Resmi"/></div>
         </div>
 
         <div class="container mt-150">
@@ -319,13 +326,13 @@ require 'master/header.php';
                                 <button class="accordion-button collapsed fs-20 fw-bold" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                    Vonboarding hangi ödeme kuruluşları ile entegre çalışıyor?
+                                    Vonboarding hangi ödeme kuruluşları ile entegra çalışıyor?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Vallet, Elekse, Paybyme, Fzypay
+                                    Vallet, Elekse, Paybyme, Fzypay, WeePay, GPara
                                 </div>
                             </div>
                         </div>
@@ -360,14 +367,13 @@ require 'master/header.php';
                                 <button class="accordion-button collapsed fs-20 fw-bold" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseFour" aria-expanded="false"
                                         aria-controls="collapseFour">
-                                    Vonboarding üzerinden başvurumu yaptıktan sonra süreç ne kadar sürede tamamlanır?
+                                    Ödeme Kuruluşları Vonboarding’e nasıl başvurabilir?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Başvurunuzu tamamladıktan sonra, sistem başvurunuzu ilgili ödeme kuruluşuna iletir ve değerlendirme süreci başlar. Genellikle başvuru süreci, belgelerinizin
-                                    eksiksiz olması durumunda 3 iş günü içerisinde tamamlanır. Süreçle ilgili tüm bilgilendirmeler e-posta, SMS ya da arama ile tarafınıza iletilir.
+                                    Ödeme kuruluşları, Vonboarding’e başvurmak için “Kayıt Ol” butonuna tıklayarak formu doldurabilir ve başvuru sürecini kolayca başlatabilirler.
                                 </div>
                             </div>
                         </div>
@@ -403,7 +409,7 @@ require 'master/header.php';
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Başvuru sürecinde yaşadığınız herhangi bir sorun veya aksaklık için Vonboarding Destek Ekibi’ne ulaşabilirsiniz. Destek ekibine, platform üzerindeki İletişim Formu
+                                    Başvuru sürecinde yaşadığınız herhangi bir sorun veya aksaklık için Vonboarding Destek Ekibi’ne ulaşabilirsiniz. Destek ekibine, iletişim formu üzerindeki  <a class="text-blue" href="<?= $baseUrl ?>index.php#iletisim">İletişim Formu</a>
                                     aracılığıyla veya e-posta yoluyla (<a href="mailto:destek@vonboarding.com" class="text-blue">destek@vonboarding.com</a>) erişebilirsiniz.
                                 </div>
                             </div>

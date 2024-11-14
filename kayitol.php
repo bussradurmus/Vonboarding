@@ -1,5 +1,8 @@
 <?php
 global $baseUrl;
+$metaTitle = 'KAYIT OL - VONBOARDING';
+$metaDescription = 'Vonboarding’e Kayıt Ol: Ödeme kuruluşları için hızlı ve kolay başvuru süreçlerine adım atmanızı sağlar. Dijital başvuru yönetimi, sanal POS entegrasyonu ve güvenli ödeme çözümleriyle işletmenizi büyütmek için hemen kayıt olun ve başvuru süreçlerinizi hızlandırın.';
+$metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 require 'master/header.php';
 ?>
 
@@ -306,9 +309,9 @@ require 'master/header.php';
     <main>
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
-                <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
-                <h3 class="form-title text-white fw-bold mb-3">Tebrikler! Kaydınız Tamamlandı.</h3>
+
                 <img src="<?= $baseUrl ?>assets/images/party-popper.png" alt="Image" class="mb-4">
+                <h3 class="form-title text-white fw-bold mb-3">Tebrikler! Kaydınız Tamamlandı.</h3>
                 <p class="form-subtitle text-lgrey mb-5 font-raleway">Vonboarding’in tüm özelliklerini kullanabilmeniz için, hesabınızın onaylanması gerekmektedir. Onay sürecini <span class="fw-bold">Vonboarding’e giriş</span>
                     yaparak takip edebilirsiniz.</p>
 

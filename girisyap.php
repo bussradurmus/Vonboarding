@@ -1,5 +1,8 @@
 <?php
 global $baseUrl;
+$metaTitle = 'GİRİŞ YAP - VONBOARDING';
+$metaDescription = 'Vonboarding’e Giriş Yap: Ödeme kuruluşları için kolay entegrasyon, hızlı sanal POS entegrasyonu ve dijital başvuru yönetimi sunar. Başvuru süreçlerinizi hızlandırın, ödeme entegrasyonu yönetimini tek panelden takip edin ve işletmenizin verimliliğini artırın. Güvenli, kullanıcı dostu ve şeffaf ödeme süreçleri ile dijital dönüşümünüzü hızlandırın.';
+$metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 require 'master/header.php';
 ?>
 

@@ -1,17 +1,17 @@
 <?php
 global $baseUrl;
+$metaTitle = 'BLOG - VONBOARDING';
+$metaDescription = 'Vonboarding Blog: Ödeme kuruluşları için dijital başvuru yönetimi, sanal POS entegrasyonu ve başvuru süreçlerinin nasıl daha verimli ve şeffaf hale getirilebileceği hakkında kapsamlı bilgiler sunar. Entegre ödeme çözümleri Vonboarding başvuru süreçleri ve dijital dönüşümle ilgili en güncel bilgileri burada bulabilirsiniz';
+$metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 require 'master/header.php';
 ?>
 
-<div class="hero-text-container blog-detail-page">
+<div class="hero-text-container blog-detail-page blog-6">
     <div class="col-lg-8 col-md-10 mx-auto hero-content text-center max-w796">
-        <h6 class="fs-16 text-center text-lgrey">8 Ekim 2024</h6>
-        <h1 class="mb-4 text-white fw-bold fs-40 w-1052">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h1>
+        <h6 class="fs-16 text-center text-lgrey">12 Kasım 2024</h6>
+        <h1 class="mb-4 text-white fw-bold fs-40 w-1052">Vonboarding ile Başvuru Süreçlerinde Verimliliği Yakalayın</h1>
         <div class="d-flex flex-column align-items-center">
-            <p class=" text-lgrey mb-0">Günümüzde finansal dünyada başarılı olmak için hız, verimlilik ve operasyonel süreçlerin sorunsuz bir şekilde yönetilmesi büyük önem taşıyor. İşte tam
-                da bu noktada, Vonboarding devreye giriyor. İşletmelerin ve ödeme kuruluşlarının başvuru ve entegrasyon süreçlerini hızlandırarak, zaman ve kaynak kullanımını en verimli hale getiren
-                modern bir çözüm sunuyor.</p>
-            <p class="text-lgrey fw-bold text-center">Peki avantajları neler? </p>
+            <p class=" text-lgrey mb-0">Vonboarding, süreci sadeleştirirken işletmelerin zamandan tasarruf etmesini sağlıyor. Peki, Vonboarding’i bu kadar özel yapan ne? Gelin, Vonboarding'in sunduğu avantajlara daha yakından bakalım.</p>
         </div>
     </div>
 </div>
@@ -21,71 +21,66 @@ require 'master/header.php';
         <div class="container max-w744">
             <div class="row mb-4">
                 <div class="col-12">
-                    <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Makale Resmi" class="w-100">
+                    <img src="<?= $baseUrl ?>/assets/images/close-up-hand-holding-smartphone%20(1)%202.png" alt="Vonboarding Makale Resmi" class="w-100">
                 </div>
                 <div class="col-12 mt-100">
-                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Verimli ve Hızlı Başvuru Yönetimi</h2>
-                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Geleneksel</span>başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının
-                        incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding,
-                        tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur.<span class="fw-bold"> Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur.</span>
-                        Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde
-                        sonuçlandırılır. </p>
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Kullanıcı Dostu Arayüz: Verimliliği Artıran Pratik Çözümler</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><strong class="ms-5">Vonboarding</strong>, kullanıcı dostu arayüzü sayesinde işletmelere büyük bir kolaylık sunuyor.
+                        Platformun anlaşılır yapısı, karmaşık başvuru süreçlerini adım adım yönetme imkanı verirken, gereksiz işlemleri ortadan kaldırarak
+                        <strong> verimliliği artırır</strong>. Böylece, işletmeler başvuruları daha hızlı değerlendirebilir, iş süreçlerinde gereksiz detaylarla vakit kaybetmez
+                        ve kaynaklarını daha etkili kullanabilir.</p>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding'in</span><strong> kullanıcı dostu </strong> yapısı, her seviyeden çalışan
+                        için öğrenmesi kolay bir deneyim sunar. Teknolojik altyapısının güçlü olması, sistemin hızlı çalışmasını sağlarken, işletmeler
+                        için teknik aksaklıkların önüne geçer. Özellikle dijital ortamda başvuru süreçlerini yürüten işletmeler için bu yapı, büyük bir
+                        avantaj haline gelir.</p>
                 </div>
                 <div class="col-12 mt-4">
-                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Entegre ve Şeffaf Süreç Yönetimi</h2>
-                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding,</span>
-                        sadece başvuru sürecini hızlandırmakla kalmaz; aynı zamanda süreçlerinizi tek bir ekran üzerinden yönetme olanağı sunar. Üye işyeri başvuruları ve banka
-                        izinlerinin yönetimini merkezi bir platformda yaparak her adımda tam kontrol sahibi olabilirsiniz. Tüm başvuru süreçlerini anlık olarak izleyebilir ve güncellemeleri anında
-                        takip edebilirsiniz.<span class="fw-bold"> Bu sayede operasyonel verimliliğinizi artırarak kaynaklarınızı daha verimli bir şekilde kullanabilirsiniz.</span></p>
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Tek Platform Üzerinden Tüm Süreçleri Yönetme İmkanı</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Başvuru</span> sürecinde yer alan farklı adımları ayrı platformlar yerine tek bir çatı
+                        altında toplayan Vonboarding, işletmelere <strong>zamandan ve enerjiden tasarruf </strong> sağlıyor. Bu entegre yapı, ödeme kuruluşları ve işletmeler
+                        arasında şeffaf bir iletişim köprüsü kurarken, başvuru sürecini <strong>uçtan uca takip</strong>  etmeyi de kolaylaştırıyor. İşletmeler, sürecin hangi
+                        aşamada olduğunu tek ekranda görebilir, gerekli onayları hızla alabilir ve tüm başvuru adımlarını rahatça yönetebilir.</p>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Bu özellik</span> sayesinde işletmeler, büyüme hedeflerine
+                        odaklanmak için daha fazla zamana sahip oluyor. Vonboarding, başvuru süreçlerinin hızla tamamlanmasını sağlayarak işletmelerin ana
+                        işlerine odaklanmasına olanak tanıyor.<strong>Tek bir platform </strong> üzerinden sağlanan bu kolaylık, hem zamandan hem de operasyonel maliyetlerden
+                        tasarruf sağlar.</p>
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-12 mb-4">
-                    <img src="<?= $baseUrl ?>/assets/images/blog-detail2.png" alt="Makale Resmi" class="w-100">
+                    <img src="<?= $baseUrl ?>/assets/images/crystal-globe-with-stock-information%202.png" alt="Vonboarding Makale Resmi" class="w-100">
                 </div>
                 <div class="col-12 mt-4">
-                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">İşinizi Büyütün: Müşterilerinize Değer Katın</h2>
-                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding,</span>işletmelerin iş süreçlerini hızlandırırken aynı zamanda büyümelerine de katkıda bulunur.
-                        Müşterilerinize Vonboarding aracılığıyla sanal POS sistemlerini önererek,
-                        onların işlerini kolaylaştırabilir ve ek gelir fırsatları yaratabilirsiniz. Sanal POS entegrasyonlarının sunduğu pratik çözümler sayesinde müşterileriniz işlemlerini daha hızlı
-                        gerçekleştirebilir ve ticari faaliyetlerini geliştirebilirler. Müşterilerinize değer katarken,<span class="fw-bold"> bu entegrasyonlardan elde edeceğiniz gelirlerin de keyfini çıkarabilirsiniz.</span>
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Müşteri Memnuniyetini Artırın</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Müşteri</span> memnuniyetini artırmak için süreçlerin hızlı ve sorunsuz ilerlemesi
+                        oldukça önemlidir. Vonboarding’in sunduğu <strong> kullanıcı dostu ve entegre platform</strong>, müşteri memnuniyetine doğrudan katkı sağlar. Başvuru
+                        süreçlerini hızlandırarak ve gereksiz beklemeleri ortadan kaldırarak,<strong> müşterilere en iyi hizmeti sunma şansı </strong>verir. Ayrıca, şeffaf iletişim
+                        özelliği ile işletmeler ve müşteriler arasında güvenilir bir bağ kurulmasına yardımcı olur.
                     </p>
                 </div>
-                <div class="col-12 mt-4">
-                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Tüm Banka İzinlerini Tek Ekrandan Yönetin</h2>
-                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding </span>Vonboarding ile başvuru sürecinin her aşamasında tam kontrol sahibi olabilirsiniz. <span
-                                class="fw-bold">Tüm
-                        banka izinlerini tek bir ekrandan yönetin ve başvurularınızın durumunu kolayca takip edin.</span> Anlık bildirimler sayesinde her aşamadan haberdar olun ve potansiyel
-                        gecikmeleri
-                        ortadan kaldırın. Başvuru sürecindeki hız ve verimlilik, sadece operasyonel yükünüzü azaltmakla kalmaz, aynı zamanda müşteri memnuniyetini de artırır.</p>
-                </div>
+
             </div>
 
-            <div class="row mb-4">
-                <div class="col-12 ">
-                    <blockquote class="quote">
-                        <p class="fs-32 fst-italic fw-bold ps-3 text-user-color"> "Herkes bir problem çözebilirse, herkes bir icat çıkarabilirse, o zaman ilerleme sonsuz olacaktır."</p>
-                        <p class="fs-20 text-grey ps-3">-Henry Ford</p>
-                    </blockquote>
-                </div>
-            </div>
+
             <div class="row mb-4">
                 <div class="col-12 mt-4 avantaj-box border-bottom">
-                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Ek Gelir Fırsatları ve Değer Yaratan Çözümler</h2>
-                    <p class="fs-18 font-raleway mb-4 text-user-color">Vonboarding, müşterilerinize sunduğunuz sanal POS hizmetleri ile ek gelir elde etme fırsatları sunar. Gerekli belgeleri platforma
-                        yükleyerek sanal POS başvuru sürecini yönetin ve işlemleri hızla sonuçlandırın. <span class="fw-bold"> Bu sayede müşterilerinize değer katarken, siz de ek gelir fırsatlarından yararlanın.</span> Sanal POS
-                        entegrasyonlarından elde ettiğiniz gelirlerle işinizi büyütmeye odaklanın.</p>
-                    <p class="fs-18 font-raleway mb-4 text-user-color">Vonboarding, başvuru ve entegrasyon süreçlerinizde yaşadığınız zorlukları ortadan kaldıran,
-                        verimliliği artıran ve büyüme hedeflerinize ulaşmanızı kolaylaştıran modern bir çözümdür. Operasyonel yüklerinizi hafifletmek ve iş süreçlerinizi optimize etmek için
-                        Vonboarding ile tanışın, zamandan ve kaynaklarınızdan tasarruf ederek işinizi bir sonraki seviyeye taşıyın!</p>
+                    <h2 class="fs-32 fw-semibold text-dgrey mb-3">Vonboarding ile Dijital Başvuru Süreçlerinde Bir Adım Öne Geçin</h2>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding</span> , dijitalleşen dünyada işletmelere
+                        büyük bir avantaj sağlayan başvuru yönetim platformudur.<strong> Kullanıcı dostu arayüzü</strong>, teknolojik altyapısı ve tek platform
+                        üzerinden yönetim imkanı sunması, işletmelere verimlilik, zaman ve müşteri memnuniyeti anlamında kazanç sağlar.
+                        İş süreçlerinde gereksiz adımları azaltarak hızlı bir işleyiş sağlar, işletmelere işlerini büyütme ve<strong> müşteri odaklı </strong>
+                        çalışmaları için daha fazla zaman bırakır.</p>
+                    <p class="fs-18 font-raleway mb-4 text-user-color"><span class="ms-5">Vonboarding'i</span> tercih ederek <strong> dijital
+                            dönüşüm yolunda</strong> işletmenizin verimliliğini artırabilir, müşteri memnuniyetini sağlayabilir ve iş süreçlerinizi bir
+                        adım ileri taşıyabilirsiniz.</p>
                 </div>
             </div>
             <div class="d-flex justify-content-between flex-column flex-sm-row gap-3 gap-sm-0 align-items-center align-items-sm-start hover-effect">
                 <div class="d-flex user-info fs-14 align-items-center">
-                    <img src="<?= $baseUrl ?>/assets/images/user-pp.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
+                    <img src="<?= $baseUrl ?>/assets/images/user-pp2.png" alt="Kullanıcı Resmi" class="rounded-circle me-2">
                     <div class="d-flex flex-column">
-                        <span class="fw-bold text-user-color max-content">Tilbe Çınar</span>
-                        <span class="text-date max-content">8 Ekim 2024</span>
+                        <span class="fw-bold text-user-color max-content">Nehir Bozbey</span>
+                        <span class="text-date max-content">12 Kasım 2024</span>
                     </div>
                 </div>
                 <div class="d-flex gap-2">
@@ -132,15 +127,21 @@ require 'master/header.php';
                     <div class="slick">
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-1.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Vonboarding Makale Resmi">
                                     </div>
                                     <div class="slide-content">
                                         <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
                                         <p class="truncated-text font-raleway">
-                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
+                                            Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının
+                                            incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler,
+                                            işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları
+                                            ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme
+                                            imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine
+                                            yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir
+                                            ve süreç hızlı bir şekilde sonuçlandırılır.
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
                                             <span class="text-date max-content fs-14">20 Temmuz 2024</span>
@@ -168,18 +169,21 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-2.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/woman-s-hand-presenting-futuristic-technology-digital-remix%202.png" alt="Vonboarding Makale Resmi">
                                     </div>
                                     <div class="slide-content">
-                                        <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
+                                        <h4 class="fs-18 fw-bold">Vonboarding ile Dijital Dönüşüm</h4>
                                         <p class="truncated-text font-raleway">
-                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
+                                            Dijitalleşen dünyada, işletmelerin ihtiyaç duyduğu en önemli altyapılardan biri de güvenli,
+                                            hızlı ve verimli ödeme sistemleridir. Vonboarding, bu alandaki ihtiyacı karşılamak için geliştirilmiş
+                                            bir dijital başvuru yönetimi ve ödeme entegrasyon platformudur. Özellikle ödeme kuruluşları
+                                            ve şirketler arasında güçlü bir köprü
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
-                                            <span class="text-date max-content fs-14">20 Temmuz 2024</span>
+                                            <span class="text-date max-content fs-14">14 Ekim 2024</span>
                                             <div class="d-flex font-raleway fw-semibold text-blue fs-14">
                                                 <div class="max-content continue-text">Devamını Oku</div>
                                                 <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -204,18 +208,18 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-3.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/digital-communication-technology-background-with-hand-touching-virtual-screen-digital-remix.png" alt="Vonboarding Makale Resmi">
                                     </div>
                                     <div class="slide-content">
-                                        <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
+                                        <h4 class="fs-18 fw-bold">Tek Panelden Başvuru Yönetimi</h4>
                                         <p class="truncated-text font-raleway">
-                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
+                                            Vonboarding, işletmelerin başvuru süreçlerini dijitalleştirerek, her adımı şeffaf bir şekilde takip etmelerini sağlar. Başvuru süreçlerini dijitalleştirme sayesinde işletmeler, başvuruları daha hızlı ve kolay bir şekilde yönetebilir. Ayrıca, tüm başvurular gerçek zamanlı takip ile izlenebilir ve işletmelere anlık bildirimler gönderilir.
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
-                                            <span class="text-date max-content fs-14">20 Temmuz 2024</span>
+                                            <span class="text-date max-content fs-14">14 Ekim 2024</span>
                                             <div class="d-flex font-raleway fw-semibold text-blue fs-14">
                                                 <div class="max-content continue-text">Devamını Oku</div>
                                                 <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -240,18 +244,20 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-id.php">
+                                <a href="blog-4.php">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
-                                        <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Copy Image">
+                                        <img src="<?= $baseUrl ?>/assets/images/close-up-hand-holding-smartphone%202.png" alt="Vonboarding Makale Resmi">
                                     </div>
                                     <div class="slide-content">
-                                        <h4 class="fs-18 fw-bold">Vonboarding ile Başvuru Süreçlerini Hızlandırın, İşinizi Büyütün!</h4>
+                                        <h4 class="fs-18 fw-bold">Ödeme Kuruluşlarıyla Kolay Entegrasyon</h4>
                                         <p class="truncated-text font-raleway">
-                                           Geleneksel başvuru süreçleri karmaşık ve zaman alıcı olabilir. Üye işyeri başvurularının incelenmesi, belgelerin toplanması ve gerekli izinlerin alınması sürecinde yaşanan gecikmeler, işletmelerin iş akışını aksatabilir ve büyüme hızını yavaşlatabilir. Vonboarding, tüm bu zorlukları ortadan kaldırmak için tasarlanmış bir platformdur. Başvuru süreçlerini tek bir platformdan yönetme imkanı sunarak, verimliliğinizi artırmanıza yardımcı olur. Gerekli belgeleri Vonboarding sistemine yükleyip başvuru sürecini başlattığınızda, tüm bilgi ve belgeler anında ödeme kuruluşlarına iletilir ve süreç hızlı bir şekilde sonuçlandırılır.
+                                            Dijitalleşen dünyada, ödeme sistemleri ve sanal POS çözümleri işletmeler için büyük önem taşıyor.
+                                            Vonboarding, ödeme süreçlerini hızlandıran, güvenli hale getiren ve ödeme kuruluşları ile işletmeler
+                                            arasında güçlü bir köprü oluşturan bir onboarding platformudur.
                                         </p>
                                         <div class="d-flex justify-content-between mt-4">
-                                            <span class="text-date max-content fs-14">20 Temmuz 2024</span>
+                                            <span class="text-date max-content fs-14">30 Ekim 2024</span>
                                             <div class="d-flex font-raleway fw-semibold text-blue fs-14">
                                                 <div class="max-content continue-text">Devamını Oku</div>
                                                 <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +280,79 @@ require 'master/header.php';
                             </div>
                         </div>
 
+                        <div class="item">
+                            <div class="bg">
+                                <a href="blog-5.php">
+                                    <div class="img-container">
+                                        <div class="img-overlay"></div>
+                                        <img src="<?= $baseUrl ?>/assets/images/futuristic-smart-city-with-5g-global-network-technology%202.png" alt="Vonboarding Makale Resmi">
+                                    </div>
+                                    <div class="slide-content">
+                                        <h4 class="fs-18 fw-bold">Ödeme Kuruluşlarıyla Kolay Entegrasyon</h4>
+                                        <p class="truncated-text font-raleway">
+                                            Dijitalleşen dünyada, ödeme sistemleri ve sanal POS çözümleri işletmeler için büyük önem taşıyor.
+                                            Vonboarding, ödeme süreçlerini hızlandıran, güvenli hale getiren ve ödeme kuruluşları ile işletmeler
+                                            arasında güçlü bir köprü oluşturan bir onboarding platformudur.
+                                        </p>
+                                        <div class="d-flex justify-content-between mt-4">
+                                            <span class="text-date max-content fs-14">30 Ekim 2024</span>
+                                            <div class="d-flex font-raleway fw-semibold text-blue fs-14">
+                                                <div class="max-content continue-text">Devamını Oku</div>
+                                                <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12" cy="12" r="12" fill="#1C64FE"/>
+                                                    <g clip-path="url(#clip0_164_14086)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M15.0883 11.411C15.2445 11.5673 15.3323 11.7792 15.3323 12.0002C15.3323 12.2211 15.2445 12.433 15.0883 12.5893L10.3741 17.3035C10.2973 17.3831 10.2053 17.4466 10.1037 17.4902C10.002 17.5339 9.89263 17.5569 9.78198 17.5579C9.67133 17.5588 9.5616 17.5377 9.45919 17.4958C9.35677 17.4539 9.26373 17.3921 9.18548 17.3138C9.10724 17.2356 9.04536 17.1425 9.00346 17.0401C8.96156 16.9377 8.94048 16.828 8.94144 16.7173C8.9424 16.6067 8.96539 16.4973 9.00906 16.3956C9.05274 16.294 9.11622 16.202 9.19581 16.1252L13.3208 12.0002L9.19581 7.87515Z"
+                                                              fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_164_14086">
+                                                            <rect width="8" height="12" fill="white" transform="translate(8 6)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
+                        <div class="item">
+                            <div class="bg">
+                                <a href="blog-6.php">
+                                    <div class="img-container">
+                                        <div class="img-overlay"></div>
+                                        <img src="<?= $baseUrl ?>/assets/images/close-up-hand-holding-smartphone%20(1)%202.png" alt="Vonboarding Makale Resmi">
+                                    </div>
+                                    <div class="slide-content">
+                                        <h4 class="fs-18 fw-bold">Başvuru Süreçlerinde Verimliliği Yakalayın</h4>
+                                        <p class="truncated-text font-raleway">
+                                            Vonboarding, süreci sadeleştirirken işletmelerin zamandan tasarruf etmesini sağlıyor. Peki, Vonboarding’i bu kadar özel yapan ne? Gelin, Vonboarding'in sunduğu avantajlara daha yakından bakalım.
+                                        </p>
+                                        <div class="d-flex justify-content-between mt-4">
+                                            <span class="text-date max-content fs-14">30 Ekim 2024</span>
+                                            <div class="d-flex font-raleway fw-semibold text-blue fs-14">
+                                                <div class="max-content continue-text">Devamını Oku</div>
+                                                <svg class="ms-1 icon-auto" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="12" cy="12" r="12" fill="#1C64FE"/>
+                                                    <g clip-path="url(#clip0_164_14086)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                              d="M15.0883 11.411C15.2445 11.5673 15.3323 11.7792 15.3323 12.0002C15.3323 12.2211 15.2445 12.433 15.0883 12.5893L10.3741 17.3035C10.2973 17.3831 10.2053 17.4466 10.1037 17.4902C10.002 17.5339 9.89263 17.5569 9.78198 17.5579C9.67133 17.5588 9.5616 17.5377 9.45919 17.4958C9.35677 17.4539 9.26373 17.3921 9.18548 17.3138C9.10724 17.2356 9.04536 17.1425 9.00346 17.0401C8.96156 16.9377 8.94048 16.828 8.94144 16.7173C8.9424 16.6067 8.96539 16.4973 9.00906 16.3956C9.05274 16.294 9.11622 16.202 9.19581 16.1252L13.3208 12.0002L9.19581 7.87515Z"
+                                                              fill="white"/>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_164_14086">
+                                                            <rect width="8" height="12" fill="white" transform="translate(8 6)"/>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

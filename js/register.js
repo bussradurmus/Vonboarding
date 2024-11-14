@@ -279,7 +279,7 @@ $(document).ready(function () {
             };
 
             $.ajax({
-                url: 'https://recep.valletbeta2.site/onbV2/register/kayitSmsDogrulama',
+                url: 'https://back.vonboarding.com/onbV2/register/kayitSmsDogrulama',
                 type: 'POST',
                 data: JSON.stringify(smsData),
                 headers: {
@@ -332,7 +332,7 @@ $(document).ready(function () {
         if (smsCode) {
             updateFormData('dogrulamaKodu', smsCode);
             $.ajax({
-                url: 'https://recep.valletbeta2.site/onbV2/register/kayitAction',
+                url: 'https://back.vonboarding.com/onbV2/register/kayitAction',
                 type: 'POST',
                 data: formData,
                 headers: {
@@ -389,7 +389,7 @@ $(document).ready(function () {
             };
 
             $.ajax({
-                url: 'https://recep.valletbeta2.site/onbV2/register/kayitSmsDogrulama',
+                url: 'https://back.vonboarding.com/register/kayitSmsDogrulama',
                 type: 'POST',
                 data: JSON.stringify(smsData),
                 headers: {

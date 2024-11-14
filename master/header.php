@@ -1,9 +1,9 @@
 <?php
 $baseUrl = 'https://busra.valletbeta2.site/Vonboarding/';
 // Meta etiketleri için varsayılan değerler
-$metaTitle = $metaTitle ?? 'Varsayılan Sayfa Başlığı';
-$metaDescription = $metaDescription ?? 'Varsayılan açıklama metni';
-$metaKeywords = $metaKeywords ?? 'Varsayılan anahtar kelimeler';
+$metaTitle = $metaTitle ?? ' VONBOARDING: Hızlı Sanal Pos Entegrasyonu ve Başvuru Yönetimi';
+$metaDescription = $metaDescription ?? 'Vonboarding ile başvuru süreçlerinizi daha verimli hale getirin! Ödeme kuruluşları için dijital başvuru yönetimi ile sanal POS entegrasyonunda tüm başvurularınızı tek bir panelden kolayca takip edebilirsiniz.';
+$metaKeywords = $metaKeywords ?? 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 ?>
 <!DOCTYPE html>
 <html lang="tr">

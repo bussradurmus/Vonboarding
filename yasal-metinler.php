@@ -1,5 +1,8 @@
 <?php
 global $baseUrl;
+$metaTitle = ' GİZLİLİK SÖZLEŞMESİ - VONBOARDING';
+$metaDescription = 'Vonboarding Yasal Metinler ve Sözleşmeler: Vonboarding Ödeme süreçlerinizi dijitalleştirirken kişisel verilerinizin ve ödeme bilgilerinizin güvenliğini ön planda tutar. Kolay başvuru yönetimi, sanal POS entegrasyonu ve dijital başvuru süreçlerinde yüksek güvenlikli sistemimizle verilerinizin korunmasını sağlıyoruz. Hızlı ve güvenli entegrasyon için Vonboarding’e başvurun.';
+$metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 require 'master/header.php';
 ?>
 

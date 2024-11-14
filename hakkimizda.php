@@ -1,7 +1,7 @@
 
 <?php
 global $baseUrl;
-$metaTitle = 'Hakkımızda - Vonboarding';
+$metaTitle = 'HAKKIMIZDA - Vonboarding';
 $metaDescription = 'Vonboarding, başvuru süreçlerini hızlandıran ve şirketler ile ödeme kuruluşları arasında köprü görevi gören bir platformdur.';
 $metaKeywords = 'Vonboarding, başvuru süreçleri, ödeme kuruluşları, entegrasyon, iş verimliliği';
 
@@ -25,6 +25,7 @@ require 'master/header.php';
         <div class="container  max-w1140">
             <h2 class="mb-5 text-grey letterSpace-45 text-uppercase mt-150 text-center lh-13">EKOSİSTEMİMİZİN YENİ TEKLİSİ! <br>
                 V<span class="text-blue">ON</span>BOARDING</h2>
+            <div></div>
         </div>
         <div class="container  max-w1140">
             <div class="row g-5">

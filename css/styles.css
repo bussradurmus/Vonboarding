@@ -384,6 +384,18 @@ footer {
     margin-top: -230px;
     z-index: 3333;
 }
+.page-container:has(.blog-2) .page {
+    margin-top: -165px;
+    z-index: 3333;
+}
+.page-container:has(.blog-6) .page {
+    margin-top: -325px;
+    z-index: 3333;
+}
+.user-info img{
+    width: 45px;
+    height: 45px;
+}
 .page-container:has(.blog-detail-page) .user-info img {
     width: 40px;
     height: 40px;
@@ -1074,6 +1086,7 @@ input:-webkit-autofill:active {
     .page-container:has(.blog-detail-page) .page {
         margin-top: 30px;
     }
+
     .page-container:has(.blog-detail-page) span.ms-5 {
         margin-left: 0 !important;
     }

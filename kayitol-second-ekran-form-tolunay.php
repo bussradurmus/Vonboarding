@@ -11,7 +11,7 @@ require 'master/header.php';
         <div class="container d-flex justify-content-center">
             <div class="form-container text-center w550">
                 <div class="step-header">
-                <img src="<?= $baseUrl ?>assets/images/modal.png" alt="Image" class="mb-4">
+          
                     <h3 class="form-title text-white fw-bold mb-3">Vonboarding’e Kayıt Olun</h3>
                     <p class="form-subtitle text-lgrey mb-3 font-raleway">Ödeme kuruluşu olarak kayıt olmak için lütfen formu doldurun</p>
                 </div>

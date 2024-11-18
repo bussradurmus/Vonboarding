@@ -86,7 +86,7 @@ require 'master/header.php';
                         <button type="button" class="btn btn-primary" id="nextButtonPrg" disabled>Devam Et</button>
                     </div>
                 </form>
-                <p class="already-have-account step-text">Zaten bir hesabın var mı? <a href="<?= $baseUrl ?>girisyap.php" class="text-white ms-1 fw-bold hover-link-underline">Giriş Yap</a></p>
+                <p class="already-have-account step-text">Zaten bir hesabın var mı? <a href="https://merchant.vonboarding.com/login" class="text-white ms-1 fw-bold hover-link-underline">Giriş Yap</a></p>
             </div>
     </main>
 

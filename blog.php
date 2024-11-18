@@ -24,7 +24,7 @@ require 'master/header.php';
                 <div class="col-lg-7 col-md-12">
                     <h2 class="fs-40 text-grey fw-bold ">Makalelerimiz</h2>
                     <div class="article-box mb-4 max-w678 mt-4">
-                        <a href="blog-1.php" class="text-decoration-none text-dark">
+                        <a href="blog-1" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -42,7 +42,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-2.php" class="text-decoration-none text-dark">
+                        <a href="blog-2" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-2n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -60,7 +60,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-3.php" class="text-decoration-none text-dark">
+                        <a href="blog-3" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-3n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -78,7 +78,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-4.php" class="text-decoration-none text-dark">
+                        <a href="blog-4" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-4n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -96,7 +96,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-5.php" class="text-decoration-none text-dark">
+                        <a href="blog-5" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-5n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -114,7 +114,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="article-box mb-4 max-w678">
-                        <a href="blog-6.php" class="text-decoration-none text-dark">
+                        <a href="blog-6" class="text-decoration-none text-dark">
                             <div class="d-flex resp-box">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-6n.png" alt="Makale Resmi" class="me-4">
                                 <div class="ms-3">
@@ -140,7 +140,7 @@ require 'master/header.php';
                 <div class="col-lg-4 col-md-12">
                     <h2 class="fs-40 text-grey fw-bold last-title">Çok Okunanlar</h2>
                     <div class="popular-box">
-                        <a href="blog-1.php" class="text-decoration-none text-dark">
+                        <a href="blog-1" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-1.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -152,7 +152,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-2.php" class="text-decoration-none text-dark">
+                        <a href="blog-2" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-2n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -164,7 +164,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-3.php" class="text-decoration-none text-dark">
+                        <a href="blog-3" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-3n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -176,7 +176,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-4.php" class="text-decoration-none text-dark">
+                        <a href="blog-4" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-4n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">
@@ -188,7 +188,7 @@ require 'master/header.php';
                     </div>
 
                     <div class="popular-box">
-                        <a href="blog-5.php" class="text-decoration-none text-dark">
+                        <a href="blog-5" class="text-decoration-none text-dark">
                             <div class=" d-flex">
                                 <img src="<?= $baseUrl ?>/assets/images/blog-5n.png" alt="Makale Resmi" class="me-4">
                                 <div class=" align-content-center">

@@ -180,7 +180,7 @@ require 'master/header.php';
                     <div class="slick">
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-1.php">
+                                <a href="<?= $baseUrl ?>blog-1">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/blog-detail1.png" alt="Vonboarding Makale Resmi">
@@ -222,7 +222,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-2.php">
+                                <a href="<?= $baseUrl ?>blog-2">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/woman-s-hand-presenting-futuristic-technology-digital-remix%202.png" alt="Vonboarding Makale Resmi">
@@ -261,7 +261,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-3.php">
+                                <a href="<?= $baseUrl ?>blog-3">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/digital-communication-technology-background-with-hand-touching-virtual-screen-digital-remix.png" alt="Vonboarding Makale Resmi">
@@ -297,7 +297,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-4.php">
+                                <a href="<?= $baseUrl ?>blog-4">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/close-up-hand-holding-smartphone%202.png" alt="Vonboarding Makale Resmi">
@@ -335,7 +335,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-5.php">
+                                <a href="<?= $baseUrl ?>blog-5">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/futuristic-smart-city-with-5g-global-network-technology%202.png" alt="Vonboarding Makale Resmi">
@@ -373,7 +373,7 @@ require 'master/header.php';
 
                         <div class="item">
                             <div class="bg">
-                                <a href="blog-6.php">
+                                <a href="<?= $baseUrl ?>blog-6">
                                     <div class="img-container">
                                         <div class="img-overlay"></div>
                                         <img src="<?= $baseUrl ?>/assets/images/close-up-hand-holding-smartphone%20(1)%202.png" alt="Vonboarding Makale Resmi">

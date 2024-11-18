@@ -64,7 +64,7 @@ require 'master/header.php';
             <div class="mt-150 ">
                 <div class="px-0 d-flex gap-5 justify-content-center flex-lg-row flex-column">
                     <div class="mb-5">
-                        <h2 class="text-uppercase letterSpace-45 mb-4">MISY<span class="text-blue">ON</span>UMUZ</h2>
+                        <h2 class="text-uppercase letterSpace-45 mb-4">MİSY<span class="text-blue">ON</span>UMUZ</h2>
                         <p class="font-raleway fs-18 text-lgrey">Üye işyeri başvuru ve bildirim süreçlerini tek bir noktada toplayan ve şirketler ile ödeme kuruluşları arasında güçlü bir köprü görevi
                             görmek. İşletmelerin başvuru süreçlerini modern bir anlayışla ele alarak, operasyonel yüklerini minimuma indiriyor ve süreçlerin daha şeffaf, hızlı ve verimli olmasını
                             sağlıyoruz.</p>
@@ -112,7 +112,7 @@ require 'master/header.php';
                                         class="text-blue">on</span> Başlasın!</h3>
                             <p class="text-grey fs-18 lh-23">Ödeme sistemlerine sorunsuz entegrasyon için hemen <br>Vonboarding’e
                                 katılın ve süreci hızlandırın!</p>
-                            <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+                            <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol-first">Hemen Başla</a>
                         </div>
                     </div>
 

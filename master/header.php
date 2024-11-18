@@ -78,7 +78,7 @@ $metaKeywords = $metaKeywords ?? 'Vonboarding, başvuru süreçleri, ödeme kuru
                         </li>
                         <li class="nav-item me-xl-2 ms-xl-2">
                             <a class="nav-link text-white fs-16 font-raleway"
-                               href="<?= $baseUrl ?>hakkimizda.php">Hakkımızda</a>
+                               href="<?= $baseUrl ?>hakkimizda">Hakkımızda</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
@@ -90,13 +90,13 @@ $metaKeywords = $metaKeywords ?? 'Vonboarding, başvuru süreçleri, ödeme kuru
                             </div>
                         </li>
                         <li class="nav-item me-lg-2 ms-xl-2">
-                            <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>blog.php">Blog</a>
+                            <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>blog">Blog</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
                         </li>
                         <li class="nav-item ms-xl-2">
-                            <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>index.php#iletisim">İletişim</a>
+                            <a class="nav-link text-white fs-16 font-raleway" href="<?= $baseUrl ?>index#iletisim">İletişim</a>
                             <div class="nav-underline">
                                 <img src="<?= $baseUrl ?>/assets/images/hover-line.svg"  alt="Hover Line for navigation">
                             </div>
@@ -104,7 +104,7 @@ $metaKeywords = $metaKeywords ?? 'Vonboarding, başvuru süreçleri, ödeme kuru
                     </ul>
                     <div class="d-flex mb-2 ms-3 ms-xl-0">
                         <a href="https://gokhan.valletbeta2.site/login" class="btn text-white me-lg-2 ps-0 fs-14 font-raleway fw-semibold align-content-center" >Giriş Yap</a>
-                        <a href="<?= $baseUrl ?>kayitol.php" class="btn button-outline fs-14 font-raleway fw-semibold">Kayıt Ol</a>
+                        <a href="<?= $baseUrl ?>kayitol-first" class="btn button-outline fs-14 font-raleway fw-semibold">Kayıt Ol</a>
                     </div>
                 </div>
             </nav>

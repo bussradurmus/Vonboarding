@@ -60,7 +60,7 @@ require 'master/header.php';
                     <p class="form-subtitle text-lgrey mb-5 font-raleway">Yeni şifreniz kayıtlı telefon numaranıza gönderilmiştir. Yeni şifrenizle giriş yapabilirsiniz.</p>
 
                     <div class="d-flex justify-content-between button-container my-5">
-                        <a href="<?= $baseUrl ?>/girisyap.php" type="button" class="btn btn-primary w-100" id="fpCompleted">Giriş Yap</a>
+                        <a href="<?= $baseUrl ?>/girisyap" type="button" class="btn btn-primary w-100" id="fpCompleted">Giriş Yap</a>
                     </div>
                 </div>
             </div>

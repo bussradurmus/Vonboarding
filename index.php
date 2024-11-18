@@ -19,7 +19,7 @@ require 'master/header.php';
         <h1 class="mb-4 text-white fw-bold"> Başvuru Süreçlerini Hızlandırın,<br>İşinizi Büyütün!</h1>
         <p class="mb-4 text-lgrey font-raleway">Başvuruların inceleme ve platform üzerinden yönetim,
             Vonboarding <br> ile daha hızlı ve verimli çözümlere ulaşabilirsiniz.</p>
-        <a class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+        <a class="btn btn-primary btn-lg mt-5 fs-14 font-raleway fw-bold" href="<?= $baseUrl ?>kayitol-first">Hemen Başla</a>
     </div>
 </div>
 <div class="container metrics-container align-content-center text-white position-relative mt-4">
@@ -111,7 +111,7 @@ require 'master/header.php';
                     entegrasyon süreçlerini tek bir yerden yürütüp, onboarding süreçlerinizi hızlandırır.
                     Böylece operasyonel yük azalırken, işinizi büyütmek için daha fazla zaman kazanırsınız.</p>
                 <div class="d-flex justify-content-center align-items-center mt-4 vbutton-container">
-                    <a class="btn btn-primary me-24" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+                    <a class="btn btn-primary me-24" href="<?= $baseUrl ?>kayitol-first">Hemen Başla</a>
                     <a href="https://vallet.gitbook.io/vonboarding" class="btn button-outline">Dökümantasyon</a>
                 </div>
 
@@ -326,7 +326,7 @@ require 'master/header.php';
                                 <button class="accordion-button collapsed fs-20 fw-bold" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
-                                    Vonboarding hangi ödeme kuruluşları ile entegra çalışıyor?
+                                    Vonboarding hangi ödeme kuruluşları ile entegre çalışıyor?
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
@@ -409,7 +409,7 @@ require 'master/header.php';
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                  data-bs-parent="#faqAccordion">
                                 <div class="accordion-body fs-18 font-raleway">
-                                    Başvuru sürecinde yaşadığınız herhangi bir sorun veya aksaklık için Vonboarding Destek Ekibi’ne ulaşabilirsiniz. Destek ekibine, iletişim formu üzerindeki  <a class="text-blue" href="<?= $baseUrl ?>index.php#iletisim">İletişim Formu</a>
+                                    Başvuru sürecinde yaşadığınız herhangi bir sorun veya aksaklık için Vonboarding Destek Ekibi’ne ulaşabilirsiniz. Destek ekibine, iletişim formu üzerindeki  <a class="text-blue" href="<?= $baseUrl ?>index#iletisim">İletişim Formu</a>
                                     aracılığıyla veya e-posta yoluyla (<a href="mailto:destek@vonboarding.com" class="text-blue">destek@vonboarding.com</a>) erişebilirsiniz.
                                 </div>
                             </div>
@@ -430,7 +430,7 @@ require 'master/header.php';
                                     class="text-blue">on</span> Başlasın!</h3>
                         <p class="text-grey fs-18 lh-23">Ödeme sistemlerine sorunsuz entegrasyon için hemen <br>Vonboarding’e
                             katılın ve süreci hızlandırın!</p>
-                        <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol.php">Hemen Başla</a>
+                        <a class="btn btn-primary mt-4 fs-14 resp-with100" href="<?= $baseUrl ?>kayitol-first">Hemen Başla</a>
                     </div>
                 </div>
 
